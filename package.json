@@ -1,0 +1,24 @@
+{
+  "name": "github-daily-rank-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "generate:data": "node scripts/generate-data.mjs",
+    "enrich:descriptions": "node scripts/enrich-descriptions.mjs",
+    "index:projects": "node scripts/index-projects.mjs",
+    "dev": "node scripts/generate-data.mjs && node server.mjs --dev",
+    "build": "node scripts/generate-data.mjs && vite build",
+    "start": "node server.mjs",
+    "preview": "vite preview",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "node-cron": "^4.6.0",
+    "undici": "^7.16.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.3"
+  }
+}

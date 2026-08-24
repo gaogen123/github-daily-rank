@@ -1,0 +1,552 @@
+{
+  "x4gKing/X4G": {
+    "description": "仓库已不可访问，暂无项目说明。",
+    "source": "unavailable",
+    "updatedAt": "2026-08-21T00:00:00.000Z"
+  },
+  "anywhere-labs/deepseek-harness-desktop": {
+    "description": "DeepSeek Harness 的跨平台桌面客户端。",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T05:57:02.357Z"
+  },
+  "s1dashu/ip-as-logo-skill": {
+    "description": "生成企业 IP 吉祥物的 Agent 技能。",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T05:57:03.824Z"
+  },
+  "guillaumemeyer/watermarks-remover": {
+    "description": "清除文本与文件中 AI 水印的 Python 工具。",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T05:57:05.369Z"
+  },
+  "amadeusprotocol/node": {
+    "description": "Amadeus 协议的区块链节点实现。",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T05:57:06.614Z"
+  },
+  "awesome-dsh-plugin/awesome-dsh-plugin": {
+    "description": "DeepSeek Harness 社区插件精选列表。",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T05:57:08.345Z"
+  },
+  "vercel-labs/portless": {
+    "description": "用命名域名替代本地开发端口的工具。",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T05:57:10.059Z"
+  },
+  "marceloprates/prettymaps": {
+    "description": "生成艺术风格地图海报的 Python 库。",
+    "source": "condensed",
+    "updatedAt": "2026-08-21T05:57:10.059Z"
+  },
+  "chaitanyagiri/munder-difflin": {
+    "description": "本地多智能体测试框架。",
+    "source": "translation",
+    "updatedAt": "2026-08-21T05:57:10.802Z"
+  },
+  "cursor/plugins": {
+    "description": "Cursor插件规范及官方插件。",
+    "source": "translation",
+    "updatedAt": "2026-08-21T05:57:11.500Z"
+  },
+  "akitaonrails/ai-memory": {
+    "description": "为 AI 编码代理提供长期记忆的工具。",
+    "source": "translation",
+    "updatedAt": "2026-08-21T05:57:12.141Z"
+  },
+  "DietrichGebert/ponytail": {
+    "description": "AI编程助手极简代码生成插件",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:08:07.043Z"
+  },
+  "Panniantong/Agent-Reach": {
+    "description": "AI代理全网内容读取与搜索命令行工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:09.863Z"
+  },
+  "DeusData/codebase-memory-mcp": {
+    "description": "高性能代码智能MCP服务器",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:10.435Z"
+  },
+  "calesthio/OpenMontage": {
+    "description": "全球首个开源智能体视频制作系统",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:11.246Z"
+  },
+  "deepseek-ai/DeepSpec": {
+    "description": "投机解码草稿模型训练与评估全栈代码库",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:08:14.057Z"
+  },
+  "hasaneyldrm/exercises-dataset": {
+    "description": "433项健身动作综合数据集",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:14.754Z"
+  },
+  "xbtlin/ai-berkshire": {
+    "description": "基于Claude Code的价值投资多智能体研究框架",
+    "source": "condensed",
+    "updatedAt": "2026-08-21T06:08:15.339Z"
+  },
+  "HKUDS/Vibe-Trading": {
+    "description": "个人交易代理Vibe-Trading",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:16.341Z"
+  },
+  "usestrix/strix": {
+    "description": "开源AI黑客代理与自动化渗透测试工具",
+    "source": "condensed",
+    "updatedAt": "2026-08-21T06:08:17.025Z"
+  },
+  "hugohe3/ppt-master": {
+    "description": "AI生成可编辑PPT及语音备注工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:17.768Z"
+  },
+  "facebook/astryx": {
+    "description": "开源可定制且适配智能体的设计系统",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:18.222Z"
+  },
+  "microsoft/AI-For-Beginners": {
+    "description": "微软AI初学者12周24课教程",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:19.042Z"
+  },
+  "diegosouzapw/OmniRoute": {
+    "description": "免费AI网关聚合160多家服务商",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:19.771Z"
+  },
+  "JuliusBrussee/caveman": {
+    "description": "克劳德代码技能：用原始人语言节省65%令牌",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:20.673Z"
+  },
+  "alibaba/page-agent": {
+    "description": "浏览器内JavaScript图形界面智能代理",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:21.450Z"
+  },
+  "santifer/career-ops": {
+    "description": "基于Claude Code的AI求职系统",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:22.271Z"
+  },
+  "stablyai/orca": {
+    "description": "并行代理开发环境，支持桌面与移动端",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:23.242Z"
+  },
+  "Leonxlnx/taste-skill": {
+    "description": "AI品味提升与内容质量优化工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:23.979Z"
+  },
+  "ogulcancelik/herdr": {
+    "description": "终端中的智能体多路复用器",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:24.738Z"
+  },
+  "addyosmani/agent-skills": {
+    "description": "AI编码智能体的生产级工程技能库",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:25.266Z"
+  },
+  "Zackriya-Solutions/meetily": {
+    "description": "注重隐私的本地AI会议助手，基于Rust构建。",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:25.860Z"
+  },
+  "ruvnet/RuView": {
+    "description": "WiFi信号驱动的实时空间感知与生命体征监测系统",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:26.486Z"
+  },
+  "bradautomates/claude-video": {
+    "description": "为Claude添加视频观看能力的命令行工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:27.403Z"
+  },
+  "safishamsi/graphify": {
+    "description": "AI编程助手知识图谱技能包",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:28.099Z"
+  },
+  "MadsLorentzen/ai-job-search": {
+    "description": "基于Claude Code的AI求职申请框架",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:28.680Z"
+  },
+  "iOfficeAI/OfficeCLI": {
+    "description": "面向AI代理的Office文档读写自动化套件",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:29.365Z"
+  },
+  "jamiepine/voicebox": {
+    "description": "开源语音合成工作室",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:29.963Z"
+  },
+  "wonderwhy-er/DesktopCommanderMCP": {
+    "description": "Claude终端控制与文件编辑MCP服务器",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:32.330Z"
+  },
+  "OpenCut-app/OpenCut": {
+    "description": "开源剪映替代视频剪辑工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:32.901Z"
+  },
+  "Dicklesworthstone/destructive_command_guard": {
+    "description": "危险Git与Shell命令拦截防护工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:33.517Z"
+  },
+  "Nutlope/hallmark": {
+    "description": "Claude Code、Cursor及Codex的反AI味设计技能",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:34.368Z"
+  },
+  "coreyhaines31/marketingskills": {
+    "description": "Claude Code营销技能库及增长工程指南",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:35.025Z"
+  },
+  "Raphire/Win11Debloat": {
+    "description": "Windows 10/11系统精简与去遥测PowerShell脚本",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:35.743Z"
+  },
+  "HenryNdubuaku/maths-cs-ai-compendium": {
+    "description": "AI与机器学习研究工程师学习路线图",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:36.515Z"
+  },
+  "HKUDS/DeepTutor": {
+    "description": "智能体原生个性化学习助手",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:37.156Z"
+  },
+  "xai-org/grok-build": {
+    "description": "SpaceXAI终端AI编程代理及TUI工具",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:08:39.102Z"
+  },
+  "Fei-Away/Codex-Dream-Skin": {
+    "description": "Codex桌面端外部主题换肤工具",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:08:40.630Z"
+  },
+  "Robbyant/lingbot-map": {
+    "description": "流式数据场景重建的前馈三维基础模型",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:41.320Z"
+  },
+  "0xNyk/council-of-high-intelligence": {
+    "description": "多模型AI人格协商决策工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:41.899Z"
+  },
+  "k1tbyte/Wand-Enhancer": {
+    "description": "Wand应用的高级用户体验与互操作性扩展",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:42.779Z"
+  },
+  "moonshine-ai/moonshine": {
+    "description": "边缘设备快速精准自动语音识别工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:43.281Z"
+  },
+  "tirth8205/code-review-graph": {
+    "description": "本地优先代码智能图谱，面向MCP与CLI工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:43.946Z"
+  },
+  "every-app/open-seo": {
+    "description": "Semrush和Ahrefs的开源替代方案",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:44.570Z"
+  },
+  "KnockOutEZ/wigolo": {
+    "description": "本地优先AI编程代理搜索与抓取工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:45.862Z"
+  },
+  "koala73/worldmonitor": {
+    "description": "实时全球情报仪表盘与地缘监控平台",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:46.434Z"
+  },
+  "oblien/openship": {
+    "description": "自托管部署平台",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:47.084Z"
+  },
+  "chrislgarry/Apollo-11": {
+    "description": "阿波罗11号制导计算机指令舱与登月舱源码",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:47.843Z"
+  },
+  "earendil-works/pi": {
+    "description": "统一大模型API与智能体循环的AI工具包",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:48.784Z"
+  },
+  "baidu/Unlimited-OCR": {
+    "description": "百度推出的单次长时序文档解析OCR模型",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:08:50.281Z"
+  },
+  "bojieli/ai-agent-book": {
+    "description": "AI Agent设计原理与工程实践开源书籍仓库",
+    "source": "condensed",
+    "updatedAt": "2026-08-21T06:08:51.119Z"
+  },
+  "ayghri/i-have-adhd": {
+    "description": "编码代理防跑题输出技能包",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:52.162Z"
+  },
+  "rohitg00/ai-engineering-from-scratch": {
+    "description": "从零开始学习AI工程并构建交付的指南",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:53.163Z"
+  },
+  "block/buzz": {
+    "description": "蜂群思维通信平台",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:53.672Z"
+  },
+  "alibaba/open-code-review": {
+    "description": "阿里巴巴开源的混合架构代码审查工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:54.270Z"
+  },
+  "citrolabs/ego-lite": {
+    "description": "面向人类与AI代理并行工作的浏览器",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:55.073Z"
+  },
+  "andrewyng/openworker": {
+    "description": "本地优先的开源AI桌面助手",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:08:57.433Z"
+  },
+  "CoreBunch/Instatic": {
+    "description": "自托管可视化CMS快速部署工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:58.031Z"
+  },
+  "ComposioHQ/awesome-claude-skills": {
+    "description": "精选Claude技能、资源与工具清单",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:58.984Z"
+  },
+  "permissionlesstech/bitchat": {
+    "description": "蓝牙Mesh聊天工具，IRC风格",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:08:59.658Z"
+  },
+  "pbakaus/impeccable": {
+    "description": "AI设计语言增强框架",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:00.404Z"
+  },
+  "MoonshotAI/Kimi-K3": {
+    "description": "开源原生多模态智能体大模型Kimi K3",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:09:03.349Z"
+  },
+  "virgiliojr94/book-to-skill": {
+    "description": "技术书籍PDF转Claude Code技能工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:03.968Z"
+  },
+  "pascalorg/editor": {
+    "description": "基于React Three Fiber和WebGPU的3D建筑编辑器",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:09:06.187Z"
+  },
+  "paperswithbacktest/awesome-systematic-trading": {
+    "description": "系统化交易精选资源列表",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:06.894Z"
+  },
+  "1jehuang/jcode": {
+    "description": "编码代理测试框架",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:07.637Z"
+  },
+  "huggingface/speech-to-speech": {
+    "description": "开源语音智能体本地构建框架",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:08.552Z"
+  },
+  "different-ai/openwork": {
+    "description": "Claude Cowork的开源替代方案（基于opencode）",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:09.187Z"
+  },
+  "mvanhorn/last30days-skill": {
+    "description": "跨平台AI调研与摘要生成技能",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:24.687Z"
+  },
+  "zhaoxuya520/reverse-skill": {
+    "description": "AI驱动的逆向渗透安全技能路由包",
+    "source": "condensed",
+    "updatedAt": "2026-08-21T06:09:25.455Z"
+  },
+  "yc-software/qm": {
+    "description": "面向初创企业的多智能体协作工作平台",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:09:27.013Z"
+  },
+  "TencentCloud/TencentDB-Agent-Memory": {
+    "description": "腾讯云数据库智能体本地长期记忆方案",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:27.665Z"
+  },
+  "lyogavin/airllm": {
+    "description": "单卡4GB显存运行70B模型推理方案",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:28.263Z"
+  },
+  "firecrawl/pdf-inspector": {
+    "description": "Rust编写的PDF检测分类与文本提取库",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:29.099Z"
+  },
+  "trycompai/crm": {
+    "description": "开源客户关系管理系统",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:29.922Z"
+  },
+  "xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer": {
+    "description": "前线部署工程师岗位研究指南及案例集",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:09:31.231Z"
+  },
+  "browser-use/video-use": {
+    "description": "编码代理编辑视频的工具库",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:31.883Z"
+  },
+  "firecrawl/anydoc": {
+    "description": "Firecrawl通用文档解析与转换工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:32.505Z"
+  },
+  "cloudflare/computer": {
+    "description": "为AI代理提供计算机操作能力的工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:33.166Z"
+  },
+  "huangruiteng/loopx": {
+    "description": "轻量级循环工程状态内核，适配多智能体团队",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:33.689Z"
+  },
+  "FareedKhan-dev/kimi-k3-in-c": {
+    "description": "Kimi K3智能体C语言实现",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:34.312Z"
+  },
+  "pranshuparmar/witr": {
+    "description": "Witr运行原因分析工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:35.129Z"
+  },
+  "PrimeIntellect-ai/prime-agent": {
+    "description": "自进化强化学习智能体，用于编码流程与长时自主任务",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:35.888Z"
+  },
+  "tt-a1i/archify": {
+    "description": "支持明暗主题切换的架构图生成智能体技能",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:37.081Z"
+  },
+  "denoland/celld": {
+    "description": "自托管分布式持久对象系统",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:37.744Z"
+  },
+  "semantica-agi/semantica": {
+    "description": "图原生上下文与可问责AI系统基础设施",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:38.367Z"
+  },
+  "danielmiessler/Personal_AI_Infrastructure": {
+    "description": "个人AI基础设施以增强人类能力",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:39.175Z"
+  },
+  "pingdotgg/t3code": {
+    "description": "T3Code开源项目及代码生成工具",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:39.929Z"
+  },
+  "cathrynlavery/diagram-design": {
+    "description": "Claude Code的29种编辑图表类型，自包含HTML与SVG格式",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:40.664Z"
+  },
+  "macro-inc/macro": {
+    "description": "整合邮件、文档、任务与 CRM 的团队工作空间。",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:41.708Z"
+  },
+  "cactus-compute/needle": {
+    "description": "14MB端侧基础模型，适配手机、穿戴、智能家居与机器人",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:42.543Z"
+  },
+  "holaboss-ai/holaOS": {
+    "description": "开源全合一AI智能体工作空间",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:43.134Z"
+  },
+  "lightningpixel/modly": {
+    "description": "本地AI图像转3D模型的桌面应用",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:43.832Z"
+  },
+  "alibaba/OpenSandbox": {
+    "description": "通用AI应用沙箱平台及多语言SDK",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:44.769Z"
+  },
+  "yjh051108/dsh-routing-suite": {
+    "description": "DSH运行时注入器与思维模式路由预设套装",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:09:48.302Z"
+  },
+  "cordiverse/cordis": {
+    "description": "时空组合性元框架",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:49.145Z"
+  },
+  "zhu1090093659/dsh-web-ui": {
+    "description": "DeepSeek Harness Web GUI插件与皮肤全家桶",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:09:50.586Z"
+  },
+  "xiaobright/dsh-anchored-standard": {
+    "description": "DeepSeek Harness锚定标准模式预设集",
+    "source": "readme-summary",
+    "updatedAt": "2026-08-21T06:09:52.369Z"
+  },
+  "jundot/omlx": {
+    "description": "macOS菜单栏管理的Apple Silicon LLM推理服务器",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:53.110Z"
+  },
+  "RyanCodrai/turbovec": {
+    "description": "基于TurboQuant的Rust向量索引及Python绑定",
+    "source": "translation",
+    "updatedAt": "2026-08-21T06:09:53.655Z"
+  }
+}
