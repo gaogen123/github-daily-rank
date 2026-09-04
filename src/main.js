@@ -1,4 +1,6 @@
 import './styles.css';
+import { normalizeAppData } from './lib/normalize-app-data.js';
+import { computeNewsItems, computeRankings, formatNewsDate, formatRelativeNewsDate, categoriesForRepo as computeCategoriesForRepo, directoryScore as computeDirectoryScore, directoryProjects as computeDirectoryProjects } from './lib/project-state.js';
 
 const tabs = [
   { key: 'dailyGrowth', label: '日增长榜', metric: '日增 Star', help: '按最近一日新增 Star 排序' },
@@ -67,9 +69,7 @@ function renderDescription(project) {
 }
 
 function categoriesForRepo(repo) {
-  const value = state.projectCategories[repo];
-  const categories = Array.isArray(value) ? value : Array.isArray(value?.categories) ? value.categories : [];
-  return categories.filter((category) => projectCategoryNames.includes(category));
+  return computeCategoriesForRepo(repo, state.projectCategories, projectCategoryNames);
 }
 
 function projectDestination(project) {
@@ -118,99 +118,38 @@ function metricDisplay(project, key) {
 }
 
 
-function isNewProject(project) {
-  if (!project.openedAt) return false;
-  const reportDate = new Date(`${state.data.date}T00:00:00Z`);
-  const openedAt = new Date(`${project.openedAt}T00:00:00Z`);
-  const age = (reportDate - openedAt) / 86_400_000;
-  return age >= 0 && age <= 30;
-}
-
 function filteredProjects() {
-  const min = state.minK * 1_000;
-  const max = state.maxK * 1_000;
-  const query = state.query.trim().toLowerCase();
-  const key = state.searchMode ? 'stars' : state.activeTab === 'new' ? 'dailyGrowth' : state.activeTab;
-  const source = state.searchMode
-    ? state.searchResults ?? state.globalProjects ?? []
-    : state.data.projects;
-  const filtered = source
-    .filter((project) => project.stars >= min && project.stars <= max)
-    .filter((project) => state.searchMode || state.activeTab !== 'new' || isNewProject(project))
-    .filter((project) => state.searchProvider === 'semantic' || !query || `${project.repo} ${project.name} ${project.description}`.toLowerCase().includes(query));
-
-  return state.searchMode && state.searchProvider === 'semantic'
-    ? filtered
-    : filtered.sort((left, right) => right[key] - left[key]);
-}
-
-function newsItems() {
-  const items = (state.news?.items || [])
-    .filter((item) => item.category === state.newsCategory);
-  const publishedAt = (item) => {
-    const timestamp = Date.parse(item.published_at || '');
-    return Number.isNaN(timestamp) ? 0 : timestamp;
-  };
-
-  return [...items].sort((left, right) => {
-    if (state.newsSort === 'latest') return publishedAt(right) - publishedAt(left);
-    return (Number(right.score) || 0) - (Number(left.score) || 0)
-      || publishedAt(right) - publishedAt(left);
+  return computeRankings({
+    data: state.data,
+    minK: state.minK,
+    maxK: state.maxK,
+    query: state.query,
+    activeTab: state.activeTab,
+    searchMode: state.searchMode,
+    searchResults: state.searchResults,
+    globalProjects: state.globalProjects,
+    searchProvider: state.searchProvider
   });
 }
 
-function formatNewsDate(value) {
-  if (!value) return '时间未知';
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return value;
-  return new Intl.DateTimeFormat('zh-CN', {
-    month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
-  }).format(date);
-}
-
-function formatRelativeNewsDate(value) {
-  if (!value) return '时间未知';
-  const timestamp = Date.parse(value);
-  if (Number.isNaN(timestamp)) return '时间未知';
-  const elapsed = Math.max(0, Date.now() - timestamp);
-  const minute = 60_000;
-  const hour = 60 * minute;
-  const day = 24 * hour;
-  if (elapsed < minute) return '刚刚';
-  if (elapsed < hour) return `${Math.floor(elapsed / minute)}分钟前`;
-  if (elapsed < day) return `${Math.floor(elapsed / hour)}小时前`;
-  if (elapsed < 7 * day) return `${Math.floor(elapsed / day)}天前`;
-  if (elapsed < 30 * day) return `${Math.floor(elapsed / (7 * day))}周前`;
-  if (elapsed < 365 * day) return `${Math.floor(elapsed / (30 * day))}个月前`;
-  return `${Math.floor(elapsed / (365 * day))}年前`;
+function newsItems() {
+  return computeNewsItems({ news: state.news, category: state.newsCategory, sort: state.newsSort });
 }
 
 
 function directoryScore(project) {
-  return state.projectScores[project.repo]?.[state.directoryCategory] || null;
+  return computeDirectoryScore(project, state.projectScores, state.directoryCategory);
 }
 
 function directoryProjects() {
-  const projects = (state.globalProjects || [])
-    .filter((project) => categoriesForRepo(project.repo).length)
-    .filter((project) => state.directoryCategory === '全部' || categoriesForRepo(project.repo).includes(state.directoryCategory));
-
-  const scoreDifference = (field, left, right) => {
-    const leftScore = directoryScore(left);
-    const rightScore = directoryScore(right);
-    if (Boolean(leftScore?.excluded) !== Boolean(rightScore?.excluded)) return leftScore?.excluded ? 1 : -1;
-    return (Number(rightScore?.[field]) || -1) - (Number(leftScore?.[field]) || -1);
-  };
-  const comparators = {
-    recommended: (left, right) => scoreDifference('comprehensiveScore', left, right),
-    rising: (left, right) => scoreDifference('hotScore', left, right),
-    hot: (left, right) => (Number(right.dailyGrowth) || 0) - (Number(left.dailyGrowth) || 0),
-    popular: (left, right) => (Number(right.stars) || 0) - (Number(left.stars) || 0),
-    fastest: (left, right) => (Number(right.dailyRate) || 0) - (Number(left.dailyRate) || 0),
-    latest: (left, right) => (Date.parse(right.lastSeen || '') || 0) - (Date.parse(left.lastSeen || '') || 0)
-  };
-
-  return projects.sort((left, right) => comparators[state.directorySort](left, right) || left.repo.localeCompare(right.repo));
+  return computeDirectoryProjects({
+    globalProjects: state.globalProjects,
+    projectCategories: state.projectCategories,
+    projectScores: state.projectScores,
+    directoryCategory: state.directoryCategory,
+    directorySort: state.directorySort,
+    projectCategoryNames
+  });
 }
 
 function directoryMetric(project) {
@@ -771,18 +710,21 @@ async function bootstrap() {
     if (!response.ok) throw new Error(`日期索引请求失败：${response.status}`);
     if (!projectsResponse.ok) throw new Error(`全库项目索引加载失败：${projectsResponse.status}`);
     const [index, globalProjectIndex] = await Promise.all([response.json(), projectsResponse.json()]);
-    state.globalProjects = globalProjectIndex.projects || [];
-    if (authResponse?.ok) state.user = (await authResponse.json()).user;
-    if (newsResponse?.ok) state.news = await newsResponse.json();
-    if (projectCategories && typeof projectCategories === 'object') {
-      state.projectCategories = projectCategories.projects || projectCategories.projectCategories || projectCategories.categories || projectCategories;
-    }
-    if (projectImages?.images && typeof projectImages.images === 'object') {
-      state.projectImages = projectImages.images;
-    }
-    if (projectScores?.projects && typeof projectScores.projects === 'object') {
-      state.projectScores = projectScores.projects;
-    }
+    const normalized = normalizeAppData({
+      index,
+      globalProjectIndex,
+      authUser: authResponse?.ok ? (await authResponse.json()).user : null,
+      news: newsResponse?.ok ? await newsResponse.json() : null,
+      projectCategories,
+      projectImages,
+      projectScores
+    });
+    state.globalProjects = normalized.globalProjects;
+    state.user = normalized.user;
+    state.news = normalized.news;
+    state.projectCategories = normalized.projectCategories;
+    state.projectImages = normalized.projectImages;
+    state.projectScores = normalized.projectScores;
     const authError = new URLSearchParams(window.location.search).get('auth_error');
     if (authError) {
       const authMessages = {
@@ -794,9 +736,9 @@ async function bootstrap() {
       state.authError = authMessages[authError] || authMessages.github;
       window.history.replaceState({}, '', window.location.pathname);
     }
-    state.dates = index.dates;
-    state.selectedDate = index.latest;
-    await loadReport(index.latest);
+    state.dates = normalized.dates;
+    state.selectedDate = normalized.selectedDate;
+    await loadReport(normalized.selectedDate);
   } catch (error) {
     document.querySelector('#app').innerHTML = `<div class="load-error"><strong>排行榜加载失败</strong><p>${escapeHtml(error.message)}</p><p>请先运行 <code>npm run generate:data</code>。</p></div>`;
   }
