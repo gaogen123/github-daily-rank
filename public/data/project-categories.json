@@ -1,0 +1,2420 @@
+{
+  "version": 1,
+  "generated_at": "2026-08-27T02:30:01.330094Z",
+  "count": 1238,
+  "projects": {
+    "01-ai/Yi": [
+      "AI开发平台"
+    ],
+    "0xNyk/council-of-high-intelligence": [
+      "AI智能体"
+    ],
+    "1Panel-dev/1Panel": [
+      "AI运维"
+    ],
+    "1c7/chinese-independent-developer": [],
+    "1jehuang/jcode": [
+      "AI编程工具"
+    ],
+    "3b1b/manim": [],
+    "4ian/GDevelop": [],
+    "521xueweihan/GitHub520": [],
+    "5rahim/seanime": [],
+    "648540858/wvp-GB28181-pro": [],
+    "666ghj/BettaFish": [
+      "AI智能体",
+      "AI爬虫工具"
+    ],
+    "666ghj/MiroFish": [
+      "AI智能体"
+    ],
+    "78/xiaozhi-esp32": [],
+    "9001/copyparty": [],
+    "A-poc/RedTeam-Tools": [],
+    "AI4Finance-Foundation/FinGPT": [
+      "AI开发平台"
+    ],
+    "AI4Finance-Foundation/FinRL": [
+      "AI开发平台"
+    ],
+    "AI4Finance-Foundation/FinRobot": [
+      "AI智能体"
+    ],
+    "AIDC-AI/Pixelle-Video": [
+      "AI视频工具"
+    ],
+    "AIHawk-FOSS/Auto_Jobs_Applier_AI_Agent": [
+      "AI智能体"
+    ],
+    "AUTOMATIC1111/stable-diffusion-webui": [
+      "AI图像工具"
+    ],
+    "AlexxIT/go2rtc": [
+      "AI视频工具"
+    ],
+    "Alibaba-NLP/DeepResearch": [
+      "AI搜索引擎"
+    ],
+    "Alibaba-NLP/WebAgent": [
+      "AI搜索引擎",
+      "AI智能体"
+    ],
+    "Alishahryar1/free-claude-code": [
+      "AI编程工具"
+    ],
+    "All-Hands-AI/OpenHands": [
+      "AI智能体",
+      "AI编程工具"
+    ],
+    "Alvin9999/new-pac": [],
+    "AmruthPillai/Reactive-Resume": [],
+    "Anduin2017/HowToCook": [],
+    "Anil-matcha/Open-Generative-AI": [
+      "AI图像工具",
+      "AI视频工具"
+    ],
+    "Anjok07/ultimatevocalremovergui": [
+      "AI音频工具"
+    ],
+    "Anuken/Mindustry": [],
+    "AprilNEA/OpenLogi": [],
+    "ArchiveBox/ArchiveBox": [],
+    "Asabeneh/30-Days-Of-Python": [],
+    "Atlas-OS/Atlas": [],
+    "AutomaApp/automa": [
+      "AI爬虫工具"
+    ],
+    "Avaiga/taipy": [
+      "AI开发平台"
+    ],
+    "AykutSarac/jsoncrack.com": [],
+    "Baiyuetribe/paper2gui": [
+      "AI图像工具",
+      "AI视频工具",
+      "AI音频工具"
+    ],
+    "BasedHardware/omi": [
+      "AI智能体"
+    ],
+    "BerriAI/litellm": [
+      "AI开发平台"
+    ],
+    "BlackINT3/OpenArk": [],
+    "BloopAI/bloop": [
+      "AI编程工具"
+    ],
+    "BloopAI/vibe-kanban": [
+      "AI办公工具"
+    ],
+    "Budibase/budibase": [],
+    "BuilderIO/gpt-crawler": [
+      "AI爬虫工具",
+      "AI搜索引擎"
+    ],
+    "Byaidu/PDFMathTranslate": [
+      "AI办公工具"
+    ],
+    "ByteByteGoHq/system-design-101": [],
+    "C4illin/ConvertX": [],
+    "CMU-Perceptual-Computing-Lab/openpose": [
+      "AI图像工具"
+    ],
+    "Canner/WrenAI": [
+      "AI开发平台"
+    ],
+    "ChrisTitusTech/winutil": [],
+    "ChristianLempa/boilerplates": [],
+    "ChromeDevTools/chrome-devtools-mcp": [
+      "AI爬虫工具",
+      "Skills"
+    ],
+    "Cinnamon/kotaemon": [
+      "AI开发平台",
+      "AI办公工具"
+    ],
+    "Ciphey/Ciphey": [],
+    "ClemensElflein/OpenMower": [],
+    "CloakHQ/CloakBrowser": [
+      "AI爬虫工具"
+    ],
+    "ComposioHQ/awesome-claude-skills": [
+      "Skills"
+    ],
+    "ComposioHQ/awesome-codex-skills": [
+      "Skills"
+    ],
+    "CopilotKit/CopilotKit": [
+      "AI开发平台",
+      "AI智能体"
+    ],
+    "CoreBunch/Instatic": [],
+    "CorentinTh/it-tools": [],
+    "D4Vinci/Scrapling": [
+      "AI爬虫工具"
+    ],
+    "DS4SD/docling": [
+      "AI办公工具"
+    ],
+    "DarkFlippers/unleashed-firmware": [],
+    "DataEngineer-io/data-engineer-handbook": [],
+    "DataExpert-io/data-engineer-handbook": [],
+    "DataTalksClub/data-engineering-zoomcamp": [],
+    "DataTalksClub/machine-learning-zoomcamp": [],
+    "DayuanJiang/next-ai-draw-io": [
+      "AI设计工具"
+    ],
+    "DeusData/codebase-memory-mcp": [
+      "AI编程工具",
+      "Skills"
+    ],
+    "DiceDB/dice": [],
+    "Dicklesworthstone/destructive_command_guard": [],
+    "DietrichGebert/ponytail": [
+      "AI编程工具"
+    ],
+    "DigitalPlatDev/FreeDomain": [],
+    "DioxusLabs/dioxus": [],
+    "DoctorWkt/acwj": [],
+    "Donchitos/Claude-Code-Game-Studios": [
+      "AI编程工具",
+      "AI智能体",
+      "Skills"
+    ],
+    "Drakkar-Software/OctoBot": [],
+    "DustinBrett/daedalOS": [],
+    "EbookFoundation/free-programming-books": [],
+    "EthicalML/awesome-production-machine-learning": [
+      "AI开发平台"
+    ],
+    "EveryInc/compound-engineering-plugin": [
+      "AI编程工具"
+    ],
+    "Evil0ctal/Douyin_TikTok_Download_API": [
+      "AI爬虫工具"
+    ],
+    "EvoMap/evolver": [
+      "AI智能体"
+    ],
+    "Expensify/App": [],
+    "FareedKhan-dev/kimi-k3-in-c": [
+      "AI智能体"
+    ],
+    "Fei-Away/Codex-Dream-Skin": [
+      "AI编程工具"
+    ],
+    "Fincept-Corporation/FinceptTerminal": [],
+    "FlagAlpha/Llama2-Chinese": [],
+    "FlowiseAI/Flowise": [
+      "AI开发平台"
+    ],
+    "Flowseal/zapret-discord-youtube": [],
+    "FortAwesome/Font-Awesome": [],
+    "Free-TV/IPTV": [],
+    "FreeCAD/FreeCAD": [],
+    "FreeTubeApp/FreeTube": [],
+    "FuelLabs/fuel-core": [],
+    "FuelLabs/sway": [],
+    "FujiwaraChoki/MoneyPrinterV2": [
+      "AI营销"
+    ],
+    "GeeeekExplorer/nano-vllm": [
+      "AI开发平台"
+    ],
+    "GetStream/Vision-Agents": [
+      "AI智能体",
+      "AI视频工具"
+    ],
+    "GibsonAI/Memori": [
+      "AI开发平台"
+    ],
+    "GoogleChromeLabs/squoosh": [
+      "AI图像工具"
+    ],
+    "GoogleCloudPlatform/agent-starter-pack": [
+      "AI开发平台",
+      "AI运维"
+    ],
+    "GoogleCloudPlatform/generative-ai": [
+      "AI开发平台"
+    ],
+    "GopeedLab/gopeed": [],
+    "GrapesJS/grapesjs": [],
+    "GraphiteEditor/Graphite": [
+      "AI设计工具"
+    ],
+    "GreyDGL/PentestGPT": [
+      "AI智能体"
+    ],
+    "GrowingGit/GitHub-Chinese-Top-Charts": [],
+    "GyulyVGC/sniffnet": [],
+    "HIllya51/LunaTranslator": [],
+    "HKUDS/AI-Trader": [
+      "AI智能体"
+    ],
+    "HKUDS/CLI-Anything": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "HKUDS/DeepCode": [
+      "AI编程工具"
+    ],
+    "HKUDS/DeepTutor": [
+      "AI智能体"
+    ],
+    "HKUDS/LightRAG": [
+      "AI开发平台"
+    ],
+    "HKUDS/RAG-Anything": [
+      "AI开发平台"
+    ],
+    "HKUDS/ViMax": [
+      "AI视频工具"
+    ],
+    "HKUDS/Vibe-Trading": [
+      "AI智能体"
+    ],
+    "HQarroum/docker-android": [],
+    "HailToDodongo/pyrite64": [],
+    "HandsOnLLM/Hands-On-Large-Language-Models": [],
+    "HenryNdubuaku/maths-cs-ai-compendium": [],
+    "HeyPuter/puter": [
+      "AI智能体"
+    ],
+    "Hmbown/DeepSeek-TUI": [
+      "AI编程工具"
+    ],
+    "HuLaSpark/HuLa": [],
+    "Huanshere/VideoLingo": [
+      "AI视频工具",
+      "AI音频工具"
+    ],
+    "HunxByts/GhostTrack": [],
+    "HuolalaTech/page-spy-web": [],
+    "IceWhaleTech/CasaOS": [],
+    "Imbad0202/academic-research-skills": [
+      "Skills"
+    ],
+    "ImranR98/Obtainium": [],
+    "Infisical/infisical": [],
+    "InsForge/InsForge": [
+      "AI开发平台"
+    ],
+    "JCodesMore/ai-website-cloner-template": [
+      "AI编程工具"
+    ],
+    "Johnshall/Shadowrocket-ADBlock-Rules-Forever": [],
+    "JuliusBrussee/caveman": [
+      "AI编程工具",
+      "Skills"
+    ],
+    "K-Dense-AI/claude-scientific-skills": [
+      "Skills"
+    ],
+    "KRTirtho/spotube": [],
+    "KaijuEngine/kaiju": [],
+    "Kaiyiwing/qwerty-learner": [],
+    "KeygraphHQ/shannon": [
+      "AI智能体",
+      "AI运维"
+    ],
+    "KillianLucas/open-interpreter": [
+      "AI智能体"
+    ],
+    "Kilo-Org/kilocode": [
+      "AI编程工具",
+      "AI智能体"
+    ],
+    "KnockOutEZ/wigolo": [
+      "AI爬虫工具",
+      "AI编程工具"
+    ],
+    "KrishKrosh/TrackWeight": [],
+    "KurtBestor/Hitomi-Downloader": [],
+    "Kyome22/RunCat_for_windows": [],
+    "LC044/WeChatMsg": [],
+    "LadybirdBrowser/ladybird": [],
+    "LazyVim/LazyVim": [],
+    "Leonxlnx/taste-skill": [
+      "AI设计工具"
+    ],
+    "LibreTranslate/LibreTranslate": [],
+    "Lissy93/dashy": [],
+    "LizardByte/Sunshine": [],
+    "Lordog/dive-into-llms": [],
+    "Lum1104/Understand-Anything": [
+      "AI编程工具"
+    ],
+    "MAZHARMIK/Interview_DS_Algo": [],
+    "MODSetter/SurfSense": [],
+    "MadsLorentzen/ai-job-search": [
+      "AI智能体",
+      "AI办公工具"
+    ],
+    "ManimCommunity/manim": [
+      "AI视频工具"
+    ],
+    "MengTo/threeui": [],
+    "MichMich/MagicMirror": [],
+    "MichaelCade/90DaysOfDevOps": [],
+    "MightyMoud/sidekick": [],
+    "Milkdown/milkdown": [],
+    "Mintplex-Labs/anything-llm": [
+      "AI开发平台"
+    ],
+    "MiroMindAI/MiroThinker": [
+      "AI智能体",
+      "AI搜索引擎"
+    ],
+    "MonitorControl/MonitorControl": [],
+    "MoonshotAI/Kimi-K3": [
+      "AI开发平台"
+    ],
+    "Mozilla-Ocho/llamafile": [
+      "AI开发平台"
+    ],
+    "MustardChef/WSABuilds": [],
+    "NARKOZ/hacker-scripts": [],
+    "NVIDIA/SkillSpector": [
+      "AI运维",
+      "Skills"
+    ],
+    "NVIDIA/open-gpu-kernel-modules": [],
+    "NVIDIA/warp": [],
+    "NaiboWang/EasySpider": [
+      "AI爬虫工具"
+    ],
+    "NangoHQ/nango": [
+      "AI开发平台"
+    ],
+    "NanmiCoder/MediaCrawler": [
+      "AI爬虫工具"
+    ],
+    "NationalSecurityAgency/ghidra": [],
+    "NevaMind-AI/memU": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "NirDiamant/RAG_Techniques": [
+      "AI开发平台"
+    ],
+    "NousResearch/hermes-agent": [
+      "AI智能体"
+    ],
+    "Nutlope/hallmark": [
+      "AI编程工具"
+    ],
+    "OI-wiki/OI-wiki": [],
+    "OpenBB-finance/OpenBB": [],
+    "OpenBB-finance/OpenBBTerminal": [],
+    "OpenBMB/ChatDev": [
+      "AI智能体",
+      "AI编程工具"
+    ],
+    "OpenBMB/MiniCPM-V": [
+      "AI开发平台"
+    ],
+    "OpenBMB/UltraRAG": [
+      "AI开发平台"
+    ],
+    "OpenBMB/VoxCPM": [
+      "AI音频工具"
+    ],
+    "OpenCut-app/OpenCut": [
+      "AI视频工具"
+    ],
+    "OpenXiangShan/XiangShan": [],
+    "Orange-OpenSource/hurl": [],
+    "PHPMailer/PHPMailer": [],
+    "PKU-YuanGroup/Open-Sora-Plan": [
+      "AI视频工具"
+    ],
+    "PKUFlyingPig/cs-self-learning": [],
+    "PaddlePaddle/PaddleOCR": [
+      "AI图像工具"
+    ],
+    "Panniantong/Agent-Reach": [
+      "AI爬虫工具",
+      "AI搜索引擎"
+    ],
+    "PaperMC/Paper": [],
+    "PawanOsman/ChatGPT": [],
+    "Pawdroid/Free-servers": [],
+    "Ph0enixKM/Amber": [],
+    "Portkey-AI/gateway": [
+      "AI开发平台"
+    ],
+    "PostHog/posthog": [],
+    "PowerShell/PowerShell": [],
+    "Predidit/Kazumi": [],
+    "PrefectHQ/prefect": [],
+    "PrimeIntellect-ai/prime-agent": [
+      "AI智能体",
+      "AI编程工具"
+    ],
+    "Project-DARC/DARC": [],
+    "Project-MONAI/MONAI": [
+      "AI开发平台"
+    ],
+    "Pythagora-io/gpt-pilot": [
+      "AI智能体",
+      "AI编程工具"
+    ],
+    "QuantConnect/Lean": [],
+    "QwenLM/Qwen": [],
+    "QwenLM/Qwen2.5": [
+      "AI开发平台"
+    ],
+    "RPCS3/rpcs3": [],
+    "RSSNext/Follow": [],
+    "RSSNext/Folo": [
+      "AI搜索引擎"
+    ],
+    "RVC-Boss/GPT-SoVITS": [
+      "AI音频工具"
+    ],
+    "Raphire/Win11Debloat": [],
+    "RedisInsight/RedisInsight": [],
+    "Robbyant/lingbot-map": [],
+    "RockChinQ/LangBot": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "RockChinQ/QChatGPT": [
+      "AI智能体"
+    ],
+    "RubyMetric/chsrc": [],
+    "RyanCodrai/turbovec": [],
+    "Ryujinx/Ryujinx": [],
+    "SJTU-IPADS/PowerInfer": [
+      "AI开发平台"
+    ],
+    "SagerNet/sing-box": [],
+    "SakanaAI/AI-Scientist": [
+      "AI智能体"
+    ],
+    "Sanster/lama-cleaner": [
+      "AI图像工具"
+    ],
+    "ScrapeGraphAI/Scrapegraph-ai": [
+      "AI爬虫工具"
+    ],
+    "SerenityOS/serenity": [],
+    "Serial-Studio/Serial-Studio": [],
+    "Shubhamsaboo/awesome-llm-apps": [
+      "AI开发平台"
+    ],
+    "SigNoz/signoz": [
+      "AI运维"
+    ],
+    "Significant-Gravitas/Auto-GPT": [
+      "AI智能体"
+    ],
+    "Skyvern-AI/skyvern": [
+      "AI爬虫工具",
+      "AI智能体"
+    ],
+    "Snouzy/workout-cool": [],
+    "SocialSisterYi/bilibili-API-collect": [
+      "AI爬虫工具"
+    ],
+    "Stability-AI/generative-models": [
+      "AI图像工具"
+    ],
+    "StanGirard/quivr": [
+      "AI开发平台",
+      "AI搜索引擎"
+    ],
+    "StarRocks/starrocks": [],
+    "Swordfish90/cool-retro-term": [],
+    "THUDM/CogVideo": [
+      "AI视频工具"
+    ],
+    "TabbyML/tabby": [
+      "AI编程工具"
+    ],
+    "TapXWorld/ChinaTextbook": [],
+    "TauricResearch/TradingAgents": [
+      "AI智能体"
+    ],
+    "TeamNewPipe/NewPipe": [],
+    "Tencent/AI-Infra-Guard": [
+      "AI运维"
+    ],
+    "Tencent/WeKnora": [
+      "AI开发平台"
+    ],
+    "TencentCloud/TencentDB-Agent-Memory": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "Textualize/toolong": [],
+    "TheAlgorithms/Go": [],
+    "TheAlgorithms/Python": [],
+    "TheAlgorithms/Rust": [],
+    "TheCraigHewitt/seomachine": [
+      "AI营销",
+      "AI办公工具"
+    ],
+    "TheJoeFin/Text-Grab": [
+      "AI图像工具"
+    ],
+    "ThePrimeagen/99": [
+      "AI编程工具",
+      "AI智能体"
+    ],
+    "ThreeDotsLabs/watermill": [],
+    "TodePond/DreamBerd": [],
+    "Tohrusky/Final2x": [
+      "AI图像工具"
+    ],
+    "ToolJet/ToolJet": [
+      "AI开发平台"
+    ],
+    "TwiN/gatus": [
+      "AI运维"
+    ],
+    "UFund-Me/Qbot": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "Universidade-Livre/ciencia-da-computacao": [],
+    "Unstructured-IO/unstructured": [
+      "AI开发平台"
+    ],
+    "Upsonic/gpt-computer-assistant": [
+      "AI智能体"
+    ],
+    "Vaibhavs10/insanely-fast-whisper": [
+      "AI音频工具"
+    ],
+    "VectifyAI/PageIndex": [
+      "AI开发平台"
+    ],
+    "Vendicated/Vencord": [],
+    "VikParuchuri/marker": [],
+    "VikParuchuri/surya": [
+      "AI图像工具"
+    ],
+    "VoltAgent/awesome-agent-skills": [
+      "Skills"
+    ],
+    "VueTorrent/VueTorrent": [],
+    "WerWolv/ImHex": [],
+    "Wilfred/difftastic": [],
+    "Winfredy/SadTalker": [
+      "AI视频工具"
+    ],
+    "XayahSuSuSu/Android-DataBackup": [],
+    "XiaoMi/ha_xiaomi_home": [],
+    "XiaomiMiMo/MiMo-Code": [
+      "AI编程工具"
+    ],
+    "XuehaiPan/nvitop": [],
+    "Y2Z/monolith": [],
+    "Yeachan-Heo/oh-my-claudecode": [
+      "AI编程工具",
+      "AI智能体"
+    ],
+    "Yeachan-Heo/oh-my-codex": [
+      "AI编程工具",
+      "AI智能体"
+    ],
+    "Yidadaa/ChatGPT-Next-Web": [
+      "AI开发平台"
+    ],
+    "YunaiV/ruoyi-vue-pro": [],
+    "Z4nzu/hackingtool": [],
+    "ZJU-LLMs/Foundations-of-LLMs": [],
+    "ZachGoldberg/Startup-CTO-Handbook": [],
+    "Zackriya-Solutions/meetily": [
+      "AI办公工具"
+    ],
+    "ZhuLinsen/daily_stock_analysis": [
+      "AI智能体"
+    ],
+    "Zie619/n8n-workflows": [
+      "AI智能体",
+      "Skills"
+    ],
+    "abi/screenshot-to-code": [
+      "AI编程工具",
+      "AI图像工具"
+    ],
+    "academic/awesome-datascience": [],
+    "acmesh-official/acme.sh": [],
+    "activepieces/activepieces": [
+      "AI开发平台"
+    ],
+    "actualbudget/actual": [],
+    "adam-maj/tiny-gpu": [],
+    "addyosmani/agent-skills": [
+      "Skills"
+    ],
+    "affaan-m/everything-claude-code": [
+      "Skills",
+      "AI编程工具"
+    ],
+    "afkarxyz/SpotiFLAC": [
+      "AI音频工具"
+    ],
+    "agentscope-ai/agentscope": [
+      "AI智能体"
+    ],
+    "agentsmd/agents.md": [
+      "AI智能体"
+    ],
+    "agrinman/tunnelto": [],
+    "aiboboxx/clashfree": [],
+    "aidenybai/react-scan": [
+      "AI编程工具"
+    ],
+    "airtai/faststream": [],
+    "aishwaryanr/awesome-generative-ai-guide": [],
+    "ajeetdsouza/zoxide": [],
+    "akitaonrails/ai-memory": [
+      "AI编程工具"
+    ],
+    "alexpate/awesome-design-systems": [],
+    "alibaba/MNN": [
+      "AI开发平台"
+    ],
+    "alibaba/OpenSandbox": [
+      "AI开发平台"
+    ],
+    "alibaba/higress": [
+      "AI开发平台"
+    ],
+    "alibaba/open-code-review": [
+      "AI编程工具"
+    ],
+    "alibaba/page-agent": [
+      "AI智能体"
+    ],
+    "alibaba/spring-ai-alibaba": [
+      "AI开发平台"
+    ],
+    "alibaba/zvec": [
+      "AI开发平台"
+    ],
+    "alist-org/alist": [],
+    "alyssaxuu/screenity": [
+      "AI视频工具"
+    ],
+    "amadeusprotocol/node": [],
+    "amir20/dozzle": [],
+    "amplication/amplication": [],
+    "andrewyng/aisuite": [
+      "AI开发平台"
+    ],
+    "andrewyng/openworker": [
+      "AI智能体"
+    ],
+    "android/nowinandroid": [],
+    "anfragment/zen": [],
+    "anthropics/anthropic-cookbook": [
+      "AI开发平台"
+    ],
+    "anthropics/anthropic-quickstarts": [
+      "AI开发平台"
+    ],
+    "anthropics/claude-code": [
+      "AI编程工具"
+    ],
+    "anthropics/courses": [],
+    "anthropics/financial-services": [],
+    "anthropics/prompt-eng-interactive-tutorial": [
+      "AI编程工具"
+    ],
+    "anthropics/skills": [
+      "Skills"
+    ],
+    "antirez/smallchat": [],
+    "antvis/Infographic": [
+      "AI设计工具"
+    ],
+    "anvaka/city-roads": [],
+    "anywhere-labs/deepseek-harness-desktop": [
+      "AI开发平台"
+    ],
+    "apache/airflow": [],
+    "apache/dolphinscheduler": [
+      "AI运维"
+    ],
+    "apache/echarts": [],
+    "apache/iotdb": [],
+    "apache/maka": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "apache/superset": [],
+    "apple/container": [],
+    "appsmithorg/appsmith": [
+      "AI开发平台"
+    ],
+    "appwrite/appwrite": [],
+    "apurvsinghgautam/robin": [
+      "AI爬虫工具"
+    ],
+    "aquasecurity/trivy": [],
+    "arc53/DocsGPT": [
+      "AI办公工具"
+    ],
+    "argilla-io/argilla": [
+      "AI开发平台"
+    ],
+    "arialdomartini/Back-End-Developer-Interview-Questions": [],
+    "asciimoo/hister": [
+      "AI搜索引擎"
+    ],
+    "ashishpatel26/500-AI-Agents-Projects": [
+      "AI智能体"
+    ],
+    "ashishps1/awesome-system-design-resources": [],
+    "assafelovic/gpt-researcher": [
+      "AI搜索引擎"
+    ],
+    "assimon/dujiaoka": [],
+    "astral-sh/ruff": [
+      "AI编程工具"
+    ],
+    "astral-sh/ty": [
+      "AI编程工具"
+    ],
+    "atlassian/pragmatic-drag-and-drop": [],
+    "authelia/authelia": [],
+    "automatisch/automatisch": [],
+    "awesome-dsh-plugin/awesome-dsh-plugin": [],
+    "awesome-selfhosted/awesome-selfhosted": [],
+    "awslabs/mcp": [],
+    "ayangweb/EcoPaste": [],
+    "ayghri/i-have-adhd": [
+      "Skills"
+    ],
+    "ayn2op/discordo": [],
+    "b-nnett/grok-bot-0.18-reconstructed": [],
+    "badlogic/pi-mono": [
+      "AI智能体",
+      "AI编程工具"
+    ],
+    "baidu/Unlimited-OCR": [
+      "AI图像工具"
+    ],
+    "barry-ran/QtScrcpy": [],
+    "basecamp/fizzy": [],
+    "basecamp/kamal": [],
+    "bcicen/ctop": [
+      "AI运维"
+    ],
+    "beekeeper-studio/beekeeper-studio": [],
+    "benbusby/whoogle-search": [
+      "AI搜索引擎"
+    ],
+    "bensadeh/tailspin": [],
+    "better-auth/better-auth": [],
+    "bevyengine/bevy": [],
+    "bgstaal/multipleWindow3dScene": [],
+    "bigskysoftware/htmx": [],
+    "binary-husky/chatgpt_academic": [
+      "AI编程工具"
+    ],
+    "binhnguyennus/awesome-scalability": [],
+    "binwiederhier/ntfy": [],
+    "biomejs/biome": [],
+    "birobirobiro/awesome-shadcn-ui": [],
+    "bitcoin/bitcoin": [],
+    "bitfield/script": [],
+    "black-forest-labs/flux": [
+      "AI图像工具"
+    ],
+    "blackboardsh/electrobun": [],
+    "blacklanternsecurity/bbot": [
+      "AI爬虫工具"
+    ],
+    "blakeblackshear/frigate": [
+      "AI视频工具"
+    ],
+    "block/buzz": [],
+    "block/goose": [
+      "AI智能体",
+      "AI编程工具"
+    ],
+    "bluenviron/mediamtx": [],
+    "bluesky-social/social-app": [],
+    "bobeff/open-source-games": [],
+    "bojieli/ai-agent-book": [
+      "AI智能体"
+    ],
+    "bradautomates/claude-video": [
+      "AI视频工具"
+    ],
+    "bradtraversy/50projects50days": [],
+    "bregman-arie/devops-exercises": [],
+    "browser-use/browser-use": [
+      "AI智能体",
+      "AI爬虫工具"
+    ],
+    "browser-use/video-use": [
+      "AI视频工具",
+      "AI编程工具"
+    ],
+    "browserbase/stagehand": [
+      "AI爬虫工具"
+    ],
+    "budtmo/docker-android": [],
+    "byoungd/English-level-up-tips": [],
+    "bytedance/UI-TARS-desktop": [
+      "AI智能体"
+    ],
+    "bytedance/deer-flow": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "cactus-compute/needle": [
+      "AI开发平台"
+    ],
+    "caddyserver/caddy": [],
+    "calcom/cal.com": [],
+    "calesthio/OpenMontage": [
+      "AI视频工具"
+    ],
+    "can1357/oh-my-pi": [
+      "AI编程工具"
+    ],
+    "casdoor/casdoor": [],
+    "cathrynlavery/diagram-design": [
+      "AI设计工具"
+    ],
+    "ccfos/nightingale": [
+      "AI运维"
+    ],
+    "cfenollosa/os-tutorial": [],
+    "chaitanyagiri/munder-difflin": [
+      "AI智能体"
+    ],
+    "chaitin/PandaWiki": [
+      "AI办公工具",
+      "AI搜索引擎"
+    ],
+    "chaitin/SafeLine": [],
+    "charlax/professional-programming": [],
+    "charmbracelet/bubbletea": [],
+    "charmbracelet/crush": [],
+    "chartdb/chartdb": [],
+    "chat2db/Chat2DB": [
+      "AI办公工具"
+    ],
+    "chatanywhere/GPT_API_free": [
+      "AI开发平台"
+    ],
+    "cheahjs/free-llm-api-resources": [],
+    "chidiwilliams/buzz": [
+      "AI音频工具"
+    ],
+    "chopratejas/headroom": [
+      "AI编程工具",
+      "AI开发平台"
+    ],
+    "chrislgarry/Apollo-11": [],
+    "chrismaltby/gb-studio": [],
+    "chroma-core/chroma": [
+      "AI开发平台"
+    ],
+    "chubin/wttr.in": [],
+    "citrolabs/ego-lite": [
+      "AI智能体"
+    ],
+    "cjpais/Handy": [],
+    "clash-verge-rev/clash-verge-rev": [],
+    "cline/cline": [
+      "AI编程工具",
+      "AI智能体"
+    ],
+    "cloudcommunity/Free-Certifications": [],
+    "cloudflare/computer": [
+      "AI智能体"
+    ],
+    "cocos/cocos-engine": [],
+    "code-yeongyu/oh-my-opencode": [
+      "AI智能体",
+      "AI编程工具"
+    ],
+    "codecrafters-io/build-your-own-x": [],
+    "codexu/note-gen": [
+      "AI办公工具"
+    ],
+    "coinbase/x402": [],
+    "colbymchenry/codegraph": [
+      "AI编程工具"
+    ],
+    "coleam00/Archon": [
+      "AI智能体"
+    ],
+    "colinhacks/zod": [],
+    "comfyanonymous/ComfyUI": [
+      "AI图像工具"
+    ],
+    "commaai/openpilot": [],
+    "continuedev/continue": [
+      "AI编程工具"
+    ],
+    "coollabsio/coolify": [
+      "AI运维"
+    ],
+    "coqui-ai/TTS": [
+      "AI音频工具"
+    ],
+    "cordiverse/cordis": [],
+    "coreyhaines31/marketingskills": [
+      "AI营销",
+      "Skills"
+    ],
+    "coroot/coroot": [
+      "AI运维"
+    ],
+    "cpacker/MemGPT": [
+      "AI智能体"
+    ],
+    "cryptomator/cryptomator": [],
+    "csunny/DB-GPT": [
+      "AI开发平台"
+    ],
+    "cuixueshe/earthworm": [],
+    "cursor/plugins": [
+      "AI编程工具",
+      "Skills"
+    ],
+    "cypress-io/cypress": [],
+    "czlonkowski/n8n-mcp": [
+      "Skills"
+    ],
+    "d2l-ai/d2l-zh": [],
+    "dabeaz-course/python-mastery": [],
+    "dagger/dagger": [
+      "AI运维"
+    ],
+    "dail8859/NotepadNext": [],
+    "dair-ai/ML-YouTube-Courses": [],
+    "dandavison/delta": [],
+    "dani-garcia/vaultwarden": [],
+    "danielgatis/rembg": [
+      "AI图像工具"
+    ],
+    "danielmiessler/Fabric": [
+      "AI智能体",
+      "Skills"
+    ],
+    "danielmiessler/Personal_AI_Infrastructure": [
+      "AI开发平台"
+    ],
+    "danswer-ai/danswer": [
+      "AI搜索引擎"
+    ],
+    "darkroomengineering/lenis": [],
+    "darlinghq/darling": [],
+    "darrenburns/posting": [],
+    "dataease/dataease": [],
+    "datalab-to/chandra": [
+      "AI图像工具"
+    ],
+    "datawhalechina/easy-vibe": [],
+    "datawhalechina/happy-llm": [],
+    "datawhalechina/hello-agents": [
+      "AI智能体"
+    ],
+    "datawhalechina/llm-universe": [
+      "AI开发平台"
+    ],
+    "datawhalechina/prompt-engineering-for-developers": [],
+    "davideuler/architecture.of.internet-product": [],
+    "davidfowl/AspNetCoreDiagnosticScenarios": [],
+    "davila7/claude-code-templates": [
+      "AI编程工具"
+    ],
+    "daytonaio/daytona": [],
+    "dbeaver/dbeaver": [],
+    "debauchee/barrier": [],
+    "decolua/9router": [
+      "AI编程工具"
+    ],
+    "deepseek-ai/3FS": [
+      "AI开发平台"
+    ],
+    "deepseek-ai/DeepEP": [
+      "AI开发平台"
+    ],
+    "deepseek-ai/DeepGEMM": [
+      "AI开发平台"
+    ],
+    "deepseek-ai/DeepSeek-R1": [
+      "AI开发平台"
+    ],
+    "deepseek-ai/DeepSpec": [
+      "AI开发平台"
+    ],
+    "deepseek-ai/DualPipe": [],
+    "deepseek-ai/FlashMLA": [
+      "AI开发平台"
+    ],
+    "deepseek-ai/awesome-deepseek-integration": [
+      "AI开发平台",
+      "Skills"
+    ],
+    "deepseek-ai/open-infra-index": [
+      "AI开发平台"
+    ],
+    "deepspeedai/DeepSpeed": [
+      "AI开发平台"
+    ],
+    "denoland/celld": [],
+    "dependabot/dependabot-core": [],
+    "dgtlmoon/changedetection.io": [
+      "AI爬虫工具"
+    ],
+    "dicebear/dicebear": [],
+    "didi/DoKit": [],
+    "didi/xiaoju-survey": [],
+    "diegosouzapw/OmniRoute": [
+      "AI开发平台"
+    ],
+    "different-ai/openwork": [
+      "AI智能体",
+      "AI编程工具"
+    ],
+    "directus/directus": [],
+    "dkhamsing/open-source-ios-apps": [],
+    "docker/awesome-compose": [],
+    "dockur/macos": [],
+    "dockur/windows": [],
+    "documenso/documenso": [],
+    "docusealco/docuseal": [],
+    "dokku/dokku": [],
+    "dolphin-emu/dolphin": [],
+    "donnemartin/system-design-primer": [],
+    "doocs/leetcode": [],
+    "droidrun/droidrun": [
+      "AI智能体"
+    ],
+    "dromara/hertzbeat": [
+      "AI运维"
+    ],
+    "dstotijn/hetty": [],
+    "dunwu/db-tutorial": [],
+    "dyad-sh/dyad": [
+      "AI开发平台"
+    ],
+    "dylanaraps/pure-bash-bible": [],
+    "earendil-works/pi": [
+      "AI开发平台"
+    ],
+    "easychen/lean-side-bussiness": [],
+    "eclipse-sumo/sumo": [],
+    "ehang-io/nps": [],
+    "eigent-ai/eigent": [
+      "AI办公工具"
+    ],
+    "elebumm/RedditVideoMakerBot": [
+      "AI视频工具"
+    ],
+    "electric-sql/electric": [],
+    "electric-sql/pglite": [],
+    "electron/electron": [],
+    "electronicarts/CnC_Remastered_Collection": [],
+    "ellie/atuin": [],
+    "embedchain/embedchain": [
+      "AI开发平台"
+    ],
+    "encode/uvicorn": [],
+    "encoredev/encore": [],
+    "endless-sky/endless-sky": [],
+    "enso-org/enso": [],
+    "ente-io/ente": [],
+    "erikgrinaker/toydb": [],
+    "eslint/eslint": [],
+    "ethereum/go-ethereum": [],
+    "evcc-io/evcc": [],
+    "evershopcommerce/evershop": [],
+    "every-app/open-seo": [
+      "AI营销"
+    ],
+    "exaloop/codon": [],
+    "excalidraw/excalidraw": [],
+    "exelban/stats": [],
+    "exo-explore/exo": [
+      "AI开发平台"
+    ],
+    "expo/expo": [],
+    "f/awesome-chatgpt-prompts": [],
+    "facebook/astryx": [
+      "AI设计工具"
+    ],
+    "facebookresearch/AnimatedDrawings": [
+      "AI图像工具"
+    ],
+    "facebookresearch/detectron2": [
+      "AI图像工具"
+    ],
+    "facebookresearch/llama": [],
+    "facebookresearch/llama-recipes": [
+      "AI开发平台"
+    ],
+    "facebookresearch/segment-anything": [
+      "AI图像工具"
+    ],
+    "facefusion/facefusion": [
+      "AI图像工具"
+    ],
+    "fanmingming/live": [],
+    "farhanashrafdev/90DaysOfCyberSecurity": [],
+    "farion1231/cc-switch": [],
+    "farm-fe/farm": [],
+    "fastfetch-cli/fastfetch": [],
+    "fastlane/fastlane": [],
+    "fathyb/carbonyl": [],
+    "federico-busato/Modern-CPP-Programming": [],
+    "feeluown/FeelUOwn": [],
+    "felixrieseberg/windows95": [],
+    "filamentphp/filament": [],
+    "finos/perspective": [],
+    "firecracker-microvm/firecracker": [],
+    "firecrawl/anydoc": [
+      "AI爬虫工具"
+    ],
+    "firecrawl/pdf-inspector": [],
+    "firefly-iii/firefly-iii": [],
+    "flxzt/rnote": [],
+    "foambubble/foam": [
+      "AI办公工具"
+    ],
+    "formbricks/formbricks": [],
+    "forrestchang/andrej-karpathy-skills": [
+      "Skills"
+    ],
+    "forthespada/CS-Books": [],
+    "frappe/erpnext": [],
+    "frappe/hrms": [],
+    "frdel/agent-zero": [
+      "AI智能体"
+    ],
+    "freeCodeCamp/freeCodeCamp": [],
+    "freemocap/freemocap": [
+      "AI视频工具"
+    ],
+    "freestylefly/awesome-gpt-image-2": [
+      "AI图像工具",
+      "Skills"
+    ],
+    "freqtrade/freqtrade": [],
+    "geekan/HowToLiveLonger": [],
+    "geekan/MetaGPT": [
+      "AI智能体",
+      "AI编程工具"
+    ],
+    "getcursor/cursor": [
+      "AI编程工具"
+    ],
+    "gethomepage/homepage": [],
+    "getlago/lago": [],
+    "getomni-ai/zerox": [
+      "AI开发平台"
+    ],
+    "getzep/graphiti": [
+      "AI开发平台"
+    ],
+    "ggerganov/llama.cpp": [
+      "AI开发平台"
+    ],
+    "gibbok/typescript-book": [],
+    "gildas-lormeau/SingleFile": [],
+    "gitbutlerapp/gitbutler": [],
+    "github/awesome-copilot": [
+      "AI编程工具"
+    ],
+    "github/copilot.vim": [
+      "AI编程工具"
+    ],
+    "gkd-kit/gkd": [],
+    "go-gitea/gitea": [],
+    "go-pay/gopay": [],
+    "go-skynet/LocalAI": [
+      "AI开发平台"
+    ],
+    "goauthentik/authentik": [],
+    "godotengine/godot": [],
+    "gojue/ecapture": [],
+    "goodrain/rainbond": [
+      "AI运维"
+    ],
+    "google-ai-edge/gallery": [
+      "AI开发平台"
+    ],
+    "google-gemini/cookbook": [
+      "AI开发平台"
+    ],
+    "google-gemini/gemini-cli": [
+      "AI编程工具",
+      "AI智能体"
+    ],
+    "google-labs-code/design.md": [
+      "AI编程工具"
+    ],
+    "google-research/timesfm": [
+      "AI开发平台"
+    ],
+    "google-research/tuning_playbook": [],
+    "google/A2UI": [
+      "AI开发平台"
+    ],
+    "google/comprehensive-rust": [],
+    "google/flatbuffers": [],
+    "google/gemma.cpp": [
+      "AI开发平台"
+    ],
+    "google/gemma_pytorch": [],
+    "google/highway": [],
+    "google/jax": [],
+    "google/langextract": [
+      "AI开发平台"
+    ],
+    "google/magika": [
+      "AI开发平台"
+    ],
+    "google/osv-scanner": [],
+    "googleapis/genai-toolbox": [
+      "AI开发平台"
+    ],
+    "googleapis/googleapis": [],
+    "gorhill/uBlock": [],
+    "gorilla/websocket": [],
+    "gothinkster/realworld": [],
+    "gradio-app/gradio": [
+      "AI开发平台"
+    ],
+    "greatghoul/remote-working": [],
+    "gsd-build/get-shit-done": [
+      "AI编程工具",
+      "Skills"
+    ],
+    "guillaumemeyer/watermarks-remover": [
+      "AI图像工具"
+    ],
+    "gusmanb/logicanalyzer": [],
+    "hacksider/Deep-Live-Cam": [
+      "AI视频工具",
+      "AI图像工具"
+    ],
+    "hagezi/dns-blocklists": [],
+    "halo-dev/halo": [],
+    "haotian-liu/LLaVA": [
+      "AI开发平台"
+    ],
+    "harry0703/MoneyPrinterTurbo": [
+      "AI视频工具"
+    ],
+    "harvard-edge/cs249r_book": [],
+    "hasaneyldrm/exercises-dataset": [],
+    "hashcat/hashcat": [],
+    "hashicorp/terraform": [],
+    "heartexlabs/label-studio": [],
+    "hehonghui/awesome-english-ebooks": [],
+    "helix-editor/helix": [],
+    "hiroi-sora/Umi-OCR": [
+      "AI图像工具"
+    ],
+    "hiyouga/LLaMA-Factory": [
+      "AI开发平台"
+    ],
+    "hoarder-app/hoarder": [],
+    "holaboss-ai/holaOS": [
+      "AI智能体"
+    ],
+    "honghuangdc/soybean-admin": [],
+    "honojs/hono": [],
+    "hoppscotch/hoppscotch": [],
+    "hpcaitech/ColossalAI": [
+      "AI开发平台"
+    ],
+    "hpcaitech/Open-Sora": [
+      "AI视频工具"
+    ],
+    "hrvach/deskhop": [],
+    "hsliuping/TradingAgents-CN": [
+      "AI智能体"
+    ],
+    "huangruiteng/loopx": [
+      "AI智能体"
+    ],
+    "huggingface/diffusers": [
+      "AI图像工具",
+      "AI音频工具"
+    ],
+    "huggingface/lerobot": [
+      "AI智能体"
+    ],
+    "huggingface/ml-intern": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "huggingface/skills": [
+      "Skills"
+    ],
+    "huggingface/speech-to-speech": [
+      "AI音频工具",
+      "AI智能体"
+    ],
+    "huggingface/text-generation-inference": [
+      "AI开发平台"
+    ],
+    "huggingface/transformers": [
+      "AI开发平台"
+    ],
+    "hugohe3/ppt-master": [
+      "AI办公工具"
+    ],
+    "huiyadanli/RevokeMsgPatcher": [],
+    "humanlayer/12-factor-agents": [
+      "AI智能体"
+    ],
+    "hydralauncher/hydra": [],
+    "hyperdxio/hyperdx": [
+      "AI运维"
+    ],
+    "hyprwm/Hyprland": [],
+    "iBotPeaches/Apktool": [],
+    "iDvel/rime-ice": [],
+    "iOfficeAI/AionUi": [
+      "AI编程工具"
+    ],
+    "iOfficeAI/OfficeCLI": [
+      "AI办公工具",
+      "AI智能体"
+    ],
+    "iam-veeramalla/aws-devops-zero-to-hero": [],
+    "iamgio/quarkdown": [],
+    "iawia002/lux": [],
+    "illacloud/illa-builder": [
+      "AI开发平台"
+    ],
+    "iluwatar/java-design-patterns": [],
+    "imClumsyPanda/langchain-ChatGLM": [
+      "AI开发平台"
+    ],
+    "imartinez/privateGPT": [
+      "AI开发平台"
+    ],
+    "immich-app/immich": [],
+    "imthenachoman/How-To-Secure-A-Linux-Server": [],
+    "instantdb/instant": [],
+    "iperov/DeepFaceLive": [
+      "AI视频工具"
+    ],
+    "iptv-org/iptv": [],
+    "itwanger/toBeBetterJavaer": [],
+    "itzg/docker-minecraft-server": [],
+    "ixartz/Next-js-Boilerplate": [],
+    "iyaja/llama-fs": [],
+    "j178/prek": [],
+    "jackfrued/Python-100-Days": [],
+    "jamiepine/voicebox": [
+      "AI音频工具"
+    ],
+    "janhq/jan": [
+      "AI开发平台"
+    ],
+    "jarrodwatts/claude-hud": [
+      "AI编程工具"
+    ],
+    "jaywcjlove/awesome-mac": [],
+    "jaywcjlove/linux-command": [],
+    "jaywcjlove/reference": [],
+    "jeecgboot/jeecg-boot": [],
+    "jef/streetmerchant": [],
+    "jellyfin/jellyfin": [],
+    "jesseduffield/lazydocker": [],
+    "jesseduffield/lazygit": [],
+    "jgraph/drawio-desktop": [],
+    "jianchang512/clone-voice": [
+      "AI音频工具"
+    ],
+    "jingyaogong/minimind": [
+      "AI开发平台"
+    ],
+    "jj-vcs/jj": [],
+    "jlevy/the-art-of-command-line": [],
+    "jmorganca/ollama": [
+      "AI开发平台"
+    ],
+    "joaomdmoura/crewAI": [
+      "AI智能体"
+    ],
+    "joonspk-research/generative_agents": [
+      "AI智能体"
+    ],
+    "jordan-cutler/path-to-senior-engineer-handbook": [],
+    "jrouwe/JoltPhysics": [],
+    "jsvine/pdfplumber": [],
+    "juanfont/headscale": [],
+    "juliangarnier/anime": [],
+    "jumpserver/jumpserver": [],
+    "jundot/omlx": [
+      "AI开发平台"
+    ],
+    "juspay/hyperswitch": [],
+    "justcallmekoko/ESP32Marauder": [],
+    "jwasham/coding-interview-university": [],
+    "k1tbyte/Wand-Enhancer": [],
+    "k4yt3x/video2x": [
+      "AI视频工具"
+    ],
+    "kamranahmedse/developer-roadmap": [],
+    "karanpratapsingh/system-design": [],
+    "karpathy/LLM101n": [
+      "AI开发平台"
+    ],
+    "karpathy/minGPT": [],
+    "karpathy/nanoGPT": [
+      "AI开发平台"
+    ],
+    "karpathy/nanochat": [
+      "AI开发平台"
+    ],
+    "karpathy/nn-zero-to-hero": [],
+    "kasmtech/KasmVNC": [],
+    "katanaml/sparrow": [
+      "AI开发平台"
+    ],
+    "kavishdevar/librepods": [],
+    "kdn251/interviews": [],
+    "keiyoushi/extensions": [],
+    "kekingcn/kkFileView": [],
+    "kepano/obsidian-skills": [
+      "Skills"
+    ],
+    "kgretzky/evilginx2": [],
+    "khoj-ai/khoj": [
+      "AI办公工具",
+      "AI搜索引擎"
+    ],
+    "kilimchoi/engineering-blogs": [],
+    "kingToolbox/WindTerm": [],
+    "kitabisa/teler": [],
+    "koala73/worldmonitor": [],
+    "koekeishiya/yabai": [],
+    "koreader/koreader": [],
+    "krahets/hello-algo": [],
+    "krishnaik06/Perfect-Roadmap-To-Learn-Data-Science-In-2024": [],
+    "kubesphere/kubesphere": [],
+    "kuchin/awesome-cto": [],
+    "kunchenguid/no-mistakes": [],
+    "labring/FastGPT": [
+      "AI开发平台"
+    ],
+    "landley/toybox": [],
+    "langchain-ai/deepagents": [
+      "AI智能体"
+    ],
+    "langchain-ai/langchain": [
+      "AI开发平台"
+    ],
+    "langchain-ai/open-swe": [
+      "AI智能体",
+      "AI编程工具"
+    ],
+    "langgenius/dify": [
+      "AI开发平台",
+      "AI智能体"
+    ],
+    "lapce/lapce": [],
+    "laurent22/joplin": [
+      "AI办公工具"
+    ],
+    "leerob/next-saas-starter": [],
+    "lencx/ChatGPT": [],
+    "lensterxyz/lenster": [],
+    "leptos-rs/leptos": [],
+    "letta-ai/letta": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "lfnovo/open-notebook": [
+      "AI办公工具"
+    ],
+    "libsdl-org/SDL": [],
+    "lightningpixel/modly": [
+      "AI图像工具"
+    ],
+    "lightpanda-io/browser": [
+      "AI爬虫工具"
+    ],
+    "likec4/likec4": [],
+    "lima-vm/lima": [],
+    "linexjlin/GPTs": [
+      "Skills"
+    ],
+    "linshenkx/prompt-optimizer": [],
+    "lintsinghua/DeepAudit": [
+      "AI智能体",
+      "AI运维"
+    ],
+    "lionsoul2014/ip2region": [],
+    "lit/lit": [],
+    "litestar-org/litestar": [],
+    "lizhipay/acg-faka": [],
+    "ljinkai/weekly": [],
+    "lllyasviel/Fooocus": [
+      "AI图像工具"
+    ],
+    "lm-sys/FastChat": [
+      "AI开发平台"
+    ],
+    "lmarzen/esp32-weather-epd": [],
+    "lobehub/lobe-chat": [
+      "AI开发平台"
+    ],
+    "localsend/localsend": [],
+    "localstack/localstack": [],
+    "loft-sh/devpod": [
+      "AI开发平台"
+    ],
+    "logseq/logseq": [
+      "AI办公工具"
+    ],
+    "logspace-ai/langflow": [
+      "AI开发平台",
+      "AI智能体"
+    ],
+    "louis-e/arnis": [],
+    "lsdefine/GenericAgent": [
+      "AI智能体"
+    ],
+    "luchina-gabriel/OSX-PROXMOX": [],
+    "lukasz-madon/awesome-remote-job": [],
+    "luongnv89/claude-howto": [
+      "AI编程工具"
+    ],
+    "lvgl/lvgl": [],
+    "lydiahallie/javascript-questions": [],
+    "lyogavin/airllm": [
+      "AI开发平台"
+    ],
+    "m1k1o/neko": [],
+    "maboloshi/github-chinese": [],
+    "macro-inc/macro": [
+      "AI办公工具"
+    ],
+    "magic-wormhole/magic-wormhole": [],
+    "mahlernim/google-timeline-visualizer": [],
+    "mainmatter/100-exercises-to-learn-rust": [],
+    "makeplane/plane": [],
+    "manaflow-ai/cmux": [
+      "AI编程工具"
+    ],
+    "mandiant/capa": [],
+    "maotoumao/MusicFree": [],
+    "marceloprates/prettymaps": [
+      "AI图像工具"
+    ],
+    "marcelscruz/public-apis": [],
+    "marimo-team/marimo": [
+      "AI编程工具"
+    ],
+    "marin-community/marin": [
+      "AI开发平台"
+    ],
+    "marktext/marktext": [],
+    "marticliment/WingetUI": [],
+    "martinvonz/jj": [],
+    "mason-org/mason.nvim": [],
+    "massgravel/Microsoft-Activation-Scripts": [],
+    "mattermost-community/focalboard": [],
+    "mattermost/mattermost-server": [],
+    "mattpocock/skills": [
+      "Skills"
+    ],
+    "mauriceboe/TREK": [],
+    "max32002/tixcraft_bot": [
+      "AI爬虫工具"
+    ],
+    "mbrlabs/Lorien": [],
+    "medusajs/medusa": [],
+    "meilisearch/meilisearch": [],
+    "memvid/memvid": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "mendableai/firecrawl": [
+      "AI爬虫工具"
+    ],
+    "menloresearch/jan": [
+      "AI开发平台"
+    ],
+    "meshery/meshery": [
+      "AI运维"
+    ],
+    "metabase/metabase": [],
+    "metowolf/vCards": [],
+    "mgth/LittleBigMouse": [],
+    "mherrmann/helium": [
+      "AI爬虫工具"
+    ],
+    "microsoft/AI-For-Beginners": [
+      "AI开发平台"
+    ],
+    "microsoft/BitNet": [
+      "AI开发平台"
+    ],
+    "microsoft/Data-Science-For-Beginners": [],
+    "microsoft/ML-For-Beginners": [],
+    "microsoft/OmniParser": [
+      "AI开发平台"
+    ],
+    "microsoft/PowerToys": [],
+    "microsoft/SandDance": [],
+    "microsoft/TRELLIS": [
+      "AI图像工具"
+    ],
+    "microsoft/TaskWeaver": [
+      "AI开发平台"
+    ],
+    "microsoft/TinyTroupe": [
+      "AI智能体"
+    ],
+    "microsoft/VibeVoice": [
+      "AI音频工具",
+      "AI开发平台"
+    ],
+    "microsoft/Web-Dev-For-Beginners": [],
+    "microsoft/agent-lightning": [
+      "AI智能体"
+    ],
+    "microsoft/ai-agents-for-beginners": [
+      "AI智能体"
+    ],
+    "microsoft/autogen": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "microsoft/call-center-ai": [
+      "AI办公工具",
+      "AI音频工具"
+    ],
+    "microsoft/fluentui-system-icons": [],
+    "microsoft/generative-ai-for-beginners": [],
+    "microsoft/markitdown": [
+      "AI办公工具"
+    ],
+    "microsoft/playwright-mcp": [
+      "AI爬虫工具",
+      "AI运维"
+    ],
+    "microsoft/presidio": [],
+    "microsoft/qlib": [],
+    "microsoft/recommenders": [
+      "AI开发平台"
+    ],
+    "microsoft/semantic-kernel": [
+      "AI开发平台"
+    ],
+    "microsoft/typespec": [],
+    "microsoft/vscode": [],
+    "microsoft/vscode-copilot-chat": [
+      "AI编程工具"
+    ],
+    "microsoft/windows-rs": [],
+    "microsoft/wslg": [],
+    "mihomo-party-org/mihomo-party": [],
+    "mihonapp/mihon": [],
+    "mikeroyal/Self-Hosting-Guide": [],
+    "milvus-io/milvus": [
+      "AI开发平台"
+    ],
+    "mindsdb/mindsdb": [
+      "AI开发平台"
+    ],
+    "mingrammer/diagrams": [],
+    "minio/minio": [],
+    "ml-explore/mlx": [],
+    "ml-tooling/best-of-ml-python": [],
+    "mlabonne/llm-course": [],
+    "mli/paper-reading": [],
+    "mnfst/manifest": [
+      "AI开发平台"
+    ],
+    "moby/buildkit": [],
+    "modelcontextprotocol/servers": [
+      "Skills"
+    ],
+    "modularml/mojo": [],
+    "moeru-ai/airi": [
+      "AI智能体",
+      "AI音频工具"
+    ],
+    "moltbot/moltbot": [
+      "AI智能体"
+    ],
+    "moonshine-ai/moonshine": [
+      "AI音频工具"
+    ],
+    "motion-canvas/motion-canvas": [],
+    "movie-web/movie-web": [],
+    "msitarzewski/agency-agents": [
+      "AI智能体"
+    ],
+    "mtdvio/every-programmer-should-know": [],
+    "mudler/LocalAI": [
+      "AI开发平台"
+    ],
+    "mui/mui-x": [],
+    "mukul975/Anthropic-Cybersecurity-Skills": [
+      "Skills"
+    ],
+    "mulaRahul/keyviz": [],
+    "multica-ai/multica": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "mvanhorn/last30days-skill": [
+      "Skills"
+    ],
+    "myshell-ai/OpenVoice": [
+      "AI音频工具"
+    ],
+    "n0-computer/iroh": [],
+    "n8n-io/n8n": [
+      "AI智能体"
+    ],
+    "naiba/nezha": [
+      "AI运维"
+    ],
+    "nasa/openmct": [],
+    "nautechsystems/nautilus_trader": [],
+    "nektos/act": [],
+    "neondatabase/neon": [],
+    "neovim/neovim": [],
+    "nesquena/hermes-webui": [
+      "AI智能体"
+    ],
+    "netdata/netdata": [
+      "AI运维"
+    ],
+    "netless-io/flat": [],
+    "neuml/txtai": [
+      "AI开发平台"
+    ],
+    "nexmoe/VidBee": [
+      "AI视频工具"
+    ],
+    "nextcloud/all-in-one": [],
+    "nextcloud/server": [],
+    "nicbarker/clay": [],
+    "nicotsx/zerobyte": [],
+    "nihaojob/vue-fabric-editor": [
+      "AI图像工具"
+    ],
+    "nitrojs/nitro": [],
+    "nlohmann/json": [],
+    "nocobase/nocobase": [],
+    "nocodb/nocodb": [
+      "AI办公工具"
+    ],
+    "nomic-ai/gpt4all": [
+      "AI开发平台"
+    ],
+    "novuhq/novu": [],
+    "nvm-sh/nvm": [],
+    "nxtrace/NTrace-core": [],
+    "o2sh/onefetch": [],
+    "oauth2-proxy/oauth2-proxy": [],
+    "oblien/openship": [],
+    "obra/superpowers": [
+      "Skills",
+      "AI编程工具"
+    ],
+    "oceanbase/miniob": [],
+    "odoo/odoo": [],
+    "ogulcancelik/herdr": [
+      "AI智能体"
+    ],
+    "ollama-webui/ollama-webui": [
+      "AI开发平台"
+    ],
+    "omnigent-ai/omnigent": [
+      "AI智能体"
+    ],
+    "omnivore-app/omnivore": [
+      "AI办公工具"
+    ],
+    "onlook-dev/onlook": [
+      "AI设计工具"
+    ],
+    "onyx-dot-app/onyx": [
+      "AI开发平台",
+      "AI办公工具"
+    ],
+    "open-metadata/OpenMetadata": [],
+    "open-mmlab/Amphion": [
+      "AI音频工具"
+    ],
+    "openai/CLIP": [
+      "AI图像工具"
+    ],
+    "openai/codex": [
+      "AI编程工具",
+      "AI智能体"
+    ],
+    "openai/openai-cookbook": [
+      "AI开发平台"
+    ],
+    "openai/skills": [
+      "Skills"
+    ],
+    "openai/whisper": [
+      "AI音频工具"
+    ],
+    "opendatalab/MinerU": [
+      "AI开发平台"
+    ],
+    "opendataloader-project/opendataloader-pdf": [
+      "AI爬虫工具"
+    ],
+    "openemr/openemr": [],
+    "openobserve/openobserve": [
+      "AI运维"
+    ],
+    "orhun/git-cliff": [],
+    "ossu/computer-science": [],
+    "ossu/math": [],
+    "ourongxing/newsnow": [],
+    "outline/outline": [
+      "AI办公工具"
+    ],
+    "oven-sh/bun": [],
+    "p-e-w/heretic": [],
+    "p1ngul1n0/blackbird": [],
+    "p2r3/convert": [],
+    "palmier-io/palmier-pro": [
+      "AI视频工具"
+    ],
+    "paperless-ngx/paperless-ngx": [],
+    "paperswithbacktest/awesome-systematic-trading": [],
+    "pascalorg/editor": [],
+    "patchy631/ai-engineering-hub": [
+      "AI开发平台"
+    ],
+    "pathwaycom/pathway": [
+      "AI开发平台"
+    ],
+    "paul-gauthier/aider": [
+      "AI编程工具"
+    ],
+    "payloadcms/payload": [],
+    "pbakaus/impeccable": [
+      "AI设计工具"
+    ],
+    "pbatard/rufus": [],
+    "pcottle/learnGitBranching": [],
+    "penpot/penpot": [
+      "AI设计工具"
+    ],
+    "penrose/penrose": [],
+    "permissionlesstech/bitchat": [],
+    "perplexityai/bumblebee": [],
+    "pewdiepie-archdaemon/odysseus": [],
+    "phil-opp/blog_os": [],
+    "philc/vimium": [],
+    "phuryn/pm-skills": [
+      "Skills"
+    ],
+    "phyver/GameShell": [],
+    "pi-hole/pi-hole": [],
+    "pineappleEA/pineapple-src": [],
+    "pingdotgg/t3code": [
+      "AI编程工具"
+    ],
+    "pittcsc/Summer2023-Internships": [],
+    "plait-board/drawnix": [
+      "AI图像工具"
+    ],
+    "plankanban/planka": [],
+    "plasma-umass/scalene": [],
+    "playcanvas/engine": [],
+    "plotly/dash": [],
+    "pocketbase/pocketbase": [],
+    "poteto/hiring-without-whiteboards": [],
+    "pppscn/SmsForwarder": [],
+    "practical-tutorials/project-based-learning": [],
+    "pranshuparmar/witr": [
+      "AI运维"
+    ],
+    "pretzelhammer/rust-blog": [],
+    "projectdiscovery/katana": [
+      "AI爬虫工具"
+    ],
+    "promptfoo/promptfoo": [
+      "AI开发平台"
+    ],
+    "psf/black": [
+      "AI编程工具"
+    ],
+    "public-apis/public-apis": [],
+    "puckeditor/puck": [],
+    "punkpeye/awesome-mcp-servers": [
+      "Skills"
+    ],
+    "purocean/yn": [],
+    "pydantic/monty": [
+      "AI开发平台"
+    ],
+    "pymumu/smartdns": [],
+    "pynecone-io/pynecone": [
+      "AI开发平台"
+    ],
+    "pytorch/pytorch": [],
+    "qdrant/qdrant": [
+      "AI开发平台"
+    ],
+    "quickemu-project/quickemu": [],
+    "quickwit-oss/quickwit": [
+      "AI运维"
+    ],
+    "qutebrowser/qutebrowser": [],
+    "raidendotai/cofounder": [
+      "AI智能体"
+    ],
+    "ran-j/PS2Recomp": [],
+    "ranaroussi/yfinance": [],
+    "rapiz1/rathole": [],
+    "rasbt/LLMs-from-scratch": [],
+    "raysan5/raylib": [],
+    "reconurge/flowsint": [
+      "AI运维"
+    ],
+    "redis/redis": [],
+    "refined-github/refined-github": [],
+    "refinedev/refine": [],
+    "reflex-dev/reflex": [
+      "AI开发平台"
+    ],
+    "remotion-dev/remotion": [
+      "AI视频工具"
+    ],
+    "rendercv/rendercv": [
+      "AI办公工具"
+    ],
+    "resemble-ai/chatterbox": [
+      "AI音频工具"
+    ],
+    "revanced/revanced-manager": [],
+    "richards199999/Thinking-Claude": [
+      "AI智能体"
+    ],
+    "ripienaar/free-for-dev": [],
+    "roboflow/notebooks": [
+      "AI图像工具"
+    ],
+    "roboflow/supervision": [
+      "AI图像工具"
+    ],
+    "rohitg00/agentmemory": [
+      "AI开发平台"
+    ],
+    "rohitg00/ai-engineering-from-scratch": [
+      "AI开发平台"
+    ],
+    "rothgar/awesome-tuis": [],
+    "rougier/scientific-visualization-book": [],
+    "rowboatlabs/rowboat": [
+      "AI智能体"
+    ],
+    "rtk-ai/rtk": [
+      "AI编程工具"
+    ],
+    "ruanyf/weekly": [],
+    "rustdesk/rustdesk": [],
+    "rustfs/rustfs": [],
+    "ruvnet/RuView": [
+      "AI运维"
+    ],
+    "ruvnet/claude-flow": [
+      "AI智能体"
+    ],
+    "ruvnet/wifi-densepose": [
+      "AI图像工具"
+    ],
+    "rwv/chinese-dos-games": [],
+    "rxi/lite": [],
+    "s1dashu/ip-as-logo-skill": [
+      "Skills"
+    ],
+    "safishamsi/graphify": [
+      "AI编程工具",
+      "Skills"
+    ],
+    "samber/lo": [],
+    "sansan0/TrendRadar": [
+      "AI搜索引擎",
+      "AI营销",
+      "AI办公工具"
+    ],
+    "santifer/career-ops": [
+      "AI智能体",
+      "AI办公工具"
+    ],
+    "schollz/croc": [],
+    "screego/server": [],
+    "sdmg15/Best-websites-a-programmer-should-visit": [],
+    "seleniumbase/SeleniumBase": [
+      "AI爬虫工具"
+    ],
+    "semantica-agi/semantica": [
+      "AI开发平台"
+    ],
+    "serengil/deepface": [
+      "AI图像工具"
+    ],
+    "sgl-project/mini-sglang": [
+      "AI开发平台"
+    ],
+    "sgl-project/sglang": [
+      "AI开发平台"
+    ],
+    "shadcn/improve": [],
+    "shadcn/ui": [],
+    "shadow1ng/fscan": [],
+    "shadps4-emu/shadPS4": [],
+    "shanraisshan/claude-code-best-practice": [
+      "AI编程工具"
+    ],
+    "shareAI-lab/learn-claude-code": [
+      "AI编程工具"
+    ],
+    "sharkdp/fd": [],
+    "sharkdp/hyperfine": [],
+    "sherlock-project/sherlock": [],
+    "shiyu-coder/Kronos": [],
+    "shuding/nextra": [],
+    "sickcodes/Docker-OSX": [],
+    "siddharthvaddem/openscreen": [
+      "AI视频工具"
+    ],
+    "sigoden/dufs": [],
+    "simdjson/simdjson": [],
+    "simple-icons/simple-icons": [],
+    "simstudioai/sim": [
+      "AI开发平台"
+    ],
+    "sindresorhus/awesome": [],
+    "sindresorhus/ky": [],
+    "sissbruecker/linkding": [],
+    "siyuan-note/siyuan": [],
+    "sktime/sktime": [],
+    "skypilot-org/skypilot": [
+      "AI运维"
+    ],
+    "skywind3000/awesome-cheatsheets": [],
+    "slidevjs/slidev": [],
+    "slimtoolkit/slim": [],
+    "slint-ui/slint": [],
+    "snapshot-labs/snapshot": [],
+    "snipe/snipe-it": [],
+    "songquanpeng/one-api": [
+      "AI开发平台"
+    ],
+    "soulmachine/machine-learning-cheat-sheet": [],
+    "soxoj/maigret": [
+      "AI爬虫工具"
+    ],
+    "spacedriveapp/spacedrive": [],
+    "spree/spree": [],
+    "sqlc-dev/sqlc": [],
+    "sqlfluff/sqlfluff": [],
+    "ssssssss-team/spider-flow": [
+      "AI爬虫工具"
+    ],
+    "sst/opencode": [
+      "AI编程工具"
+    ],
+    "sst/opentui": [],
+    "stablyai/orca": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "stalwartlabs/mail-server": [],
+    "stamparm/maltrail": [
+      "AI运维"
+    ],
+    "stan-smith/FossFLOW": [],
+    "stanford-oval/storm": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "stas00/ml-engineering": [
+      "AI开发平台"
+    ],
+    "state-spaces/mamba": [],
+    "stedolan/jq": [],
+    "stefan-jansen/machine-learning-for-trading": [],
+    "steipete/CodexBar": [
+      "AI编程工具"
+    ],
+    "steipete/gogcli": [],
+    "stenzek/duckstation": [],
+    "steven-tey/dub": [],
+    "steven2358/awesome-generative-ai": [],
+    "steveyegge/beads": [],
+    "stonith404/pingvin-share": [],
+    "sudheerj/javascript-interview-questions": [],
+    "suno-ai/bark": [
+      "AI音频工具"
+    ],
+    "supabase/supabase": [],
+    "supermemoryai/supermemory": [
+      "AI开发平台"
+    ],
+    "superset-sh/superset": [
+      "AI编程工具"
+    ],
+    "surrealdb/surrealdb": [],
+    "swisskyrepo/PayloadsAllTheThings": [],
+    "systemdesign42/system-design": [],
+    "szimek/sharedrop": [],
+    "taichi-dev/taichi": [],
+    "taikoxyz/taiko-mono": [],
+    "tambo-ai/tambo": [
+      "AI开发平台"
+    ],
+    "tauri-apps/tauri": [],
+    "tbphp/gpt-load": [
+      "AI开发平台"
+    ],
+    "termux/termux-app": [],
+    "terrastruct/d2": [],
+    "tgbot-collection/YYeTsBot": [],
+    "th-ch/youtube-music": [],
+    "the1812/Malware-Patch": [],
+    "thedotmack/claude-mem": [
+      "AI智能体",
+      "Skills"
+    ],
+    "thunderbird/thunderbolt": [
+      "AI开发平台"
+    ],
+    "thundernest/k-9": [],
+    "timqian/chinese-independent-blogs": [],
+    "tinyhumansai/openhuman": [
+      "AI智能体"
+    ],
+    "tirth8205/code-review-graph": [
+      "AI编程工具",
+      "Skills"
+    ],
+    "tldraw/tldraw": [],
+    "tmux/tmux": [],
+    "tobi/qmd": [
+      "AI搜索引擎"
+    ],
+    "toeverything/AFFiNE": [
+      "AI办公工具"
+    ],
+    "tokio-rs/tokio": [],
+    "topjohnwu/Magisk": [],
+    "topoteretes/cognee": [
+      "AI开发平台"
+    ],
+    "tracel-ai/burn": [
+      "AI开发平台"
+    ],
+    "trekhleb/javascript-algorithms": [],
+    "trimstray/the-book-of-secret-knowledge": [],
+    "troyeguo/koodo-reader": [],
+    "truelockmc/streambert": [],
+    "trufflesecurity/trufflehog": [],
+    "trustedsec/social-engineer-toolkit": [],
+    "trycompai/crm": [
+      "AI营销"
+    ],
+    "tsl0922/ttyd": [],
+    "tt-a1i/archify": [
+      "AI设计工具",
+      "Skills"
+    ],
+    "tursodatabase/libsql": [],
+    "tw93/Mole": [],
+    "tw93/Pake": [],
+    "twentyhq/twenty": [],
+    "type-challenges/type-challenges": [],
+    "typeorm/typeorm": [],
+    "typst/typst": [],
+    "udecode/plate": [],
+    "ultralytics/ultralytics": [
+      "AI图像工具"
+    ],
+    "umami-software/umami": [],
+    "unclecode/crawl4ai": [
+      "AI爬虫工具"
+    ],
+    "unslothai/unsloth": [
+      "AI开发平台"
+    ],
+    "upscayl/upscayl": [
+      "AI图像工具"
+    ],
+    "usebruno/bruno": [],
+    "usememos/memos": [
+      "AI办公工具"
+    ],
+    "usestrix/strix": [
+      "AI智能体",
+      "AI运维"
+    ],
+    "vadimdemedes/ink": [],
+    "valinet/ExplorerPatcher": [],
+    "vanna-ai/vanna": [
+      "AI开发平台"
+    ],
+    "vbenjs/vue-vben-admin": [],
+    "vectorize-io/hindsight": [
+      "AI智能体"
+    ],
+    "veler/DevToys": [],
+    "vendure-ecommerce/vendure": [],
+    "ventoy/Ventoy": [],
+    "vercel-labs/portless": [],
+    "vercel-labs/zero": [],
+    "vercel/commerce": [],
+    "vercel/next.js": [],
+    "vinceliuice/WhiteSur-gtk-theme": [],
+    "vinta/awesome-python": [],
+    "virattt/ai-hedge-fund": [
+      "AI智能体"
+    ],
+    "virattt/dexter": [
+      "AI智能体"
+    ],
+    "virgiliojr94/book-to-skill": [
+      "AI编程工具",
+      "Skills"
+    ],
+    "voideditor/void": [
+      "AI编程工具"
+    ],
+    "volcengine/OpenViking": [
+      "AI智能体",
+      "AI开发平台"
+    ],
+    "vorssaint/vorssaint-utils": [],
+    "voxel51/fiftyone": [
+      "AI开发平台"
+    ],
+    "vxcontrol/pentagi": [
+      "AI智能体"
+    ],
+    "wagoodman/dive": [],
+    "wallabag/wallabag": [],
+    "wandb/openui": [
+      "AI图像工具"
+    ],
+    "wanglin2/mind-map": [],
+    "wangrongding/wechat-bot": [
+      "AI智能体"
+    ],
+    "web-infra-dev/oxc": [],
+    "wg-easy/wg-easy": [],
+    "willcrichton/flowistry": [
+      "AI编程工具"
+    ],
+    "windmill-labs/windmill": [
+      "AI开发平台"
+    ],
+    "withastro/astro": [],
+    "wonderwhy-er/DesktopCommanderMCP": [
+      "Skills"
+    ],
+    "x4gKing/X4G": [],
+    "xai-org/grok-1": [
+      "AI开发平台"
+    ],
+    "xai-org/grok-build": [
+      "AI编程工具"
+    ],
+    "xaoyaoo/PyWxDump": [],
+    "xbtlin/ai-berkshire": [
+      "AI智能体"
+    ],
+    "xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer": [],
+    "xiaobright/dsh-anchored-standard": [
+      "Skills"
+    ],
+    "xiaolai/everyone-can-use-english": [],
+    "xifangczy/cat-catch": [
+      "AI爬虫工具"
+    ],
+    "xpipe-io/xpipe": [
+      "AI运维"
+    ],
+    "xtekky/gpt4free": [
+      "AI开发平台"
+    ],
+    "xushengfeng/eSearch": [
+      "AI图像工具"
+    ],
+    "xyflow/xyflow": [],
+    "yamadashy/repomix": [],
+    "yangshun/tech-interview-handbook": [],
+    "yarrick/iodine": [],
+    "yc-software/qm": [
+      "AI智能体"
+    ],
+    "yeongpin/cursor-free-vip": [
+      "AI编程工具"
+    ],
+    "yetone/avante.nvim": [
+      "AI编程工具"
+    ],
+    "yichuan-w/LEANN": [
+      "AI开发平台"
+    ],
+    "yikart/AiToEarn": [],
+    "yjh051108/dsh-routing-suite": [],
+    "yorukot/superfile": [],
+    "yt-dlp/yt-dlp": [
+      "AI爬虫工具"
+    ],
+    "yujiangshui/A-Programmers-Guide-to-English": [],
+    "yuka-friends/Windrecorder": [
+      "AI办公工具"
+    ],
+    "yuzu-emu/yuzu": [],
+    "zai-org/GLM-5": [
+      "AI智能体",
+      "AI编程工具"
+    ],
+    "zauberzeug/nicegui": [],
+    "zed-industries/zed": [],
+    "zen-browser/desktop": [],
+    "zgwl/chinese-buy-us-stock-guide": [],
+    "zhaoxuya520/reverse-skill": [
+      "Skills",
+      "AI运维"
+    ],
+    "zhayujie/chatgpt-on-wechat": [
+      "AI智能体",
+      "AI办公工具"
+    ],
+    "zhongyang219/TrafficMonitor": [],
+    "zhu1090093659/dsh-web-ui": [
+      "AI开发平台"
+    ],
+    "zijie0/HumanSystemOptimization": [],
+    "zilliztech/claude-context": [
+      "AI编程工具",
+      "Skills"
+    ],
+    "zoicware/RemoveWindowsAI": [],
+    "zpoint/CPython-Internals": [],
+    "zricethezav/gitleaks": [],
+    "zulip/zulip": [],
+    "zumerlab/snapdom": [
+      "AI图像工具"
+    ]
+  }
+}

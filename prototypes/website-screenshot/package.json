@@ -1,0 +1,11 @@
+{
+  "name": "website-screenshot-prototype",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node prototype.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}

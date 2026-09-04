@@ -1,0 +1,155 @@
+{
+  "sources": [
+    {
+      "id": "36kr-latest",
+      "name": "36氪最新资讯",
+      "path": "/36kr/newsflashes",
+      "enabled": true
+    },
+    {
+      "id": "ai-tools-daily",
+      "name": "AI工具集每日资讯",
+      "path": "/ai-bot/daily-ai-news",
+      "enabled": true
+    },
+    {
+      "id": "juejin-ai",
+      "name": "掘金人工智能",
+      "path": "/juejin/category/ai",
+      "enabled": true
+    },
+    {
+      "id": "openai-news",
+      "name": "OpenAI News",
+      "path": "/openai/news",
+      "enabled": true
+    },
+    {
+      "id": "qbitai-news",
+      "name": "量子位",
+      "path": "/qbitai/category/%E8%B5%84%E8%AE%AF",
+      "enabled": true
+    },
+    {
+      "id": "cnblogs-top",
+      "name": "博客园热门",
+      "path": "/cnblogs/aggsite/topdiggs",
+      "enabled": true
+    },
+    {
+      "id": "51cto-recommend",
+      "name": "51CTO 推荐",
+      "path": "/51cto/index/recommend",
+      "enabled": true
+    },
+    {
+      "id": "cursor-blog",
+      "name": "Cursor（光标）博客",
+      "path": "/cursor/blog",
+      "enabled": true,
+      "note": "按 Cursor 理解“光标”；如指其他媒体需调整"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending",
+      "path": "/github/trending/daily/any",
+      "enabled": true
+    },
+    {
+      "id": "hellogithub",
+      "name": "HelloGitHub",
+      "path": "/hellogithub/home",
+      "enabled": true
+    },
+    {
+      "id": "hackernews-newest",
+      "name": "Hacker News",
+      "path": "/hackernews/newest",
+      "enabled": true
+    },
+    {
+      "id": "zhihu-hot",
+      "name": "知乎热榜",
+      "path": "/zhihu/hot",
+      "enabled": true,
+      "note": "泛内容热榜，由 DeepSeek 过滤非科技内容"
+    },
+    {
+      "id": "infoq-cn",
+      "name": "InfoQ 中文",
+      "path": "/infoq/recommend",
+      "enabled": false,
+      "reason": "上游正文接口返回 403"
+    },
+    {
+      "id": "geekpark",
+      "name": "极客公园",
+      "path": "/geekpark",
+      "enabled": false,
+      "reason": "上游站点返回 403"
+    },
+    {
+      "id": "blogread-newest",
+      "name": "技术头条",
+      "path": "/blogread/newest",
+      "enabled": false,
+      "reason": "上游 HTTPS 证书已过期"
+    },
+    {
+      "id": "aliyun-notice",
+      "name": "阿里云公告",
+      "path": "/aliyun/notice",
+      "enabled": false,
+      "reason": "当前 RSSHub 路由返回空内容"
+    },
+    {
+      "id": "ai-blog",
+      "name": "AI 博客",
+      "path": "/aiblog-2xv/archives",
+      "enabled": false,
+      "reason": "单次响应超过采集超时，不适合定时任务"
+    },
+    {
+      "id": "zsxq",
+      "name": "知识星球",
+      "path": "/zsxq/group/GROUP_ID",
+      "enabled": false,
+      "reason": "需要星球 ID 和 ZSXQ_ACCESS_TOKEN"
+    },
+    {
+      "id": "twitter-ai",
+      "name": "Twitter / X",
+      "path": "/twitter/keyword/AI",
+      "enabled": false,
+      "reason": "需要 TWITTER_AUTH_TOKEN 或开发者 API 凭据"
+    },
+    {
+      "id": "bilibili-ai",
+      "name": "哔哩哔哩 AI",
+      "path": "/bilibili/vsearch/AI/pubdate/1",
+      "enabled": false,
+      "reason": "当前路由返回 503，需要 Cookie 或 Playwright"
+    },
+    {
+      "id": "weibo-ai",
+      "name": "微博 AI",
+      "path": "/weibo/keyword/AI",
+      "enabled": false,
+      "reason": "需要 Playwright，建议同时配置 WEIBO_COOKIES"
+    },
+    {
+      "id": "xiaohongshu-ai",
+      "name": "小红书 AI",
+      "path": "/xiaohongshu/user/USER_ID/notes",
+      "enabled": false,
+      "reason": "需要指定账号并配置 Playwright，建议提供 XIAOHONGSHU_COOKIE"
+    },
+    {
+      "id": "renwei-unknown",
+      "name": "人为（待确认）",
+      "path": "",
+      "enabled": false,
+      "reason": "未能确认具体媒体或平台名称"
+    }
+  ]
+}

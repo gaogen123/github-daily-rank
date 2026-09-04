@@ -7,6 +7,15 @@
     "generate:data": "node scripts/generate-data.mjs",
     "enrich:descriptions": "node scripts/enrich-descriptions.mjs",
     "index:projects": "node scripts/index-projects.mjs",
+    "news:refresh": "python3 scripts/news_pipeline.py",
+    "projects:classify": "python3 scripts/project_classifier.py",
+    "projects:images": "node scripts/project_images.mjs",
+    "projects:metrics": "python3 scripts/project_metrics.py collect",
+    "projects:score": "python3 scripts/project_metrics.py score && python3 scripts/project_metrics.py export",
+    "projects:rank": "python3 scripts/project_metrics.py run",
+    "test:project-images": "node --test tests/project-images.test.mjs",
+    "test:project-ranking": "python3 -m unittest tests/test_project_scoring.py tests/test_project_metrics.py -v",
+    "test:news": "python3 -m unittest tests/test_news_pipeline.py -v",
     "dev": "node scripts/generate-data.mjs && node server.mjs --dev",
     "build": "node scripts/generate-data.mjs && vite build",
     "start": "node server.mjs",
@@ -16,6 +25,8 @@
   "dependencies": {
     "express": "^5.1.0",
     "node-cron": "^4.6.0",
+    "playwright": "^1.62.1",
+    "sharp": "^0.34.5",
     "undici": "^7.16.0"
   },
   "devDependencies": {

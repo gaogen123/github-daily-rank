@@ -55,24 +55,32 @@
     "updatedAt": "2026-08-21T05:57:12.141Z"
   },
   "DietrichGebert/ponytail": {
-    "description": "AI编程助手极简代码生成插件",
-    "source": "readme-summary",
-    "updatedAt": "2026-08-21T06:08:07.043Z"
+    "description": "AI 编程助手的极简代码生成插件",
+    "fingerprint": "24de09388597f744af08d11e3453185c553ec628548815ab48c8d0ac2cef717e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
   },
   "Panniantong/Agent-Reach": {
-    "description": "AI代理全网内容读取与搜索命令行工具",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:09.863Z"
+    "description": "AI代理读取和搜索全网内容的命令行工具",
+    "fingerprint": "e3055f5be0bce1a17ccbf33c9e586bdaa3c2ced913efd702a6ec451eaec10a84",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
   },
   "DeusData/codebase-memory-mcp": {
-    "description": "高性能代码智能MCP服务器",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:10.435Z"
+    "description": "高性能代码智能 MCP 服务器",
+    "fingerprint": "7d92d6b0ac0a0c86da030d4f4fa4adc2ea52425fc292827b50b30698762977e4",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
   },
   "calesthio/OpenMontage": {
     "description": "全球首个开源智能体视频制作系统",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:11.246Z"
+    "fingerprint": "c8939d13def6c3cdff026e08e5a44656b006f1dd8dffa5c0c56e7e7c8aa7b380",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
   },
   "deepseek-ai/DeepSpec": {
     "description": "投机解码草稿模型训练与评估全栈代码库",
@@ -90,19 +98,25 @@
     "updatedAt": "2026-08-21T06:08:15.339Z"
   },
   "HKUDS/Vibe-Trading": {
-    "description": "个人交易代理Vibe-Trading",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:16.341Z"
+    "description": "个人交易代理框架",
+    "fingerprint": "2d451ace36d7b8116a4944c40587455ccc0770b71ccc57899715c1ebddb6c58a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
   },
   "usestrix/strix": {
     "description": "开源AI黑客代理与自动化渗透测试工具",
+    "fingerprint": "5872208a724e1e8464ecf98a6811d461e426e9f4c00935501f2b0372ff91698d",
     "source": "condensed",
-    "updatedAt": "2026-08-21T06:08:17.025Z"
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
   },
   "hugohe3/ppt-master": {
-    "description": "AI生成可编辑PPT及语音备注工具",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:17.768Z"
+    "description": "AI 生成可编辑 PPT 及语音备注的工具",
+    "fingerprint": "b40d59a360023b92c8066a5df452ab94ee486f83b3200ae900cdbb509fd6d6d3",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
   },
   "facebook/astryx": {
     "description": "开源可定制且适配智能体的设计系统",
@@ -110,39 +124,53 @@
     "updatedAt": "2026-08-21T06:08:18.222Z"
   },
   "microsoft/AI-For-Beginners": {
-    "description": "微软AI初学者12周24课教程",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:19.042Z"
+    "description": "微软12周24课AI初学者教程",
+    "fingerprint": "95d1b32d6670793c11923f757ee86c6b059158da6838bd0f1320cc624bf4336e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
   },
   "diegosouzapw/OmniRoute": {
-    "description": "免费AI网关聚合160多家服务商",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:19.771Z"
+    "description": "聚合160多家服务商的免费AI网关",
+    "fingerprint": "c4078f4f2acdbd649189b419d8f6c7209e72cae8fcb7987117e9582ffcd48f0b",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
   },
   "JuliusBrussee/caveman": {
-    "description": "克劳德代码技能：用原始人语言节省65%令牌",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:20.673Z"
+    "description": "用原始人语言节省Claude代码令牌",
+    "fingerprint": "714659a350d1af8e57a431fdf0972a57aa20bdd2c6b0f9f707dbfb853727cf8d",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
   },
   "alibaba/page-agent": {
     "description": "浏览器内JavaScript图形界面智能代理",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:21.450Z"
+    "fingerprint": "ac36f09ca52bb484e25a321d64151a96a2afec78aa499d5f730a0c24e3d37a66",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
   },
   "santifer/career-ops": {
     "description": "基于Claude Code的AI求职系统",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:22.271Z"
+    "fingerprint": "746f7a87e6e43f01a0c21e7baa8613310247b58ef2a004579e036fb67612d383",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
   },
   "stablyai/orca": {
-    "description": "并行代理开发环境，支持桌面与移动端",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:23.242Z"
+    "description": "支持桌面与移动端的并行代理开发环境",
+    "fingerprint": "e2ad65b94a71fc6f7a8f74a514f1772c6f22ccb52b0703b9342551b32504d8d8",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
   },
   "Leonxlnx/taste-skill": {
     "description": "AI品味提升与内容质量优化工具",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:23.979Z"
+    "fingerprint": "8bbeca5da1aa37e176fc0a39fc013c11b78d0544a559dfd182f6e54b3fc76873",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
   },
   "ogulcancelik/herdr": {
     "description": "终端中的智能体多路复用器",
@@ -151,18 +179,24 @@
   },
   "addyosmani/agent-skills": {
     "description": "AI编码智能体的生产级工程技能库",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:25.266Z"
+    "fingerprint": "2014b962ba29bfcf99c7b81f3b626e103ba4a937584bf1312791adef997d4e4f",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
   },
   "Zackriya-Solutions/meetily": {
-    "description": "注重隐私的本地AI会议助手，基于Rust构建。",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:25.860Z"
+    "description": "注重隐私的本地AI会议助手，基于Rust",
+    "fingerprint": "7117cf0a27ed3567dcc5fa45757a0a7ab76b95684ccf7f053bab8d46317e99c6",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
   },
   "ruvnet/RuView": {
-    "description": "WiFi信号驱动的实时空间感知与生命体征监测系统",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:26.486Z"
+    "description": "WiFi信号驱动的空间感知与生命体征监测",
+    "fingerprint": "c5ca962e2ce48b324f255e3294c4bc2d67c9425d6eb5ee54c17d64cb0c31a3eb",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
   },
   "bradautomates/claude-video": {
     "description": "为Claude添加视频观看能力的命令行工具",
@@ -171,8 +205,10 @@
   },
   "safishamsi/graphify": {
     "description": "AI编程助手知识图谱技能包",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:28.099Z"
+    "fingerprint": "5b1d1abdae778542d0a32331de9ea4b3ee92694039dce8b90991dd6d9a073bb6",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
   },
   "MadsLorentzen/ai-job-search": {
     "description": "基于Claude Code的AI求职申请框架",
@@ -186,8 +222,10 @@
   },
   "jamiepine/voicebox": {
     "description": "开源语音合成工作室",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:29.963Z"
+    "fingerprint": "e908274c8c91421523a316403fbb2cef2e8eebf7a84bee388aa42de78d5ea4de",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
   },
   "wonderwhy-er/DesktopCommanderMCP": {
     "description": "Claude终端控制与文件编辑MCP服务器",
@@ -195,9 +233,11 @@
     "updatedAt": "2026-08-21T06:08:32.330Z"
   },
   "OpenCut-app/OpenCut": {
-    "description": "开源剪映替代视频剪辑工具",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:32.901Z"
+    "description": "开源免费的视频剪辑工具，剪映替代品",
+    "fingerprint": "082977a6cb4bb2ccdab891dd897c500c838d17dbc2f27cf949e2f545a7e6f08d",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
   },
   "Dicklesworthstone/destructive_command_guard": {
     "description": "危险Git与Shell命令拦截防护工具",
@@ -210,14 +250,18 @@
     "updatedAt": "2026-08-21T06:08:34.368Z"
   },
   "coreyhaines31/marketingskills": {
-    "description": "Claude Code营销技能库及增长工程指南",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:35.025Z"
+    "description": "Claude Code营销技能库与增长工程指南",
+    "fingerprint": "e8f57da6d913cc7b2d1aaa1ca0912182e9e8b9554a69b2053040d769db116d3d",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
   },
   "Raphire/Win11Debloat": {
-    "description": "Windows 10/11系统精简与去遥测PowerShell脚本",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:35.743Z"
+    "description": "Windows 10/11系统精简与去遥测脚本",
+    "fingerprint": "d5323ba39c5c30ce73582925c4158bd4c979b643c1c23c9be73a6871d2bbd539",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
   },
   "HenryNdubuaku/maths-cs-ai-compendium": {
     "description": "AI与机器学习研究工程师学习路线图",
@@ -226,8 +270,10 @@
   },
   "HKUDS/DeepTutor": {
     "description": "智能体原生个性化学习助手",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:37.156Z"
+    "fingerprint": "cc18ff030f24326aae0cc0c865e75804bd92a740343ec0b6b5a4e6e5fc6f7437",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
   },
   "xai-org/grok-build": {
     "description": "SpaceXAI终端AI编程代理及TUI工具",
@@ -260,9 +306,11 @@
     "updatedAt": "2026-08-21T06:08:43.281Z"
   },
   "tirth8205/code-review-graph": {
-    "description": "本地优先代码智能图谱，面向MCP与CLI工具",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:43.946Z"
+    "description": "本地优先的代码智能图谱，面向MCP与CLI",
+    "fingerprint": "a4276998ff3eacf8d7582d45acb228e93853a953feeada045f12b031da48d0e5",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
   },
   "every-app/open-seo": {
     "description": "Semrush和Ahrefs的开源替代方案",
@@ -276,8 +324,10 @@
   },
   "koala73/worldmonitor": {
     "description": "实时全球情报仪表盘与地缘监控平台",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:46.434Z"
+    "fingerprint": "c71dcf112080179662c7fcae2ef8c08aa5fd1238d8ae685c56235c8e6a795a86",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
   },
   "oblien/openship": {
     "description": "自托管部署平台",
@@ -286,13 +336,17 @@
   },
   "chrislgarry/Apollo-11": {
     "description": "阿波罗11号制导计算机指令舱与登月舱源码",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:47.843Z"
+    "fingerprint": "49be96b121fbba9f3f879ed9b21b6ac42bd00ea824a173df1938efd29d46933e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
   },
   "earendil-works/pi": {
     "description": "统一大模型API与智能体循环的AI工具包",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:48.784Z"
+    "fingerprint": "1a3050e5cd29d4f1047b2647cd1f7c26e54f10b7f403e92f6538509cc93c6eb3",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
   },
   "baidu/Unlimited-OCR": {
     "description": "百度推出的单次长时序文档解析OCR模型",
@@ -300,9 +354,11 @@
     "updatedAt": "2026-08-21T06:08:50.281Z"
   },
   "bojieli/ai-agent-book": {
-    "description": "AI Agent设计原理与工程实践开源书籍仓库",
+    "description": "AI Agent 设计原理与工程实践开源书籍",
+    "fingerprint": "4a0ea000b5886bcf63f1fd8e00c198282f5015abf25e69ed60975dcbba7d78a1",
     "source": "condensed",
-    "updatedAt": "2026-08-21T06:08:51.119Z"
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
   },
   "ayghri/i-have-adhd": {
     "description": "编码代理防跑题输出技能包",
@@ -310,14 +366,18 @@
     "updatedAt": "2026-08-21T06:08:52.162Z"
   },
   "rohitg00/ai-engineering-from-scratch": {
-    "description": "从零开始学习AI工程并构建交付的指南",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:53.163Z"
+    "description": "从零开始学习 AI 工程并构建交付的指南",
+    "fingerprint": "716f72f54c8f95dcb30436a26064b223e3d97a8f45ae89a4a32dc12ed3eeb227",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
   },
   "block/buzz": {
     "description": "蜂群思维通信平台",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:53.672Z"
+    "fingerprint": "535e22719b8fee186bfcd79981f128b993a72ae1dee6416c49ffa34b1156c992",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
   },
   "alibaba/open-code-review": {
     "description": "阿里巴巴开源的混合架构代码审查工具",
@@ -341,18 +401,24 @@
   },
   "ComposioHQ/awesome-claude-skills": {
     "description": "精选Claude技能、资源与工具清单",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:58.984Z"
+    "fingerprint": "e839df62847da775c63b1b5daf4a997e13946b03996ddf988c4a669a1d8265d5",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
   },
   "permissionlesstech/bitchat": {
-    "description": "蓝牙Mesh聊天工具，IRC风格",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:08:59.658Z"
+    "description": "基于蓝牙Mesh的IRC风格聊天工具",
+    "fingerprint": "28c670b21221d8fcec008521610161ed145cb73c3cdc4630ce4666995a5a6dfd",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
   },
   "pbakaus/impeccable": {
     "description": "AI设计语言增强框架",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:09:00.404Z"
+    "fingerprint": "510ad1804ae5dcf7d864cec6a11f6f0042e4874b70c5355334869c387367830a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
   },
   "MoonshotAI/Kimi-K3": {
     "description": "开源原生多模态智能体大模型Kimi K3",
@@ -391,8 +457,10 @@
   },
   "mvanhorn/last30days-skill": {
     "description": "跨平台AI调研与摘要生成技能",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:09:24.687Z"
+    "fingerprint": "8508943a1a0a3ec9daa1bb93f8f9ba2eb9914fbcf47a1213543a92387580fa89",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
   },
   "zhaoxuya520/reverse-skill": {
     "description": "AI驱动的逆向渗透安全技能路由包",
@@ -410,9 +478,11 @@
     "updatedAt": "2026-08-21T06:09:27.665Z"
   },
   "lyogavin/airllm": {
-    "description": "单卡4GB显存运行70B模型推理方案",
-    "source": "translation",
-    "updatedAt": "2026-08-21T06:09:28.263Z"
+    "description": "低显存运行大语言模型的推理方案",
+    "fingerprint": "fc64b1abf05a09e609720b3f0e5d87ce8a8651a0f9a553d5217971932fbad280",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
   },
   "firecrawl/pdf-inspector": {
     "description": "Rust编写的PDF检测分类与文本提取库",
@@ -548,5 +618,3260 @@
     "description": "基于TurboQuant的Rust向量索引及Python绑定",
     "source": "translation",
     "updatedAt": "2026-08-21T06:09:53.655Z"
+  },
+  "freeCodeCamp/freeCodeCamp": {
+    "description": "免费学习编程和计算机科学的开源平台",
+    "fingerprint": "74103c03904a042b7a024af43580d1eaac4a04876d44af18de30c87d79ddca58",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "EbookFoundation/free-programming-books": {
+    "description": "免费编程书籍资源列表",
+    "fingerprint": "18d31732037ceb66a006122b80babec9e1ffaf25536072e4bd4d032e814f7a1b",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "sindresorhus/awesome": {
+    "description": "各类有趣主题的精选列表",
+    "fingerprint": "72e57494f64181b9c128ac90ae96068162ff3ce3f5b55147fb2339ddad7c9ceb",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "public-apis/public-apis": {
+    "description": "免费公共API集合",
+    "fingerprint": "366a7331366496fb6d64ca4750414f1e3ae72b26844b852eb6cd0cf63f5650a3",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "jwasham/coding-interview-university": {
+    "description": "软件工程师面试学习计划",
+    "fingerprint": "86d230cef4abf01a0e9040146e9a19737838d1867b74158186a95fa6fa5e7b07",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "codecrafters-io/build-your-own-x": {
+    "description": "从零重建技术以掌握编程",
+    "fingerprint": "7faf466c6134c233f4278865bc379e1ff445b987a8d210d4c20c7f02a0ee5493",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "kamranahmedse/developer-roadmap": {
+    "description": "开发者成长路线图与指南",
+    "fingerprint": "8c308ec87a6c9d93cc5c206452caf6c2269f1d445bf021882fc5bc4bba3f0050",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "donnemartin/system-design-primer": {
+    "description": "学习大规模系统设计",
+    "fingerprint": "bb811ee1b494107448fbb3a4d668d6f32099a7b2082a6668b132ba66d46e77b2",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "vinta/awesome-python": {
+    "description": "Python工具与库精选列表",
+    "fingerprint": "e5d7cc0dc90850af66840a895211774e2018620a5a86f10652b6e09b5ea5fa68",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "practical-tutorials/project-based-learning": {
+    "description": "项目驱动的编程教程列表",
+    "fingerprint": "6aeddf69dcc6ac3a44b298983d33067011ecd73e26eb5ae82046561f2a300a11",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "awesome-selfhosted/awesome-selfhosted": {
+    "description": "可自托管的免费软件服务列表",
+    "fingerprint": "dba5cba070ba58823b869b53f7f8204012ab2c1f18dcb2d4da80cd9df0783a38",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "trekhleb/javascript-algorithms": {
+    "description": "JavaScript算法与数据结构实现",
+    "fingerprint": "987cced5c97eded5f5609dee79041a0301075626d5fcce11e8f025d22a809378",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "TheAlgorithms/Python": {
+    "description": "Python实现的各种算法",
+    "fingerprint": "375e1ceb1cc5fe14693a3e98dc35205f091ec5e0eb91b3f9fb323dd783a1d53b",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "Significant-Gravitas/Auto-GPT": {
+    "description": "自主人工智能代理平台",
+    "fingerprint": "3001b1e21790770c727e5a28d929cb5712c511f03710c405c0e53f4f1d3201da",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "ossu/computer-science": {
+    "description": "免费自学计算机科学课程",
+    "fingerprint": "cbe1723ffaee35adc1d34258fce15dd954b8ced66c149a89578a3b602dfef976",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "microsoft/vscode": {
+    "description": "跨平台代码编辑器",
+    "fingerprint": "61c844de6f8dcf74e904a403282a2d61cf7ac68ad73f69a6194beae52a00200e",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "jackfrued/Python-100-Days": {
+    "description": "Python从新手到大师百日教程",
+    "fingerprint": "63c5ad63a0cee7d0e238e6a9845834373d6cbeb992f2cba95606f7a7bf46355a",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "jlevy/the-art-of-command-line": {
+    "description": "命令行使用技巧指南",
+    "fingerprint": "e5c90895147edff2f0b235d420044e650840b3f8ad92d27e13aef6581a9945dc",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "trimstray/the-book-of-secret-knowledge": {
+    "description": "技术工具与资源手册",
+    "fingerprint": "46614fbfa7db15d1e5bc8f0713cedf085125e4795edd7693e18b6447bf4f2e02",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "AUTOMATIC1111/stable-diffusion-webui": {
+    "description": "Stable Diffusion网页界面",
+    "fingerprint": "edc22b53725fde502238cc4e027f4a06dcfb5716491dcb520125314b5b2c009b",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:52.787Z"
+  },
+  "huggingface/transformers": {
+    "description": "提供最先进机器学习模型的定义、训练与推理框架，支持文本、视觉、音频等多模态",
+    "fingerprint": "45fb062dca973de059e0390a263d0ddd437512a1bcd89b7d3f68f5619fc2bfea",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "vercel/next.js": {
+    "description": "基于 React 的全栈 Web 开发框架，支持服务端渲染与静态生成",
+    "fingerprint": "38bf116014e89d17d70bbf309ee4642bfabeda16500c499e4ac28f7aa926db3a",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "yangshun/tech-interview-handbook": {
+    "description": "面向忙碌软件工程师的精选编程面试准备资料",
+    "fingerprint": "ffea86a22ac940df20bf9c83fe85c92cfffbac4e472209bdb8c2531bc28b8f08",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "electron/electron": {
+    "description": "使用 JavaScript、HTML 和 CSS 构建跨平台桌面应用",
+    "fingerprint": "78ab15d3ebfd86057e40da1f38cdb6d983499feafbe788abf0dd2b02054af186",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "microsoft/PowerToys": {
+    "description": "Windows 系统增强工具集，提升生产力与个性化设置",
+    "fingerprint": "a184db80a4a9d8a197c1b48a399a435307d1b9a52f99f910d6392a3f62ffb6f5",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "anthropics/skills": {
+    "description": "基于 AI 的技能库平台，支持创建、管理与分享技能模型",
+    "fingerprint": "5ae9484d4ad886d6d8137c512e26902dec8e1946264e86fc696deb03084af82c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "sst/opencode": {
+    "description": "可本地部署的代码生成与理解工具，结合大模型提升开发效率",
+    "fingerprint": "da662287b4d0b0a7edd50930f646e7f6ef09987408b1006128cb907b1ff89833",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "farion1231/cc-switch": {
+    "description": "快速切换网络、代理或配置环境的实用工具，简化多环境调试",
+    "fingerprint": "3f83e8f6fdd574b9bb09f16fab76ffc11539dc1acd88194378accb5cec3599a1",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "forrestchang/andrej-karpathy-skills": {
+    "description": "基于 Karpathy 观察的 CLAUDE.md 文件，改进 Claude Code 行为",
+    "fingerprint": "469e77609b61b1b961c21a88a26875f053789f8daac55a56341ad48e295d54d4",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "NousResearch/hermes-agent": {
+    "description": "随用户成长而发展的智能体",
+    "fingerprint": "971ca41081e7f3e61668489f5f43d23b707035b9bcf59f68345738a8c8679432",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "f/awesome-chatgpt-prompts": {
+    "description": "社区分享与发现 ChatGPT 提示词的免费开源集合，可自托管",
+    "fingerprint": "1f152d26999cf939f514b5e38a20898a921be6a8a36b70f74c20d6bd5dd1d19d",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "obra/superpowers": {
+    "description": "面向编码代理的完整软件开发工作流，基于可组合技能与标准指令",
+    "fingerprint": "2f8c3d159eeb6957a00f7c76079334be155f542de6f02cb2c1b25265834fd48f",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "mattpocock/skills": {
+    "description": "个人技能目录，源自 .claude 目录",
+    "fingerprint": "a17827468aee0b460a5a63522c3a503badb9ecb288b8609cc86a8a521f6c27a0",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "Shubhamsaboo/awesome-llm-apps": {
+    "description": "精选 LLM 应用，涵盖 AI 代理与 RAG，支持多种模型",
+    "fingerprint": "8dfb8e66eeb2db7f14bb9973d3a25c19c8fac2803aa3a0dc388a0ea714bd1f4a",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "clash-verge-rev/clash-verge-rev": {
+    "description": "基于 Tauri 的现代 GUI 代理客户端，支持 Windows、macOS 和 Linux",
+    "fingerprint": "1833cb999f95333fe7ea55112f5044c4cdf0a79dcb55136fe23e130aaea51007",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "affaan-m/everything-claude-code": {
+    "description": "代理性能优化系统，集成技能、直觉、记忆与安全，支持多平台",
+    "fingerprint": "18b2a8b5581f59310d81cde808c07ce0ca7064d81edf0b919e348c59cb24ff95",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "mtdvio/every-programmer-should-know": {
+    "description": "汇总计算机基础、网络、算法等领域的精选资料，提供系统化学习路径",
+    "fingerprint": "eb3e511638b045ae3a74824823642271142c8aa4e0a426c3c40ff6991683dc53",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "jaywcjlove/awesome-mac": {
+    "description": "收集各类好用的 Mac 应用、软件与工具，帮助高效工作",
+    "fingerprint": "23f6bfbcb855fec059beccedee6a2e97e4447b1fa957a9f6b3c662d2fc43e965",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "GrowingGit/GitHub-Chinese-Top-Charts": {
+    "description": "GitHub 中文项目排行榜",
+    "fingerprint": "1ae789565a329c99a1aadec7869a691a8a4ec79ec543ba249e6324af3e7a22f9",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:53:57.256Z"
+  },
+  "rasbt/LLMs-from-scratch": {
+    "description": "从零用PyTorch逐步实现ChatGPT类LLM",
+    "fingerprint": "264e261e9f2de50ebfb523251fe2c3f29c0eb66be838bba1c7998bb337843236",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "msitarzewski/agency-agents": {
+    "description": "多智能体AI代理平台，各具专长",
+    "fingerprint": "b176e3131594712779b69284af8ce349abd8c4a746468b8646c07031fec7e56c",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "microsoft/Web-Dev-For-Beginners": {
+    "description": "24课12周网页开发入门教程",
+    "fingerprint": "e48e05dd0bab4a50d7a17d3afbee4dcf84bbb92ee3614cbf43bcec793edcd3e1",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "krahets/hello-algo": {
+    "description": "动画图解的数据结构与算法教程，多语言",
+    "fingerprint": "e30b6f0373673f63369108d2d05a061eae6519e88f7fdd97ee7a0dc79a97f21a",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "massgravel/Microsoft-Activation-Scripts": {
+    "description": "开源Windows和Office激活工具",
+    "fingerprint": "304e594f9517ad874d48b2030cfd895dcbac9714d6150febdd8a6561d2d2f16a",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "harry0703/MoneyPrinterTurbo": {
+    "description": "AI一键生成高清短视频",
+    "fingerprint": "ba37bb3649d8223ec8f921095dde34286ab421fb64d4bb6952f8502579edbc5e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "hacksider/Deep-Live-Cam": {
+    "description": "深度学习实时人脸替换工具",
+    "fingerprint": "b61042b4ab26de66d92cb0f932db904feedeb6e3d636755ecf2da50e235aae31",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "iluwatar/java-design-patterns": {
+    "description": "Java设计模式示例集合",
+    "fingerprint": "e2f46b02e33e6ec59b7b2d41c75b72617696c741d187fb65db7b2a264c467703",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "moltbot/moltbot": {
+    "description": "可部署于个人设备的跨渠道AI助手",
+    "fingerprint": "d921e7d6d9bcdcf9eec4723ed18e5a46f38e228b07e18cb942bf0e7a5abf2adf",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "jmorganca/ollama": {
+    "description": "本地运行多种大语言模型的工具",
+    "fingerprint": "1d65b36632464cfb11724bd3f30d7026a706573d087f77b0c93c208b5306e514",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "langchain-ai/langchain": {
+    "description": "智能体工程开发平台",
+    "fingerprint": "5fd4c254d2a631ecad1a7609c669a70bd775b65441ab571ac75fe107657fc379",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "oven-sh/bun": {
+    "description": "一体化JavaScript运行时与工具包",
+    "fingerprint": "6032638ae6923b746002467eb5143243d0baceb639ccef8d01ac4b364d46eb25",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "iptv-org/iptv": {
+    "description": "全球公开IPTV频道集合",
+    "fingerprint": "162621de06421563b4e549c1d530ad72fe6f8d702ce8e913c8464e04cba0e3dd",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "browser-use/browser-use": {
+    "description": "让AI代理访问网站并自动化任务",
+    "fingerprint": "b980bdb8e0f83a142871d5a546e037184c399fc8fe4e4e0cd68042e58adba308",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "godotengine/godot": {
+    "description": "跨平台2D和3D游戏引擎",
+    "fingerprint": "e5cdd4fbf16522d78a64605b5c0a2226785fce9a95d1cc3d9f241bb9167ed211",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "ripienaar/free-for-dev": {
+    "description": "开发者可用的免费服务列表",
+    "fingerprint": "56dee8ae72befc676974c27ffb61f89573bf7bbe8ccaa62a81fe796a745b7073",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "yt-dlp/yt-dlp": {
+    "description": "功能丰富的命令行音视频下载器",
+    "fingerprint": "825d53352a580944df07201ec7442151b9251097c1539813915af6adb537c75f",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:01.031Z"
+  },
+  "microsoft/ML-For-Beginners": {
+    "description": "微软12周机器学习课程，含配套数据集与实验",
+    "fingerprint": "cd8248e2e8245c5cee3a54d7d98274f05a678667a28ad5043842716eabb2bd03",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "zed-industries/zed": {
+    "description": "高性能多人协作代码编辑器",
+    "fingerprint": "11ef985fa8544d54be34b7433511f2a493d6051d092df4f9a44d60a57bcce161",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "PaddlePaddle/PaddleOCR": {
+    "description": "支持100+语言的轻量OCR工具，可提取图片PDF文本",
+    "fingerprint": "d59d785ff69d3ca0c009ad136a40c1eaaf8bdafe88afb95eadf625bfebf5e9a6",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "Anduin2017/HowToCook": {
+    "description": "程序员在家做饭方法指南",
+    "fingerprint": "8a7d0a14b62c1ea6bcf74165ea937ca6de89b3e2219fa4b3a6d0eb41c5c37df6",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "sherlock-project/sherlock": {
+    "description": "按用户名跨社交网络查找账号",
+    "fingerprint": "9b52add06723dfa3c2a1f06a56d41a35e7f35f3046bf8f3ef498ee9b4370df67",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "neovim/neovim": {
+    "description": "注重扩展性与易用性的Vim分支",
+    "fingerprint": "ca19a72bad89df59c1b7ca18b621c4540f070d89a12a14268cfa818853064ff8",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "gothinkster/realworld": {
+    "description": "全栈Medium克隆示例应用，展示多种技术栈",
+    "fingerprint": "9583fc2a4b0169615617faccd59f75c531c5197c5081694970096a9fdae15ed5",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "excalidraw/excalidraw": {
+    "description": "手绘风格图表的虚拟白板",
+    "fingerprint": "54343dd5814b3157a093eb2d82d60c13a94cf3694f80c7a73e840fb8b804634e",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "ruanyf/weekly": {
+    "description": "科技爱好者周刊，每周五发布",
+    "fingerprint": "f51d68a3656a00c3839376f4ab9b413f152628c43733205005e98047daef37e7",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "bitcoin/bitcoin": {
+    "description": "比特币核心软件集成与开发树",
+    "fingerprint": "d8834dfc635bae13c351e3edd37de634acf0a8931e5bdd8d37f8634b7af8c231",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "nvm-sh/nvm": {
+    "description": "POSIX兼容的Node.js版本管理器",
+    "fingerprint": "6f65ab4418a77e7798a53264a1b60c589c4a9bc39d835971c5b7c492b776b35d",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "pytorch/pytorch": {
+    "description": "支持GPU加速的张量与动态神经网络库",
+    "fingerprint": "369ca4f30ae2a694dafa84bf59c39d8ffcea7ca2f520a9bca8d34250d80728e6",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "bregman-arie/devops-exercises": {
+    "description": "DevOps实践与练习集，含CI/CD、监控等",
+    "fingerprint": "c889d749267e81f7de5bb059f91cb1320321195a66dd21635f7f4547a17f4f2c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "FortAwesome/Font-Awesome": {
+    "description": "GitHub星标最多的图标库，提供丰富图标",
+    "fingerprint": "8de7f92841bcd2880f500107ea7adab45c45f5224c06c90a16062723672e4953",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "punkpeye/awesome-mcp-servers": {
+    "description": "MCP服务器与工具精选，涵盖自托管与API网关",
+    "fingerprint": "c5747a35a423179730287e066e03cc7f6b5e42aca92c8fe54271c1cc344c3a2f",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "tauri-apps/tauri": {
+    "description": "用Web前端构建更小更快更安全的桌面应用",
+    "fingerprint": "9de113588ec2e795da24d6290ce8f8521c991f4f34c624ce801e23eee4539946",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "TauricResearch/TradingAgents": {
+    "description": "多智能体LLM金融交易框架",
+    "fingerprint": "131d8a4553f6101e0bf14a9c3d1cb8fe623ec6379a16263f974e1141af45c5c7",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:04.959Z"
+  },
+  "swisskyrepo/PayloadsAllTheThings": {
+    "description": "收集渗透测试与CTF所需的各种有效负载和绕过技巧",
+    "fingerprint": "38fbb2173616682a2062db7cec79a1eacfb2e34ad0175b44975ae724dbb54368",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "comfyanonymous/ComfyUI": {
+    "description": "模块化节点式图形界面，用于构建稳定扩散工作流",
+    "fingerprint": "2e858d5eb13d280aa6f71d7fdaea250b12b13e284792ed9ef0bd8fe503f36a0e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "openai/codex": {
+    "description": "在终端中运行的轻量级编码代理",
+    "fingerprint": "c1560f2e713e33b21471c95cd985ba4754179acbe370e38f20f511682c3b4d26",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "pewdiepie-archdaemon/odysseus": {
+    "description": "自托管AI工作空间",
+    "fingerprint": "aa048cb71ea2f88ee23dc2cb709f0adcebcee49e5e63ded38e167d5aa275ff22",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "opendatalab/MinerU": {
+    "description": "将PDF和Office文档转换为适合LLM的Markdown或JSON",
+    "fingerprint": "d6b7f544933f66c36da9423633be859f08021cdca09c9bdb756bfeeecf3cc0bd",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "ventoy/Ventoy": {
+    "description": "制作可启动U盘，直接启动多个ISO镜像",
+    "fingerprint": "9554096050660b1b761fa6383e0b23277a0428a03a38e5f52c1006b53bda6346",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "ByteByteGoHq/system-design-101": {
+    "description": "图文讲解系统设计基础与原理的入门教程",
+    "fingerprint": "5d66a77c213210e9a83fc6245b96fee494b488c6e989bbf026c6f14ff8368b63",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "rustdesk/rustdesk": {
+    "description": "开源远程桌面软件，支持自托管，替代TeamViewer",
+    "fingerprint": "6aaa5554622540149bccaffddcb0489822f791d990ba4dd9ad23c855a80d077a",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "Z4nzu/hackingtool": {
+    "description": "集成多种黑客工具的合集",
+    "fingerprint": "813c30b2b49125cc4d37671bc17a03fd9c2a8ffb4d59579e1ff02bb914d3a0dd",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "thedotmack/claude-mem": {
+    "description": "为Claude模型提供持久化记忆，记录上下文与偏好",
+    "fingerprint": "ee6a48a2f1f9131ecb8b5bfc79e6c1a747590c8a9a09c249c63312dc1d442fd6",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "mlabonne/llm-course": {
+    "description": "大语言模型学习路线与Colab笔记本教程",
+    "fingerprint": "27c8201fd1f712b90f4b6393abf6b1a93fa12ee8228a1942bf72e07569e025fe",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "Yidadaa/ChatGPT-Next-Web": {
+    "description": "零配置AI聊天助手，支持多种模型与多平台",
+    "fingerprint": "17920db54a72d38afaa1fbcda605d930575eb501dca2a469b6e23bc82ef7950d",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "supabase/supabase": {
+    "description": "基于Postgres的开发平台，用于构建Web和AI应用",
+    "fingerprint": "423940488351b93e6194e80aa0691441ba61b08646f5019388bae28f4ac02271",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "ollama-webui/ollama-webui": {
+    "description": "ChatGPT风格的Ollama Web用户界面",
+    "fingerprint": "be82860831821cb329b42312570e84d56d37e909bc00c547ba2fc8101f14158a",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "hoppscotch/hoppscotch": {
+    "description": "开源API调试工具，帮助快速发现接口问题",
+    "fingerprint": "4f53f30892e69eaedf9a8c31b69401a937dedbe161a5d5044aaaae954bb4f8e7",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "deepseek-ai/DeepSeek-R1": {
+    "description": "强化学习推理模型，数学代码任务比肩OpenAI o1",
+    "fingerprint": "4cc756d6002a496a9c53c5393f033c42423cc921e075af23e020413eed4af9c7",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "netdata/netdata": {
+    "description": "AI驱动的全栈可观测性监控平台",
+    "fingerprint": "4e21543c252c5ec8719687bcb1560c13bfa0e7e02b6812762dbf29822a0db177",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:10.339Z"
+  },
+  "TapXWorld/ChinaTextbook": {
+    "description": "收录中国小初高及大学教材PDF",
+    "fingerprint": "cea967824d5d173119129f6f6623cae50190574ae309903d952a00fe4bd99f48",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "daytonaio/daytona": {
+    "description": "安全弹性的AI生成代码运行基础设施",
+    "fingerprint": "03dff58222fb095849d35cc3a4f5e5dab8b7447da3394fa796a48ec23e4726f5",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "jesseduffield/lazygit": {
+    "description": "终端里快速操作的Git客户端",
+    "fingerprint": "4a9f7df0e971de09b8b5953d0271826627475430976caa413a0af4d9db43e65a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "nomic-ai/gpt4all": {
+    "description": "在任意设备本地运行开源大语言模型",
+    "fingerprint": "3ca06337e62f2b4cb3c18f5795d30b4e52c8d04bad5ac577c1571ef5293d341e",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "Lum1104/Understand-Anything": {
+    "description": "将代码转化为可探索和问答的交互知识图谱",
+    "fingerprint": "7f586c8cbf6f54990d7d07792694b889eedbb2477483b4edb48f86c0af0a464d",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "ruvnet/wifi-densepose": {
+    "description": "基于WiFi穿墙实时全身姿态估计系统",
+    "fingerprint": "2dd5234cd57e026ab88aae40d23760c9b2e018dbb1777c6db81e9bd483c1c957",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "immich-app/immich": {
+    "description": "自托管照片视频备份方案，支持手机上传",
+    "fingerprint": "5539cd707c5dbab7076106256b294ac247f3be4c693862d6ad87639508f0104d",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "microsoft/ai-agents-for-beginners": {
+    "description": "12课入门构建AI智能体的教程",
+    "fingerprint": "75e2105a58c79e4ae2132e80521909d40c3d203ca41e4f217d0c56391fed695d",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "redis/redis": {
+    "description": "实时数据应用首选的内存数据结构存储",
+    "fingerprint": "7f5c9fe568f3d8bd57c2e2268387cd71d119824aa459a6b5bc45cbcf13f05098",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "shadcn/ui": {
+    "description": "设计精美的可访问组件及代码分发平台",
+    "fingerprint": "ad5318f552f8346827dce091b132643f624e25464a3a2738d2ce06e8c08b542f",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "openai/openai-cookbook": {
+    "description": "展示OpenAI API常见任务示例代码",
+    "fingerprint": "3f40831680abec42f6eb1b5689aa8cc81cc0e3f6540c7f979adec3fed5b16d08",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "apache/echarts": {
+    "description": "提供丰富交互图表的数据可视化库",
+    "fingerprint": "388e742065093fb8ad85459de62b0cd7da3a676dda09043060e505e969f5adb2",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "caddyserver/caddy": {
+    "description": "支持自动HTTPS的多平台Web服务器",
+    "fingerprint": "cfe12ff98a57cf7c8b285e51166dfc34b3b70ef3aaf427601c2b25710a2f5fb7",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "PKUFlyingPig/cs-self-learning": {
+    "description": "系统学习计算机科学的自学指南与资源",
+    "fingerprint": "55d78a6ccd234a7b33a7acec48439574de92f1fd3b4ac84fa3084258f6d02c49",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "localstack/localstack": {
+    "description": "本地模拟AWS服务，便于开发测试",
+    "fingerprint": "b399262200b2d36ad3b94b2623b442372b6578a1d57340ac95cea5a24530f201",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "ggerganov/llama.cpp": {
+    "description": "用C/C++实现的大语言模型推理",
+    "fingerprint": "16c42df754a6de60af725f987bd68cc079277bf26c67f3e9e73c3e9d3d3f7707",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "kdn251/interviews": {
+    "description": "汇总技术面试所需知识与准备资料",
+    "fingerprint": "76d67f2f8d78a50cd49008aaccad10bd804a05ba4616da58cffe5b4a91371587",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "binary-husky/chatgpt_academic": {
+    "description": "优化论文阅读写作的LLM交互接口",
+    "fingerprint": "33d70db34bbaf61c07c32daee15633c4ceb85587bb31dcdd056b83b9a7f2a14c",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:15.131Z"
+  },
+  "FuelLabs/sway": {
+    "description": "用于构建可靠高效智能合约的编程语言",
+    "fingerprint": "5af9393f64f0d69b5537dd8bbe47b72235321ac6fd6777739d06d4867bf29a2a",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "Alvin9999/new-pac": {
+    "description": "提供翻墙工具、教程及免费节点资源",
+    "fingerprint": "40017ecb6fd49d66dc3fd73aae046a288c6b830cb25ee33e34e92515a8639c6e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "microsoft/generative-ai-for-beginners": {
+    "description": "21课入门生成式AI开发教程",
+    "fingerprint": "94b48459e0e1c6b83d6dc0df43d255e4b39bc4794c629c05b8679a9979e79c9a",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "D4Vinci/Scrapling": {
+    "description": "自适应网页抓取框架，支持单请求到全站爬取",
+    "fingerprint": "b86d0faa7937b614d91d3f2d87e6dfcf824ea9dd53c4cf5ea1846fc2a92c3cb1",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "nektos/act": {
+    "description": "在本地运行GitHub Actions",
+    "fingerprint": "d2efff04b3d275e10b14717a6a86242c420c160af340f029bfa4cce1f89ead18",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "lydiahallie/javascript-questions": {
+    "description": "JavaScript进阶问题与解答列表",
+    "fingerprint": "cd2fb79801b4c638d9febf59bdf00146e21a0ffec553af99a348089d41d38c67",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "LadybirdBrowser/ladybird": {
+    "description": "独立开发的开源浏览器引擎",
+    "fingerprint": "356b08963a4128a3b9259dca58993c7cefb33c3e166ea3af41b817f8b28e51bb",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "3b1b/manim": {
+    "description": "数学讲解视频动画引擎",
+    "fingerprint": "263b514a13736d75142359fb116b3bcf20481388b7dde9a342423df04d225ffc",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "juliangarnier/anime": {
+    "description": "轻量级JavaScript动画库",
+    "fingerprint": "fe9e86b80f25f3c1b45071152019655f90f06de28b8e337ddee978c1d35dfb1b",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "d2l-ai/d2l-zh": {
+    "description": "动手学深度学习中文版教材",
+    "fingerprint": "45687ed5e2d4bf3f65766143c1b31ed586122ceb02094e86eab79991a31d71c7",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "FuelLabs/fuel-core": {
+    "description": "Fuel v2协议的Rust全节点实现",
+    "fingerprint": "03343aa5a3c47ed5fc98ab55373d012054b9373cdb2ed24933684c4b649c4252",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "pathwaycom/pathway": {
+    "description": "面向实时AI应用的流式数据处理框架",
+    "fingerprint": "b93354bcd6a3a369226721b5df77475a69105c2f6bd3d7702d2d2b2181df8fc1",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "openai/whisper": {
+    "description": "大规模弱监督训练的语音识别系统",
+    "fingerprint": "6e967a156a420f2c20242df3fa077291d08dcf975b201aab4f92e402da03bd18",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "sdmg15/Best-websites-a-programmer-should-visit": {
+    "description": "程序员实用网站推荐列表",
+    "fingerprint": "af491077a47e9a7488e818cb4e342aeccb65059c54247f67305cd29d98a6802a",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "minio/minio": {
+    "description": "高性能开源对象存储服务",
+    "fingerprint": "f9cb096d3f7f08cc6d80c710c4ae8a2f0c9bfa41b4fbab3e31e722a0e3bbe05e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "apache/superset": {
+    "description": "数据可视化与探索平台",
+    "fingerprint": "47ae78d32b8b7a89d94e205d212be349ede3b66f805231289f3abb3776108cb2",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "unslothai/unsloth": {
+    "description": "加速LLM微调与强化学习训练",
+    "fingerprint": "13a2f79f86a7fc68fc2bc82d9970e8ee1c9c1f6979f1f0ff8e24340b18b1bbee",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:18.818Z"
+  },
+  "rtk-ai/rtk": {
+    "description": "减少LLM令牌消耗的CLI代理，压缩率达60-90%",
+    "fingerprint": "682a3804547422d8e2885e90103525d816c191ba28aab7bc7a3b8b5b9f184522",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "microsoft/markitdown": {
+    "description": "将文件和办公文档转换为Markdown的Python工具",
+    "fingerprint": "2ae206eb35fe8d746308ffad3fe2dd2d670f220776984f08d4c4471c9f698881",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "binhnguyennus/awesome-scalability": {
+    "description": "可扩展、可靠、高性能大型系统模式集合",
+    "fingerprint": "06f68cd88246d69a5988726bf04360d36329e0ab41f7b09609d76854ee215489",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "bytedance/deer-flow": {
+    "description": "开源超级代理框架，可研究、编码和创建",
+    "fingerprint": "e93d6fdf55d0be9012a2ed75510af08d388fef769ad3c0e6efd63c18bc53823e",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "anthropics/claude-code": {
+    "description": "Anthropic推出的AI编程助手，辅助代码开发",
+    "fingerprint": "ed1e9745f7a97804582f7168b86889cbb2eb2c1eb854d28dde92a06f0be3eb93",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "virattt/ai-hedge-fund": {
+    "description": "基于AI的对冲基金平台，分析市场数据辅助投资",
+    "fingerprint": "9169974c283c94485bc0c49227ba46607e3c94b4bc89748a8dc012efecb2ad28",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "facebookresearch/llama": {
+    "description": "Llama模型的推理代码",
+    "fingerprint": "3e37319b7b639ba24d4bde02aece82c84913272d6d0558d1f0f4b3ce92228f11",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "abi/screenshot-to-code": {
+    "description": "将截图转换为HTML/Tailwind/React/Vue代码",
+    "fingerprint": "c9037d978f7f2f5726100591f4bc0a31c973757ea78f0ffbe07e3d5e30fd6b5d",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "sansan0/TrendRadar": {
+    "description": "AI驱动的舆情监控与热点筛选工具",
+    "fingerprint": "a04199e096d571df43f96ea38e5ad9fbcf7c0836208d335d4f2afc4201350f4c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "NationalSecurityAgency/ghidra": {
+    "description": "美国国安局开源的软件逆向分析工具",
+    "fingerprint": "59ea7981abaf0188024f63f51437c87710f8ee9aeee8f1d3663ab20249606dbd",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "usememos/memos": {
+    "description": "轻量级开源个人备忘录与知识记录系统",
+    "fingerprint": "f3fccf7a96db1887eec355be2e9cbe3ba93b35b93bcddc674ee52b69de2b6103",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "xtekky/gpt4free": {
+    "description": "免费获取多种强大语言模型的API集合",
+    "fingerprint": "8132807783517f1622a8ff78d33f1b7042a6baebfdbd61ae1a3dd96896ed4103",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "geekan/MetaGPT": {
+    "description": "多智能体元编程框架，将需求转化为文档和代码",
+    "fingerprint": "2fdd6d8c2dd8dc751bd652f4635f3eb1e5f919798ab48ef713f787f31f1f387a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "pocketbase/pocketbase": {
+    "description": "Go编写的嵌入式后端，内置数据库和认证",
+    "fingerprint": "3646ac988a8bfa0e2bc094f0e0b01f3d3252e6909bdb02f7cb376089e979257a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "gsd-build/get-shit-done": {
+    "description": "Claude Code的元提示与规范驱动开发系统",
+    "fingerprint": "3e9b5b8a673da751eeff965e73ea0d91d1501ead804568964ce43b4c1d8f3097",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "penpot/penpot": {
+    "description": "开源设计与代码协作工具",
+    "fingerprint": "a9fafe6fcaa72d32fb818137fb3b31ce4bdb1e212292402194c2c4fd5d0d00de",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "nocodb/nocodb": {
+    "description": "开源智能表格工具，快速创建数据库应用",
+    "fingerprint": "af0973d86d9b3103343a0fb8f82662e1c2acf544906bcfe2ffa9e1ed4537e172",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "chopratejas/headroom": {
+    "description": "压缩工具输出和日志，减少LLM令牌消耗",
+    "fingerprint": "f62a46a35d5ff6f65770e83af55def297678c0f684549c43fa3b5df692898d3e",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:22.679Z"
+  },
+  "commaai/openpilot": {
+    "description": "为300多种车型升级驾驶辅助系统的开源机器人操作系统",
+    "fingerprint": "12ae69d8b7c0fe2a7c77f658108d045a4a21f39fa93f67fbb9ae46eede1427c0",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "cypress-io/cypress": {
+    "description": "基于JavaScript的浏览器端到端测试工具，支持图形化界面",
+    "fingerprint": "0eea3e174cda0111de46f54fdbc218e79111f3cd74bd64b9459d6e506faa30a7",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "karpathy/nanochat": {
+    "description": "百美元级ChatGPT开源实现",
+    "fingerprint": "21ad8fe9d0ea62c5084bcde27d1e1225d92ace3fb68bfd9189d53dbf3fbc9ef4",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "pi-hole/pi-hole": {
+    "description": "网络级广告拦截工具，充当互联网广告黑洞",
+    "fingerprint": "c4b4f7f4689a12b1e0cc911b20e096d096696287e9e5378182507c2bf684e0be",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "shareAI-lab/learn-claude-code": {
+    "description": "系统整理Claude代码生成、理解与调试实践的教学项目",
+    "fingerprint": "3e41869b25c70076e3d70c1485a787e58c1e5f87a0d1abd682e29774e4a20be4",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "marktext/marktext": {
+    "description": "跨平台开源Markdown编辑器，简洁优雅",
+    "fingerprint": "242a4f4dab073950f0de10f816e6ac6112499ae3687ee3de40b219aeae500e9f",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "withastro/astro": {
+    "description": "为速度设计的一体化Web框架，构建内容网站与Web应用",
+    "fingerprint": "da6193674d9fc2357d272cf9baff9b0391b2d07be27979ed0555aebffb4759d5",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "ethereum/go-ethereum": {
+    "description": "以太坊协议的Go语言官方实现",
+    "fingerprint": "5069f7be3e867acd39acb871bbf38e00cb8bbb8e19dda854fba266935b978ea3",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "xai-org/grok-1": {
+    "description": "xAI的Grok大模型开源版本",
+    "fingerprint": "d720776a21332d30f0406681dba64acfd060b3619571fbe3a0a1e8c2bc118996",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "Zie619/n8n-workflows": {
+    "description": "收集大量n8n自动化工作流模板，助快速构建自动化任务",
+    "fingerprint": "00d831628351e48ddf62190823fddf2a5cccd41989f742b30993b3b75a2018b1",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "wagoodman/dive": {
+    "description": "探索Docker镜像每层文件系统，发现缩小镜像体积方法的命令行工具",
+    "fingerprint": "2f4d5efd12ae1def80e9d0445e2d0fd72d800a516bde4903b7ac1bd9e662f9e5",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "poteto/hiring-without-whiteboards": {
+    "description": "列出面试流程贴近实际工作的公司，避免白板题",
+    "fingerprint": "5f2d261bf1bd4d5fe3fd2b66136f8f3dccdfa70652bd67eaec3b84e0c61a935c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "go-gitea/gitea": {
+    "description": "极易安装、运行快速的跨平台自建Git服务",
+    "fingerprint": "924310f99c53a2ba2dee15395005980734a0ea1ede820fe1f72d174dffd2bcb9",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "microsoft/VibeVoice": {
+    "description": "微软开源的语音AI前沿框架",
+    "fingerprint": "31f9f72111f21bc10548467ac3925fd1a130998613eb7e1400e24aaedbc94476",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "PowerShell/PowerShell": {
+    "description": "跨平台命令行工具与脚本语言，支持系统管理与自动化",
+    "fingerprint": "5e5f306c24a9074214502c716f66ac19a23fd4dee02b302edf6f7d6f2ccf776f",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "langgenius/dify": {
+    "description": "可视化界面开发AI应用，提供插件与数据集API",
+    "fingerprint": "6825df4cea5432f7fc3d529b97225468322ff404182713c33cbdd2f94eca2e97",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "yeongpin/cursor-free-vip": {
+    "description": "为Cursor编辑器添加增强功能与辅助脚本，提高调试效率",
+    "fingerprint": "fcb7397cbc582bb65dad171eec0a8145cb34a4d93b50858b6f6ba687f81e01b8",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "appwrite/appwrite": {
+    "description": "基于Docker的端到端开发者平台，提供容器化微服务库",
+    "fingerprint": "9e82edde73a1a09848e69370150527cad82bc8198e1ba47baa20f1df30a4eb67",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "shanraisshan/claude-code-best-practice": {
+    "description": "Claude Code最佳实践集合，助你精通使用",
+    "fingerprint": "5e390d5a97e2ebfaa16273de24b24623164c9460131f1abf32f05dc6ea020e84",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:29.627Z"
+  },
+  "charlax/professional-programming": {
+    "description": "面向软件工程师的学习资源合集",
+    "fingerprint": "95bad8f37fd2bff93ccf227fab99334336308fc5ee75f4307dcf87a32fcb50f2",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "All-Hands-AI/OpenHands": {
+    "description": "低代码开发平台，让编码更少、产出更多",
+    "fingerprint": "ad8e8ebd48fc17abda2065d3ab3b35336a988810c3d423cdc11e33336df0a0d2",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "toeverything/AFFiNE": {
+    "description": "类似 Notion 的协同知识库，支持离线与灵活组合",
+    "fingerprint": "15ef8450dd220d7155e5ac7be0119b3246168b04b666fccc018fc1da6da66972",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "makeplane/plane": {
+    "description": "开源项目与任务管理工具，替代 Linear/Jira",
+    "fingerprint": "654fe8ecce8b13f938ebbb01cc405a25a6ce70963d0d216bb5866d8cecb00bda",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "type-challenges/type-challenges": {
+    "description": "在线 TypeScript 类型挑战，提升类型系统理解",
+    "fingerprint": "2e288d7a16512ccb1edd870cc2e2312e4b3ba763535e0949f63b3132812d1ab3",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "apple/container": {
+    "description": "在 Mac 上使用轻量虚拟机运行 Linux 容器",
+    "fingerprint": "d8385a81686e33625e6c0a5c889fd62802427a2e5abc849a84263f6f7eca0e05",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "hashicorp/terraform": {
+    "description": "基础设施即代码工具，声明式管理 API",
+    "fingerprint": "a1ac2070ea8e311292567c8eef8478426256a364fceddd6d6047573c39b2de8e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "slidevjs/slidev": {
+    "description": "面向开发者的演示幻灯片工具",
+    "fingerprint": "1a6cd6cc64f9d3cd29ecc38e9abe204651e05817f770c007d33e0ee03baf0fd7",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "nlohmann/json": {
+    "description": "C++ 的 JSON 解析与生成库",
+    "fingerprint": "9d5898f7dc7eeb03944fcb1baadb64b77ae0289085f780e4e1d64ea1d866e57b",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "NanmiCoder/MediaCrawler": {
+    "description": "爬取小红书、抖音等平台笔记与评论",
+    "fingerprint": "a3851790e51e84164013381c488263b0cf12e7676fc06a11184914ec4e9be460",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "facebookresearch/segment-anything": {
+    "description": "图像分割模型 SAM 的推理代码与权重",
+    "fingerprint": "dca6beca4c9e67bfcb0e6a4396bb3aac3eb0114317301eb9a1e48ef2665340fd",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "alist-org/alist": {
+    "description": "支持多存储的文件列表程序，基于 Gin 和 Solidjs",
+    "fingerprint": "8297c85e3a4836fb7cfe6ecf92515690d6c3d18ecff1cbb924671e55be172dfe",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "laurent22/joplin": {
+    "description": "注重隐私的笔记应用，支持多平台同步",
+    "fingerprint": "a596f51c519bced7ca99f9d285181e7b04aaf13a8ef7db78b35830d552ea3661",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "mudler/LocalAI": {
+    "description": "本地化部署 AI 模型的平台，减少外部依赖",
+    "fingerprint": "503b9473395f004f37f61b326cee5be22a4dac4354a646e5934d1ceb57d18106",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "Asabeneh/30-Days-Of-Python": {
+    "description": "免费零基础的 Python 教程，三十天掌握",
+    "fingerprint": "d6235208394a8be5bff603692adef77bbb95af6bef55d43748c6d2703cecb06b",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "badlogic/pi-mono": {
+    "description": "AI 代理工具包，含编码 CLI 与统一 LLM API",
+    "fingerprint": "1fae85e1d89b24e9e8fc94ce490dff047da2093ec70032b9e41ae1bf0be07eef",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "roboflow/supervision": {
+    "description": "可复用的计算机视觉工具库",
+    "fingerprint": "d3a9a472ed1fc764e4272a3037922e0ae19a81558d66c77a4f406746fb7b0ba2",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "DigitalPlatDev/FreeDomain": {
+    "description": "提供免费域名的服务",
+    "fingerprint": "32f1e8c8d94454413bb056eb846266aaeaea2cdee6e46cc1daa3c24c19cad467",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:33.685Z"
+  },
+  "OpenBB-finance/OpenBB": {
+    "description": "面向所有人的投资研究平台",
+    "fingerprint": "8239664638a09cfd58ce219c17b65c9121ede83b30bc32191578c119f803b3fc",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "metabase/metabase": {
+    "description": "开源商业智能与数据可视化工具",
+    "fingerprint": "35e3bdf6a24c5c1f33cdc157549ce3b6150bb62006330b407ef1f2d80e26bd6c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "hpcaitech/ColossalAI": {
+    "description": "高效分布式AI训练系统，降低大模型成本",
+    "fingerprint": "e07c465eff7cda2127a17343dd17059a8767bd44d731c422f63e31b4956d8591",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "logspace-ai/langflow": {
+    "description": "基于LangChain的可视化流程构建UI",
+    "fingerprint": "65fc1d56789c3d739d9c5668253b17ede8ede05f54608768e5e9e86451da338c",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "jellyfin/jellyfin": {
+    "description": "自由软件媒体系统服务器后端与API",
+    "fingerprint": "a247e9127fdb4ebbebc47f4134470e02845d93657a9f017d1a82168c331d8b8d",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "dbeaver/dbeaver": {
+    "description": "支持JDBC数据库的桌面管理工具",
+    "fingerprint": "ccd6c22e17213772f81a4de091a672a1b1afac9a09f5d6a61cc20098f811dbd9",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "mendableai/firecrawl": {
+    "description": "高效抓取网页数据的智能爬虫",
+    "fingerprint": "0085705c8df6654859b18caafb4ac05bba1135725c6a047a8ad754e52926f3ad",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "DS4SD/docling": {
+    "description": "用AI理解技术文档的文档处理工具",
+    "fingerprint": "f970c6fa1ac611e7064b8b07d3b9d499f0ec4df3a4c74dceeaabb67d3f1c39d5",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "modelcontextprotocol/servers": {
+    "description": "模型上下文协议的服务器端实现",
+    "fingerprint": "97bcda2899266efde89a9c17eeab74749a5c9e9295d40dbd107a9a96b497f3b2",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "1c7/chinese-independent-developer": {
+    "description": "中国独立开发者项目列表",
+    "fingerprint": "eb2ce296b1138eb1a679eb8465b81e3f5c866c90ee1f1ff89bed7ec74e1e4299",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "expo/expo": {
+    "description": "构建Android、iOS和Web应用的开源框架",
+    "fingerprint": "95169311ba6a345f2263baedba5d26fec2203c3d25badec277971c5d191915a0",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "acmesh-official/acme.sh": {
+    "description": "纯Shell脚本实现的ACME客户端",
+    "fingerprint": "1802cd093980030761a9e765a473cb795330ef4389778fa34201648a9e933446",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "block/goose": {
+    "description": "可扩展AI代理，安装执行编辑测试",
+    "fingerprint": "62e7550911612c13bd9a8ddbde1d54ee5536f8da0d53a621a214a37264b7583a",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "google-gemini/gemini-cli": {
+    "description": "将Gemini AI带入终端的命令行代理",
+    "fingerprint": "eaca01aa8ba85de4899e91351515f2bc499bc360c4db7e0fade8e8f368d5dd1a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "coollabsio/coolify": {
+    "description": "自托管应用平台，替代Heroku和Netlify",
+    "fingerprint": "910cc5d4251835367f1be35c30d128a2585b052a91b56f150fe657e57429a570",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "NaiboWang/EasySpider": {
+    "description": "无需代码的可视化网页爬虫工具",
+    "fingerprint": "e29f273778080c2567dde07ae360de78f24fc6e38c27b89e2afa607cebf89a97",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "jeecgboot/jeecg-boot": {
+    "description": "企业级AI低代码平台，一句话生成系统",
+    "fingerprint": "77f14b24e9e99541c2fb30298ba0d8969db61c4068caa5525d28326fe3a827d9",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "OpenBB-finance/OpenBBTerminal": {
+    "description": "高颜值命令行金融市场分析工具",
+    "fingerprint": "ec5e4ec49b96248eade32723a6beb0493e16af3faad731362bd5bfba9ed42e15",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "karanpratapsingh/system-design": {
+    "description": "系统设计知识库，含图示与面试指南",
+    "fingerprint": "14eac923b2f9d02210f3de6102a5252aef6fbae1661338ab05a9fd8be9f764b4",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:37.802Z"
+  },
+  "unclecode/crawl4ai": {
+    "description": "面向AI的开源网页爬虫库",
+    "fingerprint": "c1628c84c33b84aaf1e3b09f6b5533cef4f35505c243501c072091bbf7d1239b",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "mingrammer/diagrams": {
+    "description": "用Python代码绘制系统架构图",
+    "fingerprint": "1f05d2b8a3c892d3661ea253a32cf0b579044251d75439c9174e3ce4c0de55da",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "tw93/Pake": {
+    "description": "将网页快速打包成MacApp的工具",
+    "fingerprint": "30ea2739a29242b433737db6b9f5f7bfb7eeebb7ab2adc0664399345d3a14f7a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "ChrisTitusTech/winutil": {
+    "description": "Windows系统实用工具集",
+    "fingerprint": "172aed44260972daec85f0abbd2f344df3bb058b8437a12970c2c58e918821db",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "fastlane/fastlane": {
+    "description": "iOS和Android自动化构建工具",
+    "fingerprint": "83a1df94ed274d295305aa117154a66e113cf1df6d3b52b30f404477a230216b",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "dkhamsing/open-source-ios-apps": {
+    "description": "开源iOS应用列表",
+    "fingerprint": "2635583ee72592ca27d22f9331d85b57be3f108dead327ae39a9fdae5b67c79f",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "AykutSarac/jsoncrack.com": {
+    "description": "JSON数据可视化脑图工具",
+    "fingerprint": "840a2991238225904e76ee03be3743a589c6b74fde0f0dcc79efc6c731c72dc4",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "bigskysoftware/htmx": {
+    "description": "在HTML中直接使用AJAX等特性的前端工具",
+    "fingerprint": "e646b24b7f0bf202dc6d93a7dac9c4a85cf6a2d51732b3afc0a38f0b7a5d05e1",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "hiroi-sora/Umi-OCR": {
+    "description": "免费开源的离线OCR软件",
+    "fingerprint": "d664f21030b808c6d72ca20b9825ce695fba9288f34c93b52fe742a21509335c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "typst/typst": {
+    "description": "基于标记的排版系统",
+    "fingerprint": "1f17614c66c711d8ea4a638845d43088ca3c3beb400e455657d0b2277fbc74b2",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "dani-garcia/vaultwarden": {
+    "description": "Rust编写的Bitwarden兼容服务器",
+    "fingerprint": "b0aeb78c78fb534858ae9980a69a052d4d3f5b7808a86d515492b7210f128eeb",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "deepspeedai/DeepSpeed": {
+    "description": "深度学习优化库，简化分布式训练",
+    "fingerprint": "d75d414ddd47242de19b0ea8ca7890bc472727094d6d6a8211497abeba192d20",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "menloresearch/jan": {
+    "description": "支持本地部署的多模态AI助手平台",
+    "fingerprint": "1448719210f26c2e3460e57dfe7d8d931a64f4781b5376971e65e7af5cabe99a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "yuzu-emu/yuzu": {
+    "description": "任天堂Switch模拟器",
+    "fingerprint": "12d21cb4caf4d81cb5d5fbcb8c1f7008b26faaf25287520868d266581a7e7cb7",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "logseq/logseq": {
+    "description": "本地优先的开源笔记知识管理工具",
+    "fingerprint": "ede9aaaa97e772838aedbff4318672be3a0832120e5d48ca026cb5311a5ac0e3",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "astral-sh/ruff": {
+    "description": "用Rust编写的极速Python检查格式化工具",
+    "fingerprint": "56c50c5e54906a06dd96dde7aec70de8dcabb4bbddfc1cec0b0c9f2e9515fbed",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "psf/black": {
+    "description": "无妥协的Python代码格式化工具",
+    "fingerprint": "a18e97ded7815c8c62b3712a252730794a22e597729600f6f118474a0a9381de",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "Mintplex-Labs/anything-llm": {
+    "description": "支持多文档的通用语言模型应用",
+    "fingerprint": "9cf90b47171b0b1c31056a6ee4ce9ed53752a65af30c72753a7c2a4bb8364cd9",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "dylanaraps/pure-bash-bible": {
+    "description": "收录可直接复用的Bash函数集合",
+    "fingerprint": "5dfb7a46cfc1a1cf0ecc427577d9294946b09e733502562b0f5bd664dbceb455",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:41.273Z"
+  },
+  "HKUDS/CLI-Anything": {
+    "description": "让所有软件支持智能体操作的命令行工具",
+    "fingerprint": "9665fd516bd84a3453b98d9b0126efec0786782c2cd3091e1ca115fecd4c54b0",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "siyuan-note/siyuan": {
+    "description": "本地优先的个人知识管理工具，支持块级引用与思维导图",
+    "fingerprint": "e216a4b4d8fb69f902344a67dc3dbdc8387a415a1d809c2f37589fdc19da98a1",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "calcom/cal.com": {
+    "description": "开源日程安排基础设施，支持嵌入与定制",
+    "fingerprint": "971d355aa5803cab47f4e96aa337ae4260330bc983de20aad7f374012625ae0f",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "KRTirtho/spotube": {
+    "description": "无需会员的跨平台开源 Spotify 客户端",
+    "fingerprint": "f06492c48524da6122cb18a7d482772dbba78494f7488ac72eebe07954b20eec",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "pittcsc/Summer2023-Internships": {
+    "description": "汇总 2023 与 2024 年技术实习机会的列表",
+    "fingerprint": "16027732d9252e30d4f97505db762e85b0b37fa7efcdabb610c3a54c45053eb7",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "exo-explore/exo": {
+    "description": "模块化可扩展的探索与实验平台",
+    "fingerprint": "4acfa248f5753e36278db9d9af8821e41c00e8faeeaaaef7bd1ff8f92671ad60",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "colinhacks/zod": {
+    "description": "TypeScript 优先的 schema 声明与校验库",
+    "fingerprint": "2f3e5f71e7ea1caaa26e4c3109d05f5a81eed09b8479e0e34786ff41b9cfce1f",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "apache/airflow": {
+    "description": "带 Web 界面的定时任务管理与调度平台",
+    "fingerprint": "4a464a78e6e1e15cec6d20f0492aa771a5c1dce1944200787c1e047f3915bb23",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "jesseduffield/lazydocker": {
+    "description": "终端 UI 的 Docker 管理工具",
+    "fingerprint": "3ad4de5b0b07d2305d2e8b08e4ed44e677c310e2d6d0896f1213c95a9f310938",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "RVC-Boss/GPT-SoVITS": {
+    "description": "少样本语音克隆的文本转语音工具",
+    "fingerprint": "c60123732b93d3d350454aa878697ca2b86fff257d3b420ada440efd59366180",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "tldraw/tldraw": {
+    "description": "支持协作的在线绘图白板工具",
+    "fingerprint": "10a6c02359db79ed3da41be22b5865b296442cdcb3c570fd135f5e7b190aa970",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "helix-editor/helix": {
+    "description": "Rust 编写的后现代模态文本编辑器",
+    "fingerprint": "dd15af7a05dfac6c1a33967529bc2437ca2adf849c431cdb7a67fca3df5ac54b",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "byoungd/English-level-up-tips": {
+    "description": "系统提升英语水平的学习指南",
+    "fingerprint": "7ace6356250f99ebc87239012f60917f28702df4fec880a1a0a9e939ba0d8e5e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "zhayujie/chatgpt-on-wechat": {
+    "description": "基于大模型的多平台微信聊天机器人",
+    "fingerprint": "f73449785301c78c874bf1de8469b372cf4b96ab65539280ca02a187dba0e96b",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "KeygraphHQ/shannon": {
+    "description": "自主白盒 AI Web 应用渗透测试工具",
+    "fingerprint": "2cd32808097ced11cba43bf7260ef0cc23c68d26e44aaeb75e8705d868756e7e",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "DataExpert-io/data-engineer-handbook": {
+    "description": "现代数据工程概念与实战参考手册",
+    "fingerprint": "d5edf1dc4985b1b40b8cedb233f02dc4075dc1fb8872e0bd7d92aad4c9d25ffc",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "mindsdb/mindsdb": {
+    "description": "用 SQL 查询机器学习预测的数据库",
+    "fingerprint": "a0ee08f9398607cdb4167e7282581cc1dd84424927570a6f1a503b21ee8138d9",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "danielmiessler/Fabric": {
+    "description": "可组合模式驱动的 AI 信息处理框架",
+    "fingerprint": "bc11031bcf3e4606ce3ec8131b3ac000a9a4bae5ae9790b2c08283409f3ab443",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "lapce/lapce": {
+    "description": "Rust 编写的轻快代码编辑器，支持 LSP 与远程开发",
+    "fingerprint": "3452cb4b083f480188adf37f97872247131a1db717daaa6344dbda5a9800ca6e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "termux/termux-app": {
+    "description": "Android 上的终端模拟器，提供 Linux 环境",
+    "fingerprint": "85d8d34515b8cc7fab05f2cf2f35dfae85592277f9d70c9eb215ef6560dd91c1",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:44.590Z"
+  },
+  "bevyengine/bevy": {
+    "description": "Rust 编写的数据驱动游戏引擎，用于开发 2D 和 3D 游戏",
+    "fingerprint": "b3d7a4c7415ac62e2e9d02097ee1642e7168cb1c26a5e7786b4c257f1e538b8b",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "sharkdp/fd": {
+    "description": "find 命令的简单快速替代品",
+    "fingerprint": "8e7b59bb09c7758ffbde21c05c57015d5407a54f1fe7edf52c77cb7fb55fc716",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "tw93/Mole": {
+    "description": "深度清理和优化 Mac 的工具",
+    "fingerprint": "70b62a527306a09065cb7bf60bb756438184fbdc485e2e6a7a28f74d2b834bbe",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "bradtraversy/50projects50days": {
+    "description": "50 个 HTML+CSS+JS 前端小项目集合",
+    "fingerprint": "59434554e77d164491b6ab8b8864fdcf0c2e3cf99cb198e8bf3b4ae8918643a7",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "zhongyang219/TrafficMonitor": {
+    "description": "Windows 平台网速监控悬浮窗，显示网速、CPU 和内存利用率",
+    "fingerprint": "fe3036961ffecc56e032a538578a31696ac247e392a2a0325b117763a033aa13",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "lllyasviel/Fooocus": {
+    "description": "专注于提示词和图像生成的 AI 绘画工具",
+    "fingerprint": "3cbd98a87f319c4599d0abb10ab594b99f6bd4915f66cd4c8f5ac0048459d569",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "Hmbown/DeepSeek-TUI": {
+    "description": "在终端中运行的 DeepSeek 模型编码代理",
+    "fingerprint": "ac1d8e58432fbd287101fda471a5d17387eb635409fc723e16a769d358b1c465",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "StanGirard/quivr": {
+    "description": "用于将生成式 AI 集成到应用中的 RAG 框架",
+    "fingerprint": "6fbab7b4274946a3ef6c98f2e8cba5a250378744741b5c9073f9b23ac4659ff6",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "charmbracelet/bubbletea": {
+    "description": "用于构建复杂交互终端应用的 TUI 框架",
+    "fingerprint": "ff6ce9d4f7cf3ea69b700ebd9a38a0ce014df4ec1d711aa7e44cdc18ac1017cf",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "LC044/WeChatMsg": {
+    "description": "提取微信聊天记录并导出为 HTML、Word、CSV 等格式",
+    "fingerprint": "20f0efb0de1ce393e3ca621db9d1e496c1d06473f6fc6ab175aa09299568bcb9",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "docker/awesome-compose": {
+    "description": "丰富的 Docker Compose 示例集合",
+    "fingerprint": "61229c02c4f06df1c92a799aac796889d01d4c5ff2cecfc1f900fae8568c357f",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "novuhq/novu": {
+    "description": "开源通知基础设施，支持多渠道发送通知",
+    "fingerprint": "53e99ee9ae02cfb6f8ed6f89909211537ebb02dfc150cf776732b34f76093e3f",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "odoo/odoo": {
+    "description": "开源企业应用套件，用于业务增长",
+    "fingerprint": "3f43bf33082b2faf92a24e4dd8fb68965e6ff1082c4eb9f16a8040bf5d575d61",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "CorentinTh/it-tools": {
+    "description": "面向开发者的在线工具集，提供便捷工具",
+    "fingerprint": "aad6c86501b4b741105e8ba468bddfccd25fcfcbaf24869535fc41c505338951",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "Ryujinx/Ryujinx": {
+    "description": "用 C 编写的任天堂 Switch 模拟器",
+    "fingerprint": "298d3fa857c8565bc748ad4db904ab8fa364aee97c23753674c86a4a06dc2cca",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "suno-ai/bark": {
+    "description": "文本提示生成音频的生成式音频模型",
+    "fingerprint": "53329f44990423b93e31515c63992cb7ee983b6b057450f331a18b57716169ae",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "tmux/tmux": {
+    "description": "终端复用工具，提高工作效率",
+    "fingerprint": "560321725c1bd80db0015968a5c28e38c60ecdd0d622553f1e49b5311bf00540",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:49.627Z"
+  },
+  "typeorm/typeorm": {
+    "description": "TypeScript 与 JavaScript 的 ORM，支持多种数据库",
+    "fingerprint": "af22c08c2e7223cf4cc1aecf8f842a1522d56078415939d6080da66e2f1220b7",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "ToolJet/ToolJet": {
+    "description": "低代码平台，拖拽构建业务应用并连接数据源",
+    "fingerprint": "6a0e6748a516fbc2399a95f8b72b8340e34f105635c8d432c8260d87a2fe5228",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "microsoft/BitNet": {
+    "description": "1 比特大语言模型的官方推理框架",
+    "fingerprint": "fbc6ca49cce137ffe66cdb3ebd7e644286b495dd5311949ab706360191ba37ad",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "appsmithorg/appsmith": {
+    "description": "开源低代码平台，快速搭建管理后台与工具",
+    "fingerprint": "63c4b2ef12ffc6b40ae2f641d1bc4c250914d4ca5fcf637fda0b26144b7bb256",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "code-yeongyu/oh-my-opencode": {
+    "description": "内置电池的编码代理，自动化编程",
+    "fingerprint": "3b7181bbbb6096c51f55c0af57e7390d24e7012d6ad9d8c43440f117954af3bc",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "coqui-ai/TTS": {
+    "description": "高级文本到语音生成库",
+    "fingerprint": "c4464263d6fc536d007ac5bbaa08665f373d9d809e7dd37725b74b4fd22df408",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "kilimchoi/engineering-blogs": {
+    "description": "汇集全球领先公司及技术领袖的工程博客",
+    "fingerprint": "fd78fc28e0e92f02fb2fdef1311cca426817ca61be079c517a49abedbe400cb9",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "lm-sys/FastChat": {
+    "description": "大语言模型训练、服务与评估的开放平台",
+    "fingerprint": "fe378439c360055a5e0a035b4434494b29a5ba8ddf701baeea610049b9b97e24",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "outline/outline": {
+    "description": "开源协作式文档与团队知识库",
+    "fingerprint": "9795b04d80b5aafc16fc467cd0d5e1128bee404da83f417c7659683c40206aa7",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "remotion-dev/remotion": {
+    "description": "用 React 以编程方式制作视频",
+    "fingerprint": "347c21586b6136147e7bd8acfd5958826eedc873ca74f0c7e92940a986d132f0",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "DioxusLabs/dioxus": {
+    "description": "Rust 声明式跨平台前端框架，类 React",
+    "fingerprint": "eb097970a1e34ffd8b9086514d6fcadf6cc17c752608dcae42881c19ffcf5b35",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "cline/cline": {
+    "description": "IDE 中需许可的自主编码代理",
+    "fingerprint": "e038cc4595c264d8f094ca390e98c987e4e547bf687258a4bf5edd03c8735f0a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "freqtrade/freqtrade": {
+    "description": "Python 开源加密交易机器人，支持回测",
+    "fingerprint": "2716f52c354a93b741d7898ee6b688a08a2fb7cedf6882aefaa7c7df4f1fec5b",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "huiyadanli/RevokeMsgPatcher": {
+    "description": "Windows 下微信、QQ 防撤回工具",
+    "fingerprint": "5d86bb227e83668d4769b01ee016c5a9a3b767630bf464f1ed3183688a47286a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "kuchin/awesome-cto": {
+    "description": "CTO 与架构师学习资源合集",
+    "fingerprint": "4245e30552c10ba8750f796cbeae3627e17b9e99d958e42df7a96869a92ec933",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "karpathy/nanoGPT": {
+    "description": "训练微调中型 GPT 的最简最快仓库",
+    "fingerprint": "1348e1d148ae3541494d514af4c933f94fd06c40c87e70d82abeb7a163662845",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "lukasz-madon/awesome-remote-job": {
+    "description": "远程工作机会与资源精选列表",
+    "fingerprint": "2b56033da366fd224f8a7c45298385caa6e435ed12d02807eb0a61f399818197",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "halo-dev/halo": {
+    "description": "简洁优雅的 Java 博客系统",
+    "fingerprint": "e0152df3645d4048852138c807eb5948e38cc8454bd3c039f7b15761493d33d8",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "chatanywhere/GPT_API_free": {
+    "description": "提供免费 GPT API 接口",
+    "fingerprint": "5c16a4982d0f19a5f8c5987f20de61f9a91d4abaebfbdda85131966518e6eb85",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "deepseek-ai/awesome-deepseek-integration": {
+    "description": "DeepSeek 官方生态集成工具集合",
+    "fingerprint": "dece6e1dcc73d379274f0d3d3ea4c151be8ae931a7c6b399cb2341d78e176e12",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:53.174Z"
+  },
+  "microsoft/autogen": {
+    "description": "多代理对话框架，用于构建LLM应用",
+    "fingerprint": "be86f8200fd3e1b87ef54714c0097bfd80586f8cbb51a46d54558eabf9c10dd1",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "geekan/HowToLiveLonger": {
+    "description": "汇集健康生活方式与科学建议的长寿指南",
+    "fingerprint": "a494bb4816553c2d9430058d297a363e14bd50c596b4e098b01b6aee0326684d",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "jingyaogong/minimind": {
+    "description": "2小时从零训练26M参数GPT模型",
+    "fingerprint": "fc0700f95f9d895efe6cdf9af652028d966cc87fb33fb6fd51d7a9514ccfb5b0",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "umami-software/umami": {
+    "description": "注重隐私的现代网站分析替代方案",
+    "fingerprint": "2ca4baf9671582ea94b8af70b6d5db4183d859bf205141c79820a9edcb2ef04b",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "xyflow/xyflow": {
+    "description": "构建基于节点的编辑器和交互式图表的引擎",
+    "fingerprint": "da6e589cc74358e6f0e19ac89e4457ae0395a7dde1989ac2996df2ffc4c216ec",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "facebookresearch/detectron2": {
+    "description": "用于对象检测与分割的视觉识别平台",
+    "fingerprint": "3f8ca45c4c4a9a400b0236e30a0d9b067f5745585e91fd2ec2bf02194527542a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "microsoft/Data-Science-For-Beginners": {
+    "description": "面向初学者的数据科学免费课程",
+    "fingerprint": "b15e1652f266e04e05744c2cc471f071c81a35742f54c003b1a7423d982dc594",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "schollz/croc": {
+    "description": "端到端加密的跨平台安全文件传输工具",
+    "fingerprint": "57234b6df81e4aa0a282503a24a62207d7126392df631f7ae0f45206b0a2f083",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "CMU-Perceptual-Computing-Lab/openpose": {
+    "description": "多人实时人体姿态与手指跟踪库",
+    "fingerprint": "cad6971d69599adf63ec484bf731d597a0fc7d50451520ab1487433c565bcc9d",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "gradio-app/gradio": {
+    "description": "用Python快速创建机器学习演示界面",
+    "fingerprint": "916ca8117b261364481d91022e11d803228cad798928065890f66ece37a224b7",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "ashishps1/awesome-system-design-resources": {
+    "description": "系统设计学习资料与案例资源合集",
+    "fingerprint": "6b837c694a5305ff95148aa94a1ef677bd19fc16180355fa972225206c4103d9",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "multica-ai/multica": {
+    "description": "开源托管代理平台，将编码代理转为团队成员",
+    "fingerprint": "644aa18edb24851f81a1614c27eabfe29410dff19843f3a8432b30a8cc6f504d",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "FlowiseAI/Flowise": {
+    "description": "拖放式UI构建定制化LLM流程",
+    "fingerprint": "e42be8e1ba0e3d8c704eef3da337877d7e6efdba9eafa2c8558d65e65316a02a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "ManimCommunity/manim": {
+    "description": "用Python创建数学动画的框架",
+    "fingerprint": "419dc6f2c511f4adda145cef66aa7fe5e73df2b238f738627cdf819c6a477e0c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "bytedance/UI-TARS-desktop": {
+    "description": "连接AI模型与代理基础设施的多模态桌面智能体",
+    "fingerprint": "c7483c06a8bdcea409e736e532a3a9e8c3391c169d78ccdf03603d8ebebaf143",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "spacedriveapp/spacedrive": {
+    "description": "基于虚拟分布式文件系统的跨平台文件管理工具",
+    "fingerprint": "cdd3c26c7bef0314caed23bb16a287c94e24451bdd9afddc71c9751952e74cf0",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "dockur/windows": {
+    "description": "在Docker容器中运行Windows系统",
+    "fingerprint": "71a205d731c108409f256dcf9d79abfa9ca91fc5296a2828de28cff7619a9c48",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "karpathy/LLM101n": {
+    "description": "构建Storyteller AI大语言模型的教程",
+    "fingerprint": "c66725f33a255dacdeef117cd4c5e34555093f0c9395db72774ff9428d8ce9bb",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "nextcloud/server": {
+    "description": "自托管云存储与协作平台服务器",
+    "fingerprint": "f0723ff04c5829860a3d3f92da2358ad9d82db91704cd8fc5c99426a1d302e03",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:56.136Z"
+  },
+  "upscayl/upscayl": {
+    "description": "免费开源 AI 图像升级器，放大增强低分辨率图像",
+    "fingerprint": "b149d177cc7f5f616821103521c226c120179714e205021a54a45ed3f6b95b51",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "HeyPuter/puter": {
+    "description": "开源 AI 助手，可交互问答并提供帮助建议",
+    "fingerprint": "9307a4ab1335616fd37f6a3981716bb9b9309178c36374a9f4e0e570016d6046",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "cloudcommunity/Free-Certifications": {
+    "description": "免费在线课程与认证资源策划列表",
+    "fingerprint": "6d66f7519ad5f09518015613e6ccb858ae50f9f3fe7c5e7e41e275b279ca62ca",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "juanfont/headscale": {
+    "description": "Tailscale 控制服务器的开源自托管实现",
+    "fingerprint": "f26ef182c598949269b8767ce1b9905c7861d50bc2593842429e72297d7a6fbd",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "666ghj/BettaFish": {
+    "description": "多智能体舆情分析系统，自动分析社媒评论",
+    "fingerprint": "220a3b066b92db69d77438c915a6238836298b4a30839c659fcb9cd920dbce88",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "vadimdemedes/ink": {
+    "description": "用 React 构建交互式命令行界面的库",
+    "fingerprint": "269a9581219e422b38504dd6971200e9c5bdda9ba7df2fc8358f934e2dcd5443",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "ehang-io/nps": {
+    "description": "轻量级内网穿透代理服务器，支持图形化管理",
+    "fingerprint": "2fa417b67aa1e11c66971f5ca50ba96ecd77bed9a982113d6cb1c4c53e2b7458",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "refinedev/refine": {
+    "description": "React 框架，用于构建内部工具和管理面板",
+    "fingerprint": "8ad310bf7a18863523691350c150a5c920ac36c53318b4310a15feebae3e456d",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "pcottle/learnGitBranching": {
+    "description": "Git 命令可视化学习工具，含关卡挑战",
+    "fingerprint": "30a6005e367ebe12d667d3efd164fc49cd2a2002f0a5d5940223c379d0f67c5b",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "anthropics/prompt-eng-interactive-tutorial": {
+    "description": "Anthropic 交互式提示工程教程",
+    "fingerprint": "569b56a48fc743d94b6aec7fdcc17f619b9a556e5cf8230ed17be78ff6effce3",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "google/langextract": {
+    "description": "用 LLM 从非结构化文本提取结构化信息的库",
+    "fingerprint": "d6d0f037340229706020c073a739aeb287c7ba042ebc8545cf594858b6529624",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "Lordog/dive-into-llms": {
+    "description": "动手学大模型系列编程实践教程",
+    "fingerprint": "26437581832fb40619218507a3a65b596cf91d1a283cd71776ddb8807864959d",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "directus/directus": {
+    "description": "将数据库转为无头 CMS 的灵活后端",
+    "fingerprint": "705f258b5c7c6003de5f2d853f0d4c6b5dfdbb5d79afcb81ed98939568f64ee0",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "moeru-ai/airi": {
+    "description": "开源虚拟助手框架，支持多模态交互",
+    "fingerprint": "2832880789f75179a0c3b41c2db479e28e54d6052016d1a97ef2270d44276eee",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "hyprwm/Hyprland": {
+    "description": "基于 Wayland 的动态平铺窗口管理器",
+    "fingerprint": "67460930f57df0ec4215284acb839dc9a78ed352502f3ebcb2de73848ce51104",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "milvus-io/milvus": {
+    "description": "开源向量相似性搜索引擎，支持 GPU 加速",
+    "fingerprint": "32ae8b209c75773589d9c757bb40a24eb2f4f6078d4c130e54d4543d1bd995f8",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "MonitorControl/MonitorControl": {
+    "description": "macOS 外接显示器亮度音量控制工具",
+    "fingerprint": "ffeec7c0b6de5c47f9ee23fb1e77f884b3c89d4fed6946f1d812039fd5fd5a00",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "9001/copyparty": {
+    "description": "跨平台轻量文件共享服务器，支持浏览器访问",
+    "fingerprint": "e4817f1c411af5782496d33e6215a8d5156fc2c2105006c962888ec0c1451307",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:54:59.025Z"
+  },
+  "hiyouga/LLaMA-Factory": {
+    "description": "支持多种模型的LLM微调框架",
+    "fingerprint": "580d568fac3e9349fd6e7dc7730f8a63961cae65c703d04ac1111eb00387f0b1",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "payloadcms/payload": {
+    "description": "TypeScript编写的无头CMS系统",
+    "fingerprint": "205e02c8dfd58a2ad1d180a8e6a34b1c1ce7294319bd73b171c970073bf36caa",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "Pythagora-io/gpt-pilot": {
+    "description": "首个真正的AI开发者工具",
+    "fingerprint": "83f25231b7f75c5282ebac3e4e9bd21e6513a5091bc8be5a0c940c9be046f4d3",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "iawia002/lux": {
+    "description": "支持多平台视频下载的命令行工具",
+    "fingerprint": "86dee55f8cb77e78f6204bb4428c5eea794c9ed1089cd10644291f1b2edc6d06",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "ajeetdsouza/zoxide": {
+    "description": "基于使用频率的智能目录跳转工具",
+    "fingerprint": "a436155ca27bdef6ff35297ca146eec37d1a6b13151ed83bf610e1aa052c866d",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "firecracker-microvm/firecracker": {
+    "description": "面向无服务器计算的安全快速微虚拟机",
+    "fingerprint": "54888db34a7ed05b1af76aff9a762e68a95e9b71fb61fb2e3e329977c4de5d1d",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "tokio-rs/tokio": {
+    "description": "Rust异步I/O运行时，支持高性能网络服务",
+    "fingerprint": "da282a306ea6697e7857cea64e20c675a9d514a25dcf1f65d07d1827e086660c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "jaywcjlove/linux-command": {
+    "description": "Linux命令大全搜索工具",
+    "fingerprint": "243205afe79d29879aca4d973b01616a77c11b43fba854e9bee4c0c2c6c84988",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "OpenBMB/ChatDev": {
+    "description": "多智能体协作的AI虚拟软件公司",
+    "fingerprint": "7e82ee766a50aa490a22b6d3b33dce71e7870b67dbc0a097c0629e0b60fcb9f0",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "go-skynet/LocalAI": {
+    "description": "本地运行LLM的OpenAI替代品",
+    "fingerprint": "284c4bc566a0b6faa78e37632702cee84248e0502953c72df1d49bdec34167ae",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "TeamNewPipe/NewPipe": {
+    "description": "Android自由轻量级流媒体前端",
+    "fingerprint": "de9043c4262f973a982a36c81a81a2072e968af6329fd7f7b1750b216eebba36",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "SerenityOS/serenity": {
+    "description": "开源操作系统SerenityOS",
+    "fingerprint": "3b1d7a1af6252b1b550bdddc7cbae215eeee3cf6c2891d3a5e3956ccd4bfa37e",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "mattermost/mattermost-server": {
+    "description": "Go语言开发的团队通讯服务",
+    "fingerprint": "7f5e84dabf95fabf25f148afd207630e29e42656bb9f3f4a470d48d3b9d7269f",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "th-ch/youtube-music": {
+    "description": "YouTube Music桌面客户端扩展",
+    "fingerprint": "ac621d5b9213c97c6a4bd34e17fc3730ecea64084ef39d2dc515534a0b3825ff",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "patchy631/ai-engineering-hub": {
+    "description": "系统化AI工程知识库",
+    "fingerprint": "80fe6762e6b671f84c11c9c75f5b8ebfd2585f3ce5d2308483f85a5c3fb3c194",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "refined-github/refined-github": {
+    "description": "增强GitHub功能的浏览器插件",
+    "fingerprint": "f53777b8a665ce08996e7f80414ce0824c77445dc35497ba5a851822e4152d13",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "blakeblackshear/frigate": {
+    "description": "基于AI的实时视频监控系统",
+    "fingerprint": "c6107d8fc1b8e4f8f8756d1e3038c1fb4909af3fcd1cb0495e5a789cf67184fe",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "valinet/ExplorerPatcher": {
+    "description": "自定义Windows 11开始菜单样式工具",
+    "fingerprint": "f77661ec2864acb8d51722b40aee89d2ff76b2d3d96433fd82502b65a3d3c241",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "RSSNext/Folo": {
+    "description": "内置大模型处理的内容订阅工具",
+    "fingerprint": "08630163784640845878a97e842794aaee2379ac7591e9b9c32512186844ebbf",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "tinyhumansai/openhuman": {
+    "description": "个人AI超级智能助手",
+    "fingerprint": "813666bc338c882213029e67fe57d33d4d7f5718753248e34030ab5a47b378f4",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:03.447Z"
+  },
+  "myshell-ai/OpenVoice": {
+    "description": "多语言即时语音克隆AI工具，支持风格与情感控制",
+    "fingerprint": "1ebb9bb06a5af46b24ed46a5e5bc0ed32e3138b64038596c464bb48f7ae17205",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "GyulyVGC/sniffnet": {
+    "description": "Rust编写的跨平台网络流量监控与可视化工具",
+    "fingerprint": "6809e52dd9ed22f168fe7480a0cb0957dfa854dabfa4d5ece2cf34d4e409e98c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "pbatard/rufus": {
+    "description": "可靠的USB格式化与启动盘制作工具",
+    "fingerprint": "d744fb83d22cde31cd931205a34db100d34e0f3b673ea7085d38a0a582946bbf",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "mli/paper-reading": {
+    "description": "深度学习经典与前沿论文精读视频集合",
+    "fingerprint": "bcb1ada2a66fec8c83667fed0752f86c362e11c324a53674f48b9b677d229bc2",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "lensterxyz/lenster": {
+    "description": "基于Lens协议的去中心化社交应用",
+    "fingerprint": "8019c61081412686a3a6d9e9f21ca48d0e48202c34b94e127697e18d8cd4f43f",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "aquasecurity/trivy": {
+    "description": "容器、Kubernetes等漏洞与配置扫描工具",
+    "fingerprint": "10a1a083c295a91f83ffaf04a5e0b160eaa8404108d4436a224b3984c21da052",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "siddharthvaddem/openscreen": {
+    "description": "开源免费屏幕录制演示工具，无水印",
+    "fingerprint": "3367f74432598b340f710e484eb7e646f021f6844ceb47859ac9836edf934788",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "usebruno/bruno": {
+    "description": "开源API探索与测试IDE，Postman替代品",
+    "fingerprint": "a0576f542459a863a71d7d5cc10d9f43518f8fe1320f0b8447a920474bcacf20",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "google/jax": {
+    "description": "Python+NumPy可组合变换，支持自动微分与JIT",
+    "fingerprint": "56889ec86bb04ac55b3e8221eac54c8b5697516dfeb075647a69dcc2b85f3229",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "google/comprehensive-rust": {
+    "description": "Google出品的全面Rust编程教程",
+    "fingerprint": "f1dc8952c8453d79cc3e854885d38d97386006f928f4a50eeb16ef48fc72bb75",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "exelban/stats": {
+    "description": "macOS菜单栏系统监控工具，支持多语言",
+    "fingerprint": "14a8ad253a1e82e2031f8078e32881574a5b76b60da177793465899df7fd5bda",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "debauchee/barrier": {
+    "description": "跨平台共享一套键鼠控制多台电脑",
+    "fingerprint": "01f0e5dde3f799c85a1e8aff430234e1f037841002e6746c8e0c1120173481fe",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "dokku/dokku": {
+    "description": "Docker驱动的迷你PaaS，管理应用生命周期",
+    "fingerprint": "e558bbbc101488740e876acca20ae84175d68a6420fb84f42f44540985f2f20d",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "TabbyML/tabby": {
+    "description": "自托管AI编码助手，提供代码建议与补全",
+    "fingerprint": "1ca9a1f3d6b6b2b7244de4d43e944e305e17e75df8170523b5f7d01e4a837b59",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "google-research/tuning_playbook": {
+    "description": "机器学习模型调优的实用指南",
+    "fingerprint": "93dcc9b51a1ab33a79a17015fabe8ac23c4be0cfcde66117962a6fe27848e610",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "stedolan/jq": {
+    "description": "命令行JSON处理器，用于解析与转换",
+    "fingerprint": "21589668eb3bff838ceab915e821b92d198f80ecd85e940498f66d1deb72366b",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "VikParuchuri/marker": {
+    "description": "将PDF转换为Markdown的高效工具",
+    "fingerprint": "81dbb4913fd76d7c021c5d3d46030e12bd10357353bc40ec158cdf44a93d2ccf",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "lfnovo/open-notebook": {
+    "description": "开源数字笔记本，类似NotebookLM",
+    "fingerprint": "df4e20519994d53d5220ac2b1956aa1bae6a621aa9a05a92718047eb9ba6ea47",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "Alishahryar1/free-claude-code": {
+    "description": "免费使用Claude Code的终端与编辑器扩展",
+    "fingerprint": "4d43aa361c4c6a1071089acc2a498b86efd34244808b1a83ac31fce4fcc00d6a",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:07.781Z"
+  },
+  "DataTalksClub/data-engineering-zoomcamp": {
+    "description": "免费数据工程课程，涵盖数据流、仓库与ETL",
+    "fingerprint": "a1da6531bc16b84fdbe610bd47642ca5e6d639b066ab8cbe8942cb065571d826",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "IceWhaleTech/CasaOS": {
+    "description": "一键安装于NAS等设备的家庭云系统",
+    "fingerprint": "45aca0f37518fde1b7aa32b00ee18a7f69a84f48eb400a72e6f2c08ee6a6a5da",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "doocs/leetcode": {
+    "description": "多语言LeetCode题解与面试题解",
+    "fingerprint": "b2b10fb16af8c03b37db16fe169970f22b9075545b1e846b49763e51fad70233",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "cfenollosa/os-tutorial": {
+    "description": "从零开始编写操作系统的教程",
+    "fingerprint": "1a117130707485f80d1f03b4411b2be0dc3a30ac69e838dc9ba994df313bb03f",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "dandavison/delta": {
+    "description": "美化Git差异输出的命令行工具",
+    "fingerprint": "ade80c7bf2dbd48612bde8154f0ffba660d6b78dfe81338c879dd492dff8895d",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "RSSNext/Follow": {
+    "description": "聚合订阅收藏的RSS阅读器",
+    "fingerprint": "079a5aa0c1f942471c5881a66fbe801552431509017223f027a39432e4340eb7",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "jumpserver/jumpserver": {
+    "description": "Python编写的开源跳板机系统",
+    "fingerprint": "d86ca5b76ea98fe44938557ec57cfcc30a777769fdcf009a5a0996d0eb491667",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "Imbad0202/academic-research-skills": {
+    "description": "Claude Code学术研究技能工作流",
+    "fingerprint": "1ac444d8aac48517ba42ec47e0614b7a08ffb79aa267475f45da6e3f774637f2",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "521xueweihan/GitHub520": {
+    "description": "解决GitHub访问图裂加载慢问题",
+    "fingerprint": "58b80f4d748bec711e4d4d3371468774c2f2e345299ddadadbcd683555e97389",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "Byaidu/PDFMathTranslate": {
+    "description": "PDF数学公式翻译工具",
+    "fingerprint": "484e50efd49c2eea75926615006c813208977747035d76ae68fee442b4d089ca",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "OpenBMB/VoxCPM": {
+    "description": "无分词器TTS语音生成与克隆",
+    "fingerprint": "89f8834eab84600ad3f9b46fc4cef6bf9f328e94c7fae720a7325a26bcd7f73a",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "chubin/wttr.in": {
+    "description": "命令行查看天气的终端工具",
+    "fingerprint": "f8ad2303252565f0cb0d5d515c306ce49864ed3d8c5b032a3575778f900fc0b4",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "Yeachan-Heo/oh-my-claudecode": {
+    "description": "Claude Code多智能体编排框架",
+    "fingerprint": "6bd8cceb189a3b8a1ce678f0b658520a19345ca41d3e1d097a0bfcab1aa8ab61",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "surrealdb/surrealdb": {
+    "description": "云原生数据库，简化API后端层",
+    "fingerprint": "8a64f270e20bf732180f65c98567e47f02722289002316a3fe4dd4331136e428",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "MichaelCade/90DaysOfDevOps": {
+    "description": "90天DevOps学习历程记录",
+    "fingerprint": "ad2e8e1c2dc8cff4014dc7ae516b2af41d9f0b697ff876c0cbec5879770c48e0",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "medusajs/medusa": {
+    "description": "开源电商建站平台，模块化拼装",
+    "fingerprint": "b70528dcf0f4b67c2edea83b9cba6ceedb646a5f814d25fde5b74da76fcff214",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "CopilotKit/CopilotKit": {
+    "description": "React UI与基础设施构建AI助手",
+    "fingerprint": "20f621f2fc86e50515b3c930c0c05f95c12eb808c16ae8d6d5067f12997391e0",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "eslint/eslint": {
+    "description": "JavaScript静态代码分析工具",
+    "fingerprint": "d9d0c7d6d208d91e7fd6542cb38f81c6e451ef301333e76540eaeb938c8a72d9",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "taichi-dev/taichi": {
+    "description": "Python高性能图形学编程框架",
+    "fingerprint": "97fa9d86f0c92ab2090911091a559019af6962e1f06b9ebb9caf0ad0ba53f5aa",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:11.042Z"
+  },
+  "LizardByte/Sunshine": {
+    "description": "自托管游戏串流服务器，支持硬件编码与网页配置",
+    "fingerprint": "2532c36090fa98b58abdd0d1845ef3cfed09f0a5e4f7af6f5e08d60bde00aeda",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "stanford-oval/storm": {
+    "description": "斯坦福开源的LLM多智能体编排平台",
+    "fingerprint": "bda6308c710e92964175599afccb8f0d3b07944a8f0c5367ab5a8990c703706f",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "AIHawk-FOSS/Auto_Jobs_Applier_AI_Agent": {
+    "description": "自动申请工作的求职助手",
+    "fingerprint": "d1440167bae040bbdde9b0ad71e4f5cc0303eb3320e00f9faf4fb28e0ac09393",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "binwiederhier/ntfy": {
+    "description": "通过HTTP请求向手机或桌面推送通知",
+    "fingerprint": "db299826fcc75e0a6d5e3c2ee69daf694117c0036067ef0d29bb43d2ef1ecafe",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "FujiwaraChoki/MoneyPrinterV2": {
+    "description": "自动化在线赚钱流程的工具",
+    "fingerprint": "72eed281cb2811578ae181e714e1253ef95aca424d494cd914b9e131a52e609d",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "huggingface/diffusers": {
+    "description": "PyTorch图像与音频扩散模型库",
+    "fingerprint": "7b20a9d0fdd6568e2c3c580914b85007de944c210b5a3589783a268479a9261f",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "zen-browser/desktop": {
+    "description": "注重隐私与简洁的浏览器",
+    "fingerprint": "8abdcc05639260ca310f8b30a6428778573c894d57eecf638695d469039d9052",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "hpcaitech/Open-Sora": {
+    "description": "开源视频生成模型项目",
+    "fingerprint": "051075065f45022e407a76f7ef8526f943a9ac2259595f94109d35ecd4999f50",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "voideditor/void": {
+    "description": "开源Cursor替代AI代码编辑器",
+    "fingerprint": "23d722728e02b0a7df156520a9d28f13aa2057f01ee7a5e3a74fd41e54b20581",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "soxoj/maigret": {
+    "description": "通过用户名在3000+网站收集个人信息",
+    "fingerprint": "745a3193be661f725a5a66f409b0cc06202d3b4557cc85aca28cbf3b2087841d",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "openai/CLIP": {
+    "description": "多模态对比预训练模型，实现图文匹配",
+    "fingerprint": "15e77dd4b70129e4e2b8ad3dd151afa2687b1a866fe60f498ff1aacc20d6ceb0",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "HKUDS/LightRAG": {
+    "description": "高效知识检索与问答工具",
+    "fingerprint": "c7bc792bb758de9f1d2c3b51525036d1cf297ff0d28b90aad82d32a3d93e6b60",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "ChromeDevTools/chrome-devtools-mcp": {
+    "description": "为Chrome DevTools提供MCP接口，支持AI操控",
+    "fingerprint": "875700f3c3731fcf91be93a84795f5c4e2e4fd75fb89908daaaf00b8e707d0bf",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "dgtlmoon/changedetection.io": {
+    "description": "网页内容变化检测与通知服务",
+    "fingerprint": "040caa354a8e57dd3768710e32642e6ebaa769bf2f9f866ecdbd7731ad4395a1",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "veler/DevToys": {
+    "description": "开发者瑞士军刀，集成多种实用工具",
+    "fingerprint": "439c4d01a924680a4fcd14b1bdce78c9bf6795cbf4e895b6856ee4c91481893b",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "onyx-dot-app/onyx": {
+    "description": "开源AI平台，支持多LLM的智能聊天",
+    "fingerprint": "0c4f655e5d24e7cda985e9c64471253244adef58bb5d08788280ca72e8132d67",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "topoteretes/cognee": {
+    "description": "六行代码实现AI代理记忆的知识引擎",
+    "fingerprint": "224894a3736a65dbbfeec5210b8622ed9bb0156f5cc802a0e4bde22a4d0bc76f",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "ellie/atuin": {
+    "description": "SQLite存储的shell历史记录工具，支持同步",
+    "fingerprint": "62c1291b652cd910f7e1e0121d3f2cabcbf445d6dccbb397bcc916d40629678d",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "vbenjs/vue-vben-admin": {
+    "description": "开箱即用的Vue管理后台模板",
+    "fingerprint": "3d7a4b945fbe9df9ceb71c3c1cb53751131361083bbf0f3e35d2f2df2e78da79",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:15.462Z"
+  },
+  "Swordfish90/cool-retro-term": {
+    "description": "复古阴极射线管风格的终端模拟器",
+    "fingerprint": "1b5af523bd4a92577de87c6a1d9d699dcb3c64b9ae9ae82f2df81e516d3841a0",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "luongnv89/claude-howto": {
+    "description": "Claude Code 可视化示例指南",
+    "fingerprint": "3fdcd3c307473f64b4f1a7f323f606d0a3d4face3bddd7819268402491def449",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "mattermost-community/focalboard": {
+    "description": "自托管开源项目管理工具",
+    "fingerprint": "72831bc1d2134810f102af3a81f2acc5fdb89eede304a930f9612b4a650aff7e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "troyeguo/koodo-reader": {
+    "description": "跨平台电子书阅读器，支持多种格式",
+    "fingerprint": "fbecb471dd72e47f28b17a042cf327f5d96c1686e992cb7665c566f9eee1e84c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "sudheerj/javascript-interview-questions": {
+    "description": "1000 道 JavaScript 面试题集",
+    "fingerprint": "164a746e51d094407a069a344936293409b6a2defaa30ab074147f04629242d6",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "onlook-dev/onlook": {
+    "description": "AI 驱动的 React 可视化设计工具",
+    "fingerprint": "80201f0c138d8bcf19c7e8ffa536be3ef94da5dd0a20ce3bd380c4f2a724fd8c",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "1Panel-dev/1Panel": {
+    "description": "开源 Linux 服务器运维管理面板",
+    "fingerprint": "511611fbfd77914a057143136f5edc973d2f6c61c216f77590f86e4853b96318",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "imthenachoman/How-To-Secure-A-Linux-Server": {
+    "description": "Linux 服务器安全加固指南",
+    "fingerprint": "950439aedf24bf779f1068fb29e3e8bdc099230519f61bf307664befdc8d41a6",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "linexjlin/GPTs": {
+    "description": "泄露的 GPTs 提示词集合",
+    "fingerprint": "cb79079a2a66ee294bd2d22a9511df4d1dbe0be44bcd226314ed1a6279e89d7f",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "google-research/timesfm": {
+    "description": "Google 时间序列预测基础模型",
+    "fingerprint": "aefa41c8739713feca8368cff679978ec3d30e6641326c5e8a568e417ce2873e",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "xiaolai/everyone-can-use-english": {
+    "description": "人人能用的英语学习资料",
+    "fingerprint": "c0b5d3a1949e7b94d5de23a9e5fcc5035f92bbb22bb9a8c84bbf1c7841df3e87",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "kingToolbox/WindTerm": {
+    "description": "跨平台专业 SSH 终端工具",
+    "fingerprint": "0799230acabb857dac0a8bc6adda0b90030eaa6f9352075b3af7bc982526b01f",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "forthespada/CS-Books": {
+    "description": "超千本计算机经典书籍汇总",
+    "fingerprint": "3b6029206808d3fb73a2ce9066e86c9da4ebc281d61fee9edcfd490f8293c7c1",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "reflex-dev/reflex": {
+    "description": "纯 Python 构建 Web 应用框架",
+    "fingerprint": "dd6144968e79ebe3ff9b5bc0a8cdca6b4be25653cad3364000c513c03bc0b5bf",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "hashcat/hashcat": {
+    "description": "世界最快密码恢复工具",
+    "fingerprint": "af6c04d96018e339fd26382870896070c71bdde07e45b2929dc4959843a00038",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "GoogleChromeLabs/squoosh": {
+    "description": "谷歌开源图片压缩工具",
+    "fingerprint": "e3cb2a1a1bf57347a37d6b0cd086eec34fb03981149604a1296dd5f1282b02ab",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "joaomdmoura/crewAI": {
+    "description": "协调 AI 代理协作的框架",
+    "fingerprint": "b7fef7ce5602c08b05c8f5b3f42eae77bde560a7574141db3641d69e2d698cf9",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "academic/awesome-datascience": {
+    "description": "数据科学学习资源精选列表",
+    "fingerprint": "17c869b1687f30c4df303ac1224fcb995c0066f78c7c957f30663ea0ff299576",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "koekeishiya/yabai": {
+    "description": "macOS 平铺式窗口管理器",
+    "fingerprint": "e723b42fec83258bca772efe32c4f292c12708620831e7de1bbb4a0e086359b2",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:19.266Z"
+  },
+  "imClumsyPanda/langchain-ChatGLM": {
+    "description": "基于Langchain与多种大语言模型的RAG与Agent应用",
+    "fingerprint": "7674bf75d8a501336de9581afb319533e23e6539076ca757e4b391169f2e7d19",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "heartexlabs/label-studio": {
+    "description": "开源数据标注工具，支持多类型数据",
+    "fingerprint": "bbe9526ffe441fdd47e47d5e16f72501d84ce1264f1f1d94a2647199f291bb21",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "raysan5/raylib": {
+    "description": "专注于纯粹编码的游戏编程库",
+    "fingerprint": "95b90faf7abb230fb4b929b123a6351f6cf0205e7da0ca6b9279826fd959892a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "felixrieseberg/windows95": {
+    "description": "基于Electron实现的Windows 95模拟器",
+    "fingerprint": "94f1bbf07dbe325f28c3b4150ec301ec36f875e87a3e64de558a820a0dd0b287",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "KurtBestor/Hitomi-Downloader": {
+    "description": "Python桌面下载工具，支持多网站视频提取",
+    "fingerprint": "217462de81acfadceed64bc38f0bca26a010c274ca36144d9ed16d50c0aaa3ba",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "simstudioai/sim": {
+    "description": "可扩展AI仿真平台，支持强化学习与物理模拟",
+    "fingerprint": "83ae8e64bb93b86ecc2fe5e632856f6172f36dd808428bae3359ee40f7006027",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "JCodesMore/ai-website-cloner-template": {
+    "description": "用AI编码代理一键克隆网站",
+    "fingerprint": "90235872a0fe87dfb9693f1bfd1d781591c6509d0ecc58a7c73bd8958d103ad1",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "philc/vimium": {
+    "description": "浏览器黑客式键盘操作扩展",
+    "fingerprint": "f9ae05b629e16fe109dea263c1e4823141ebad3de35dd886739e1d6742345bca",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "QwenLM/Qwen2.5": {
+    "description": "高质量语言交互的智能语言模型",
+    "fingerprint": "f632c9c24a8a759325101be17c3a49d02223a3f2f726bfc1c019b30022efe90b",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "supermemoryai/supermemory": {
+    "description": "极速可扩展的AI记忆引擎与API",
+    "fingerprint": "8057a3189e7b7679bc540768a5d45208efbb0c8bdebc0bf752c593f347169870",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "iperov/DeepFaceLive": {
+    "description": "实时换脸工具，用于直播或视频通话",
+    "fingerprint": "d8b5122c7643899648eb0e497662077604a440a9431c48e9b2d07a666f62ce8d",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "YunaiV/ruoyi-vue-pro": {
+    "description": "基于Spring Boot的后台管理系统，支持多模块功能",
+    "fingerprint": "adc8d092ace8abc4e1804788bb66be4dcacee545cdfb68468bfee11978559301",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "Wilfred/difftastic": {
+    "description": "基于语法结构的命令行文件对比工具",
+    "fingerprint": "62bc73152ab290eb6ef1ba6f5a1e435903244559772824504299097785208940",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "virattt/dexter": {
+    "description": "深度金融研究的自主智能体",
+    "fingerprint": "6aab87754c3d07d4a1839a24011df6a65162bdf8511601c37eeabd9524192e69",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "black-forest-labs/flux": {
+    "description": "Flux模型图像生成与编辑的推理代码",
+    "fingerprint": "0c6497f7205e17992124c8e46dbebcdd96b9846e7bb2ca4bd0f9a91e3c7a4e7e",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "wg-easy/wg-easy": {
+    "description": "简洁易用的WireGuard VPN管理界面",
+    "fingerprint": "531110239c08b73940f848a0e6d50a93c9c82aa0c8778b581478dcc4230878e1",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "alexpate/awesome-design-systems": {
+    "description": "精选设计系统资源集合",
+    "fingerprint": "3704bf09940c586f2c7fdeeb7d5e688d0fb42dbf33a5b2978f8e7523bb9c8183",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "google/flatbuffers": {
+    "description": "内存高效的序列化库",
+    "fingerprint": "b8a1255893a8a09f22e6f78cb4661c01ca3711944dd873d153a1c8aa04473132",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:23.121Z"
+  },
+  "plotly/dash": {
+    "description": "用纯 Python 构建数据分析可视化应用的开源框架",
+    "fingerprint": "67833d14669e206bb55ec1efe2e29d2033609fef5b342f8dcb42dbc9445cb9f9",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "getcursor/cursor": {
+    "description": "基于 AI 的交互式代码编辑器，支持智能对话辅助编程",
+    "fingerprint": "c7cd96d01119bee8b76f04b8c004682c222e35b114af5205f67eca5f5d421c02",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "Kilo-Org/kilocode": {
+    "description": "开源一体化智能体工程平台，加速构建与迭代",
+    "fingerprint": "1dbec2e4b365910ccb74eabafb39612de46de78db499b60a5e65e7d2a432ae03",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "chroma-core/chroma": {
+    "description": "开源嵌入向量数据库，支持快速插入、搜索与管理",
+    "fingerprint": "f39f2bd1a072334e8e91a942af307a1e9d2e34adfad23835afad01bc4a64c016",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "HandsOnLLM/Hands-On-Large-Language-Models": {
+    "description": "O'Reilly 书籍《Hands-On Large Language Models》官方代码仓库",
+    "fingerprint": "ffb5694c9542a43a5243ba4dde10409d73d13d2e742a77e4faba68a2a4382f1b",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "paperless-ngx/paperless-ngx": {
+    "description": "社区增强版文档管理系统，扫描、索引和归档纸质文档",
+    "fingerprint": "5865c2a2734a14d1e3eab52ebc581a64afd78d0323e5d2a6fdd244065988f7fc",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "gorilla/websocket": {
+    "description": "Go 语言高性能 WebSocket 库，功能丰富",
+    "fingerprint": "3b9b36655ea8fbe41434dc387d00556e720e40d10ee73b16ed7ef51e66f71f08",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "shadps4-emu/shadPS4": {
+    "description": "开源 PS4 模拟器，可在其他平台运行 PS4 游戏",
+    "fingerprint": "664bd279899643316e6715e499a0b51897eef0c2224681bb739df1d4e52fe864",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "trufflesecurity/trufflehog": {
+    "description": "用于查找、验证和分析泄露凭证的安全工具",
+    "fingerprint": "9b37a1f1ddb7bfe1d19f062ffbac337b331b30df42f40c4c9c47ed21281ed06b",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "ml-tooling/best-of-ml-python": {
+    "description": "精选 Python 机器学习库与工具合集，覆盖全流程",
+    "fingerprint": "53a4c3bbd30eb5c0227418e7a5a2d607d98fb7c730a6361efad5bccf531c80bc",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "sharkdp/hyperfine": {
+    "description": "命令行基准测试工具，可对比命令耗时并统计分析",
+    "fingerprint": "1d0916ad7828f6df73583a9b429dadb98ef4ab233f9b17bb3d178c104048d443",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "GraphiteEditor/Graphite": {
+    "description": "Rust 开发的 GPU 加速 2D 矢量图形编辑器",
+    "fingerprint": "0baa32ab2e569a08b10f7dd26de8ae98c08eb740f1d4c96c86d57916a62451c4",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "TheAlgorithms/Rust": {
+    "description": "收集 Rust 语言实现的各种算法，供学习与开发",
+    "fingerprint": "2cd3327288a776c66bd2d80a76438517463391f8cc4454bb669458bab1d4883c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "Anuken/Mindustry": {
+    "description": "开源工厂建设与塔防游戏，结合策略与创造力",
+    "fingerprint": "17f267c0a4ab3104fca444ea3f9e9bff86a8035e29bafddcb02354a076373935",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "AmruthPillai/Reactive-Resume": {
+    "description": "免费开源简历生成器，支持多份简历与 PDF 导出",
+    "fingerprint": "453fb88cab0c68240f918effdaf442429e07e55ac5aafa754a0cb5c663afc117",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "microsoft/playwright-mcp": {
+    "description": "基于 Playwright 的浏览器自动化平台，支持分布式任务",
+    "fingerprint": "537b1b4dd5a1813fb3d8cc7e4458ae885d140884d743cff7b905693393ea6ada",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "simdjson/simdjson": {
+    "description": "每秒解析数 GB JSON 的高性能解析库",
+    "fingerprint": "ea3168bb2f5946e27d800607f924755fe25bb9210642fe0d95adb96d7a67f5d4",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "kavishdevar/librepods": {
+    "description": "让 AirPods 摆脱苹果生态限制的开源工具",
+    "fingerprint": "2a66f1ce27962af9ea8354dee50492e28cac03440cde2f99d42d4e0f9fc5ea3d",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "PostHog/posthog": {
+    "description": "可自托管的产品分析平台，含会话录制与 A/B 测试",
+    "fingerprint": "5da1552c787f24f3394a9c20f9d86fa2401e3127ee231de2052bbf321a0b8319",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "Budibase/budibase": {
+    "description": "开源低代码平台，快速构建商业级应用",
+    "fingerprint": "a2c43dc71695b5e3f28f4c79b3aa4c611e4f7360d61ee071462265750686c78c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:26.771Z"
+  },
+  "Yeachan-Heo/oh-my-codex": {
+    "description": "为 Codex 添加钩子、代理团队与 HUD 的扩展工具",
+    "fingerprint": "549891209c0508bae178a04580d4bd79dbefb64ebbca625454194edb948db65e",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "anthropics/financial-services": {
+    "description": "面向金融服务的 Claude 代理、技能与数据连接器",
+    "fingerprint": "b3d720586ee12df64d70231c3ce0616424a9e27e5b21d6108e6aa4b2e948ec5c",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "google-labs-code/design.md": {
+    "description": "向编码代理描述视觉设计体系的格式规范",
+    "fingerprint": "b5af64ddd9cf65a245a35097ebef92e28d10de46ba954b619e19a02b07fd238c",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "harvard-edge/cs249r_book": {
+    "description": "哈佛 CS249R 课程配套的分布式系统与边缘计算教材",
+    "fingerprint": "1596ccdc000b4e96e90da0bcc5b6375c7040b77180a0be5f552d1ca5641524d7",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "songquanpeng/one-api": {
+    "description": "OpenAI 接口管理与密钥分发系统，支持多渠道",
+    "fingerprint": "cf9a67cfe34a38bb02ae12d3c28b3de3b05d3318c728bf8661b5a89e83e40cca",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "koreader/koreader": {
+    "description": "电子墨水设备上的开源阅读软件，优化 PDF 排版",
+    "fingerprint": "86fb85291300219147510d52bf41968bbad32fc24a316adefdc9862dea293e1a",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "Lissy93/dashy": {
+    "description": "可自定义的 Web 应用控制面板，用于服务快捷入口",
+    "fingerprint": "8969c95d6dc4d43c893b01b31f742415ec55bba86161590084f8bb885987871b",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "anthropics/anthropic-cookbook": {
+    "description": "Claude 应用开发的实践示例与最佳入门手册",
+    "fingerprint": "6a47b918dedda1e882bf3d24e332cfc0da0be41bc1301a8b0c06965582b651d2",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "ArchiveBox/ArchiveBox": {
+    "description": "将网页保存为静态页面以便离线浏览的归档工具",
+    "fingerprint": "9c03b3a27720f8661de77c299582641a7f581d833c1d31ac129a0d2114af7afe",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "PHPMailer/PHPMailer": {
+    "description": "支持 SMTP、HTML 与附件的 PHP 邮件发送库",
+    "fingerprint": "4e94ac24955adb62722bfd71eba3696d99aeec8ce516bd465ffe8a78dff0ae14",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "frappe/erpnext": {
+    "description": "免费开源的企业资源规划（ERP）系统",
+    "fingerprint": "43f5b6dd0ead0fcbbce2dee667a4d331f9c43b3bf218529eb0c0657bcd3971d1",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "gkd-kit/gkd": {
+    "description": "基于无障碍与订阅规则的自定义屏幕点击应用",
+    "fingerprint": "75f35810b466abc46f31eddcd616dcd57fac4785ad5fa061b07f4129693cbf50",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "lightpanda-io/browser": {
+    "description": "面向 AI 与自动化场景的无头浏览器",
+    "fingerprint": "1a6196b894a24f6fb37666ea1e46c306f58fbf52586ccb2f8ce0a9467d3ca068",
+    "source": "translation",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "GopeedLab/gopeed": {
+    "description": "支持多协议与多线程加速的高速下载工具",
+    "fingerprint": "588b79142f7c6ca973aa88f756dfe69d1ef08fbfdbecfaf8a0456ec94e21efc4",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "hehonghui/awesome-english-ebooks": {
+    "description": "免费英语杂志与书籍资源合集，每周更新",
+    "fingerprint": "b651e92e45fa4b8ba4ab9b906d4f75aa499de219a73344ca3361927eb436c3ce",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "jj-vcs/jj": {
+    "description": "基于 Rust 的现代版本控制系统，兼容 Git",
+    "fingerprint": "586dedfd0be23f009feeaff709e5927f497b8055ebcb5ba806fd0ed57e7dc0b8",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "Stability-AI/generative-models": {
+    "description": "Stability AI 的生成模型代码库",
+    "fingerprint": "615196983d1648e416fc0d5b272b9536c46cdd825c1e55dfa5cb7b42a887bd8e",
+    "source": "repository-summary",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "fanmingming/live": {
+    "description": "国内可直连的免费直播源分享项目，无广告",
+    "fingerprint": "e1ddc870fd5f87a7d0a720d295357265bfc9c14fe518031843d4adc54be2851c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
+  },
+  "steven-tey/dub": {
+    "description": "支持自定义域名与统计分析的短链接管理平台",
+    "fingerprint": "246dd4c56bae192d36d2519008b0112795ca41379d3b424d09d4b7246b760f4c",
+    "source": "condensed",
+    "model": "deepseek-chat",
+    "updatedAt": "2026-09-04T12:55:31.033Z"
   }
 }

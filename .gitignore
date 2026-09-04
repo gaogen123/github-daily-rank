@@ -1,7 +1,10 @@
 .idea
 node_modules/
+__pycache__/
+*.py[cod]
 dist/
 .env
 .env.*
 !.env.example
 storage/
+gen-lang-client-*-*.json

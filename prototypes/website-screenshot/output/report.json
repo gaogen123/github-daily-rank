@@ -1,0 +1,38 @@
+{
+  "viewport": "1440x720",
+  "fallbackOrder": [
+    "homepage-screenshot",
+    "github-opengraph",
+    "default"
+  ],
+  "results": [
+    {
+      "repo": "Significant-Gravitas/Auto-GPT",
+      "homepage": "https://agpt.co",
+      "source": "homepage-screenshot",
+      "file": "Significant-Gravitas__Auto-GPT.png",
+      "reason": null
+    },
+    {
+      "repo": "All-Hands-AI/OpenHands",
+      "homepage": "https://openhands.dev",
+      "source": "homepage-screenshot",
+      "file": "All-Hands-AI__OpenHands.png",
+      "reason": null
+    },
+    {
+      "repo": "microsoft/vscode",
+      "homepage": "https://code.visualstudio.com",
+      "source": "homepage-screenshot",
+      "file": "microsoft__vscode.png",
+      "reason": null
+    },
+    {
+      "repo": "AUTOMATIC1111/stable-diffusion-webui",
+      "homepage": null,
+      "source": "github-opengraph",
+      "file": "AUTOMATIC1111__stable-diffusion-webui.png",
+      "reason": "repository has no homepage"
+    }
+  ]
+}
