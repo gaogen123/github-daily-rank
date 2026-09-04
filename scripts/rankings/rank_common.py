@@ -87,6 +87,26 @@ def strip_tags(value):
     return re.sub(r"\s+", " ", re.sub(r"<[^>]*>", " ", value)).strip()
 
 
+def calculate_rate(total_stars, growth):
+    """增速 = 增长量 / (增长前 Star 数)，保留两位小数。"""
+    if not growth:
+        return 0
+    return round((growth / max(total_stars - growth, 1)) * 100, 2)
+
+
+def date_from_source(source, content):
+    """从文件名或标题识别日报统计日期。"""
+    filename_date = re.search(r"(\d{4})(\d{2})(\d{2})\.md$", source or "")
+    if filename_date:
+        return f"{filename_date.group(1)}-{filename_date.group(2)}-{filename_date.group(3)}"
+
+    heading_date = re.search(r"^##\s+(\d{4})\.(\d{1,2})\.(\d{1,2})", content, re.M)
+    if heading_date:
+        return f"{heading_date.group(1)}-{int(heading_date.group(2)):02d}-{int(heading_date.group(3)):02d}"
+
+    raise ValueError(f"无法从 {source or '日报'} 中识别统计日期")
+
+
 def chunk(array, size):
     for index in range(0, len(array), size):
         yield array[index:index + size]
@@ -175,6 +195,155 @@ def parse_report(content, date, growth_label):
         })
 
     return {"date": date, "projects": projects}
+
+
+def parse_daily_report(content, source=""):
+    """解析日榜日报，保留日/周/月三个增长字段及其增速。
+
+    兼容「详情段落(h3)」与「纯表格」两种格式。
+    """
+    date = date_from_source(source, content)
+    projects = []
+
+    sections = re.split(r"(?=<h3\b)", content, flags=re.I)
+    for section in sections:
+        if not section.startswith("<h3"):
+            continue
+        end = section.find("</h3>")
+        heading = strip_tags(section[: end + 5] if end != -1 else section)
+        repo_match = re.search(r"https://github\.com/([\w.-]+/[\w.-]+)", heading, re.I)
+        if not repo_match:
+            continue
+
+        repo = repo_match.group(1)
+        stars = read_metric(section, "总星标数量")
+        daily_growth = read_metric(section, "日增长数量")
+        weekly_growth = read_metric(section, "上周增长数量")
+        monthly_growth = read_metric(section, "上月增长数量")
+
+        opened_at_match = re.search(r"开源时间：\s*(\d{4}-\d{2}-\d{2})", section)
+        opened_at = opened_at_match.group(1) if opened_at_match else ""
+
+        description_match = re.search(r"项目描述：\s*([^\r\n<]*)", section)
+        description = description_match.group(1).strip() if description_match else ""
+
+        name = re.sub(r"^\d+\.\s*", "", heading)
+        name = re.sub(r"https://github\.com/[\w.-]+/[\w.-]+", "", name, flags=re.I).strip()
+
+        projects.append({
+            "repo": repo,
+            "url": f"https://github.com/{repo}",
+            "name": name,
+            "description": description,
+            "stars": stars,
+            "dailyGrowth": daily_growth,
+            "weeklyGrowth": weekly_growth,
+            "monthlyGrowth": monthly_growth,
+            "dailyRate": calculate_rate(stars, daily_growth),
+            "weeklyRate": calculate_rate(stars, weekly_growth),
+            "monthlyRate": calculate_rate(stars, monthly_growth),
+            "openedAt": opened_at,
+        })
+
+    exact_best_stars = re.search(r"总星标数量：\s*([\d,]+)⭐", content)
+    if projects and exact_best_stars:
+        stars = parse_compact_number(exact_best_stars.group(1))
+        projects[0]["stars"] = stars
+        projects[0]["dailyRate"] = calculate_rate(stars, projects[0]["dailyGrowth"])
+        projects[0]["weeklyRate"] = calculate_rate(stars, projects[0]["weeklyGrowth"])
+        projects[0]["monthlyRate"] = calculate_rate(stars, projects[0]["monthlyGrowth"])
+
+    if projects:
+        return {"date": date, "source": source, "projects": projects}
+
+    # 降级：纯表格格式（早期日报无 h3 详情段落）
+    for line in content.splitlines():
+        if not line.strip().startswith("|") or "github.com/" not in line:
+            continue
+        cells = [cell.strip() for cell in line.split("|")]
+        repo_cell_index = next(
+            (i for i, cell in enumerate(cells) if re.search(r"github\.com/[\w.-]+/[\w.-]+", cell, re.I)),
+            -1,
+        )
+        if repo_cell_index < 0:
+            continue
+        repo_match = re.search(r"github\.com/([\w.-]+/[\w.-]+)", cells[repo_cell_index], re.I)
+        if not repo_match:
+            continue
+
+        repo = repo_match.group(1)
+        stars = parse_compact_number(cells[repo_cell_index + 1]) if repo_cell_index + 1 < len(cells) else 0
+        daily_growth = parse_compact_number(cells[repo_cell_index + 2]) if repo_cell_index + 2 < len(cells) else 0
+        weekly_growth = parse_compact_number(cells[repo_cell_index + 3]) if repo_cell_index + 3 < len(cells) else 0
+        opened_at_match = re.search(r"\d{4}-\d{2}-\d{2}", line)
+        opened_at = opened_at_match.group(0) if opened_at_match else ""
+
+        if not stars:
+            continue
+
+        projects.append({
+            "repo": repo,
+            "url": f"https://github.com/{repo}",
+            "name": "",
+            "description": "",
+            "stars": stars,
+            "dailyGrowth": daily_growth,
+            "weeklyGrowth": weekly_growth,
+            "monthlyGrowth": 0,
+            "dailyRate": calculate_rate(stars, daily_growth),
+            "weeklyRate": calculate_rate(stars, weekly_growth),
+            "monthlyRate": 0,
+            "openedAt": opened_at,
+        })
+
+    return {"date": date, "source": source, "projects": projects}
+
+
+def daily_find_reports(repo_dir):
+    reports = []
+    for year in sorted(repo_dir.iterdir()):
+        if not year.is_dir() or not re.fullmatch(r"20\d{2}", year.name):
+            continue
+        for month in sorted(year.iterdir()):
+            if not month.is_dir() or not re.fullmatch(r"\d{2}", month.name):
+                continue
+            for filename in sorted(month.iterdir()):
+                if re.fullmatch(r"\d{8}\.md", filename.name):
+                    reports.append(filename)
+    reports.sort()
+    if not reports:
+        raise ValueError("没有找到日报 Markdown 文件")
+    return reports
+
+
+def daily_parse_key(report_path):
+    matched = re.search(r"(\d{4})(\d{2})(\d{2})\.md$", str(report_path))
+    if matched:
+        return f"{matched.group(1)}-{matched.group(2)}-{matched.group(3)}"
+    raise ValueError(f"无法从 {report_path} 识别统计日期")
+
+
+def daily_to_star_rows(report, crawled_at):
+    rows = []
+    for index, project in enumerate(report["projects"]):
+        rows.append({
+            "dt": report["date"],
+            "full_name": project["repo"],
+            "rank_num": index + 1,
+            "repo_url": project.get("url") or "",
+            "repo_name": project.get("name") or "",
+            "description": project.get("description") or "",
+            "total_stars": project.get("stars") or 0,
+            "stars_today": project.get("dailyGrowth") or 0,
+            "stars_week": project.get("weeklyGrowth") or 0,
+            "stars_month": project.get("monthlyGrowth") or 0,
+            "daily_growth_rate": project.get("dailyRate", 0),
+            "weekly_growth_rate": project.get("weeklyRate", 0),
+            "monthly_growth_rate": project.get("monthlyRate", 0),
+            "opened_at": project.get("openedAt") or None,
+            "crawled_at": crawled_at,
+        })
+    return rows
 
 
 def to_star_rows(report, growth_field, crawled_at):
@@ -266,14 +435,19 @@ def query_existing_dates(db, table, col="dt"):
 # --------------------------------------------------------------------------- #
 # 主流程
 # --------------------------------------------------------------------------- #
-def run(config, incremental=False, dry_run=False):
+def run(config, incremental=False, dry_run=False, since=None):
     db = config.get("db", STARROCKS_DB)
     table = config["table"]
+    parse = config.get("parse_report")
+    to_rows = config.get("to_star_rows")
 
     print(f"拉取数据源：{config['repo_url']}")
     ensure_repo(config["repo_url"], config["repo_dir"])
 
     report_paths = config["find_reports"](config["repo_dir"])
+
+    if since:
+        report_paths = [p for p in report_paths if config["parse_key"](p) >= since]
 
     if incremental:
         existing = query_existing_dates(db, table)
@@ -292,9 +466,13 @@ def run(config, incremental=False, dry_run=False):
     rows = []
     for report_path in report_paths:
         content = report_path.read_text(encoding="utf-8", errors="replace")
-        date = config["parse_key"](report_path)
-        report = parse_report(content, date, config["growth_label"])
-        rows.extend(to_star_rows(report, config["growth_field"], crawled_at))
+        if parse is not None:
+            report = parse(content, str(report_path))
+            rows.extend(to_rows(report, crawled_at))
+        else:
+            date = config["parse_key"](report_path)
+            report = parse_report(content, date, config["growth_label"])
+            rows.extend(to_star_rows(report, config["growth_field"], crawled_at))
 
     print(f"解析完成：{len(report_paths)} 份日报，共 {len(rows)} 条项目记录")
 
@@ -314,3 +492,14 @@ def run(config, incremental=False, dry_run=False):
         print(f"批次 {index} 完成：加载 {result.get('NumberLoadedRows')} 行")
 
     print(f"完成，共加载 {loaded} 行 -> {db}.{table}")
+
+
+DAILY_CONFIG = {
+    "repo_url": "https://github.com/OpenGithubs/github-daily-rank.git",
+    "repo_dir": PROJECT_ROOT / "storage" / "opengithubs-daily-rank",
+    "table": "ods_repo_github_daily_rank_f_1d",
+    "find_reports": daily_find_reports,
+    "parse_key": daily_parse_key,
+    "parse_report": parse_daily_report,
+    "to_star_rows": daily_to_star_rows,
+}
