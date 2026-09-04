@@ -1,0 +1,40 @@
+services:
+  app:
+    build:
+      context: .
+    image: github-daily-rank
+    container_name: github-daily-rank
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: "3000"
+
+      # ---- 连库：StarRocks 连接（启动时生成榜单数据用）----
+      # StarRocks 跑在宿主机（quickstart 容器，映射 9030），容器内通过 host.docker.internal 访问
+      STARROCKS_MYSQL_HOST: "host.docker.internal"
+      STARROCKS_MYSQL_PORT: "9030"
+      STARROCKS_USER: "root"
+      STARROCKS_PASSWORD: ""
+      STARROCKS_DB: "ods"
+      STARROCKS_TABLE: "ods_repo_github_daily_rank_f_1d"
+
+      # ---- 可选：GitHub OAuth 登录（取消注释并填入实际值）----
+      # GITHUB_CLIENT_ID: "your-client-id"
+      # GITHUB_CLIENT_SECRET: "your-client-secret"
+      # GITHUB_CALLBACK_URL: "http://localhost:3000/auth/github/callback"
+
+      # ---- 可选：网络代理（访问 GitHub API 时需要）----
+      # HTTPS_PROXY: "http://127.0.0.1:7890"
+      # HTTP_PROXY: "http://127.0.0.1:7890"
+
+      # ---- 可选：语义搜索（SiliconFlow + Qdrant）----
+      # SILICONFLOW_API_KEY: ""
+      # QDRANT_URL: ""
+      # QDRANT_API_KEY: ""
+      # QDRANT_COLLECTION: "github_projects_bge_m3_v1"
+      # EMBEDDING_MODEL: "BAAI/bge-m3"
+      # EMBEDDING_DIMENSION: "1024"
+
+      # ---- 定时任务：容器化部署默认禁用 ----
+      ENABLE_VECTOR_SCHEDULER: "false"

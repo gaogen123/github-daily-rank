@@ -1,0 +1,71 @@
+services:
+  postgresql:
+    image: bitnamilegacy/postgresql:15.2.0-debian-11-r9
+    container_name: dolphinscheduler-postgresql
+    environment:
+      POSTGRESQL_USERNAME: root
+      POSTGRESQL_PASSWORD: root
+      POSTGRESQL_DATABASE: dolphinscheduler
+    ports:
+      - "5432:5432"
+    volumes:
+      - dolphinscheduler-postgresql:/bitnami/postgresql
+    healthcheck:
+      test: ["CMD", "bash", "-c", "cat < /dev/null > /dev/tcp/127.0.0.1/5432"]
+      interval: 5s
+      timeout: 60s
+      retries: 120
+
+  # 一次性服务：初始化/升级数据库结构（含 JDBC registry 表）
+  schema-init:
+    image: apache/dolphinscheduler-tools:3.4.2
+    container_name: dolphinscheduler-schema-init
+    command: [ tools/bin/upgrade-schema.sh ]
+    environment:
+      DATABASE: postgresql
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgresql:5432/dolphinscheduler
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_JACKSON_TIME_ZONE: UTC
+    depends_on:
+      postgresql:
+        condition: service_healthy
+
+  # standalone-server：API + Master + Worker + Alert 合一进程，JDBC 注册中心，外接 PostgreSQL
+  standalone:
+    build:
+      context: ./dolphinscheduler
+    image: dolphinscheduler-standalone:3.4.2-py
+    container_name: dolphinscheduler-standalone
+    restart: unless-stopped
+    ports:
+      - "12345:12345"
+      - "25333:25333"
+    environment:
+      SPRING_PROFILES_ACTIVE: postgresql
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgresql:5432/dolphinscheduler
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      # 默认 -Xms4g -Xmx4g，这里调低堆内存避免占满 Docker 内存
+      JAVA_OPTS: "-Xms1g -Xmx2g"
+      # ---- 榜单脚本连库配置：Shell 任务直接继承，无需在命令里 export ----
+      STARROCKS_MYSQL_HOST: "host.docker.internal"
+      STARROCKS_MYSQL_PORT: "9030"
+      STARROCKS_USER: "root"
+      STARROCKS_PASSWORD: ""
+      STARROCKS_DB: "ods"
+      STARROCKS_HTTP: "http://host.docker.internal:8040"
+    depends_on:
+      schema-init:
+        condition: service_completed_successfully
+    volumes:
+      - dolphinscheduler-logs:/opt/dolphinscheduler/logs
+      # 挂载榜单项目目录，供 Shell 任务直接运行三个增量脚本
+      - ./:/app/github-daily-rank
+    extra_hosts:
+      # 容器内通过 host.docker.internal 访问宿主机上的 StarRocks（quickstart 容器）
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  dolphinscheduler-postgresql:
+  dolphinscheduler-logs:

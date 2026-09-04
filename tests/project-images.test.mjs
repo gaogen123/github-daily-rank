@@ -12,7 +12,7 @@ import {
   shouldProcessProject,
   stableImageFilename,
   validatePublicUrl
-} from '../scripts/project_images.mjs';
+} from '../scripts/projects/project_images.mjs';
 
 const publicLookup = async () => [{ address: '93.184.216.34', family: 4 }];
 

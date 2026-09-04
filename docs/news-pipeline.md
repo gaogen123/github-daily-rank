@@ -130,7 +130,7 @@ SQLite 缓存位于 `storage/project-categories.db`，以仓库、名称和描�
 ```bash
 npm run projects:images
 # 手动扩大单批处理量；重复运行会跳过有效缓存
-node scripts/project_images.mjs --max-process 100 --concurrency 2
+node scripts/projects/project_images.mjs --max-process 100 --concurrency 2
 ```
 
 正常图片缓存 30 天；项目名称、描述或 URL 变化时立即刷新。默认图或 GitHub 元数据请求失败的缓存会在 1 天后重试，避免短暂网络错误导致长期错过官网。默认每天 `11:00` 增量生成最多 20 张，可通过 `PROJECT_IMAGE_MAX_PROCESS`、`PROJECT_IMAGE_CRON` 和 `PROJECT_IMAGE_TIMEZONE` 调整；设置 `ENABLE_PROJECT_IMAGE_SCHEDULER=false` 可禁用。

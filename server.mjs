@@ -7,25 +7,17 @@ import express from 'express';
 import cron from 'node-cron';
 import { ProxyAgent } from 'undici';
 import {
-  searchProjects,
-  vectorSearchConfigured,
-  vectorSearchConfig
+  createSemanticProjectSearch,
+  vectorSearchConfigured
 } from './lib/vector-search.mjs';
 
 const projectRoot = dirname(fileURLToPath(import.meta.url));
-const projectDataRepository = 'https://github.com/OpenGithubs/github-daily-rank.git';
-const projectReportPathspec = ':(glob)20??/??/20??????.md';
 const isDevelopment = process.argv.includes('--dev');
 const port = Number(process.env.PORT) || 3000;
 const defaultClientId = 'Iv23lipOXPUiR5ZQFSTr';
 const sessions = new Map();
 const searchRateLimits = new Map();
-let projectDataRefreshRunning = false;
 let vectorIndexRunning = false;
-let newsRefreshRunning = false;
-let projectCategoryRefreshRunning = false;
-let projectImageRefreshRunning = false;
-let projectMetricsRefreshRunning = false;
 
 async function loadLocalEnvironment() {
   try {
@@ -93,33 +85,8 @@ function runNodeScript(script, arguments_ = []) {
   return runCommand(process.execPath, [join(projectRoot, script), ...arguments_], `${script} `);
 }
 
-async function refreshProjectData() {
-  if (projectDataRefreshRunning) {
-    console.warn('[项目数据任务] 上一次任务仍在运行，本次已跳过');
-    return;
-  }
-
-  projectDataRefreshRunning = true;
-  const startedAt = Date.now();
-  console.log('[项目数据任务] 开始拉取远程日报并重新生成数据');
-  try {
-    await runCommand(
-      'git',
-      ['fetch', '--no-tags', projectDataRepository, 'main'],
-      'GitHub 日报更新 '
-    );
-    await runCommand(
-      'git',
-      ['restore', '--source=FETCH_HEAD', '--worktree', '--', projectReportPathspec],
-      'GitHub 日报同步 '
-    );
-    await runNodeScript('scripts/generate-data.mjs');
-    console.log(`[项目数据任务] 完成，耗时 ${Math.round((Date.now() - startedAt) / 1000)} 秒`);
-  } catch (error) {
-    console.error(`[项目数据任务] 失败：${error.message}`);
-  } finally {
-    projectDataRefreshRunning = false;
-  }
+function runPythonScript(script, arguments_ = []) {
+  return runCommand('python3', [join(projectRoot, script), ...arguments_], `${script} `);
 }
 
 async function refreshVectorIndex() {
@@ -130,219 +97,17 @@ async function refreshVectorIndex() {
 
   vectorIndexRunning = true;
   const startedAt = Date.now();
-  console.log('[向量定时任务] 开始检测向量变化');
+  console.log('[向量定时任务] 开始拉取远程更新并检测向量变化');
   try {
-    await runNodeScript('scripts/index-projects.mjs', ['--refresh']);
+    // 连库版：增量更新日榜到 StarRocks，再重新生成前端数据与向量索引
+    await runPythonScript('scripts/rankings/load_daily_rank_incremental.py');
+    await runPythonScript('scripts/exports/generate_data_from_starrocks.py');
+    await runNodeScript('scripts/projects/index-projects.mjs', ['--refresh']);
     console.log(`[向量定时任务] 完成，耗时 ${Math.round((Date.now() - startedAt) / 1000)} 秒`);
   } catch (error) {
     console.error(`[向量定时任务] 失败：${error.message}`);
   } finally {
     vectorIndexRunning = false;
-  }
-}
-
-async function refreshProjectCategories() {
-  if (projectCategoryRefreshRunning) {
-    console.warn('[项目分类任务] 上一次任务仍在运行，本次已跳过');
-    return;
-  }
-
-  const configuredMax = Number.parseInt(process.env.PROJECT_CATEGORY_MAX_PROCESS || '', 10);
-  const maxProcess = Number.isInteger(configuredMax) && configuredMax >= 0 ? configuredMax : 100;
-  projectCategoryRefreshRunning = true;
-  const startedAt = Date.now();
-  console.log(`[项目分类任务] 开始增量分类，最多处理 ${maxProcess} 个项目`);
-  try {
-    await runCommand(
-      process.env.PYTHON_BIN || 'python3',
-      [join(projectRoot, 'scripts/project_classifier.py'), '--max-process', String(maxProcess)],
-      'GitHub 项目分类 '
-    );
-    console.log(`[项目分类任务] 完成，耗时 ${Math.round((Date.now() - startedAt) / 1000)} 秒`);
-  } catch (error) {
-    console.error(`[项目分类任务] 失败：${error.message}`);
-  } finally {
-    projectCategoryRefreshRunning = false;
-  }
-}
-
-async function refreshProjectImages() {
-  if (projectImageRefreshRunning) {
-    console.warn('[项目图片任务] 上一次任务仍在运行，本次已跳过');
-    return;
-  }
-
-  const configuredMax = Number.parseInt(process.env.PROJECT_IMAGE_MAX_PROCESS || '', 10);
-  const maxProcess = Number.isInteger(configuredMax) && configuredMax >= 0 ? configuredMax : 20;
-  projectImageRefreshRunning = true;
-  const startedAt = Date.now();
-  console.log(`[项目图片任务] 开始增量生成，最多处理 ${maxProcess} 个项目`);
-  try {
-    await runNodeScript('scripts/project_images.mjs', ['--max-process', String(maxProcess)]);
-    console.log(`[项目图片任务] 完成，耗时 ${Math.round((Date.now() - startedAt) / 1000)} 秒`);
-  } catch (error) {
-    console.error(`[项目图片任务] 失败：${error.message}`);
-  } finally {
-    projectImageRefreshRunning = false;
-  }
-}
-
-async function refreshProjectMetrics() {
-  if (projectMetricsRefreshRunning) {
-    console.warn('[项目指标任务] 上一次任务仍在运行，本次已跳过');
-    return;
-  }
-  if (!process.env.GITHUB_TOKEN) {
-    console.warn('[项目指标任务] 未配置 GITHUB_TOKEN，本次已跳过');
-    return;
-  }
-
-  projectMetricsRefreshRunning = true;
-  const startedAt = Date.now();
-  console.log('[项目指标任务] 开始采集基础指标、计算分类评分并导出');
-  try {
-    await runCommand(
-      process.env.PYTHON_BIN || 'python3',
-      [join(projectRoot, 'scripts/project_metrics.py'), 'run'],
-      'GitHub 项目指标 '
-    );
-    console.log(`[项目指标任务] 完成，耗时 ${Math.round((Date.now() - startedAt) / 1000)} 秒`);
-  } catch (error) {
-    console.error(`[项目指标任务] 失败：${error.message}`);
-  } finally {
-    projectMetricsRefreshRunning = false;
-  }
-}
-
-async function refreshNews() {
-  if (newsRefreshRunning) {
-    console.warn('[新闻定时任务] 上一次任务仍在运行，本次已跳过');
-    return;
-  }
-
-  newsRefreshRunning = true;
-  const startedAt = Date.now();
-  console.log('[新闻定时任务] 开始抓取 RSSHub 并处理待发布新闻');
-  try {
-    await runCommand(process.env.PYTHON_BIN || 'python3', [join(projectRoot, 'scripts/news_pipeline.py')], '新闻采集 ');
-    console.log(`[新闻定时任务] 完成，耗时 ${Math.round((Date.now() - startedAt) / 1000)} 秒`);
-  } catch (error) {
-    console.error(`[新闻定时任务] 失败：${error.message}`);
-  } finally {
-    newsRefreshRunning = false;
-  }
-}
-
-function startNewsScheduler() {
-  if (process.env.ENABLE_NEWS_SCHEDULER !== 'true') {
-    console.log('[新闻定时任务] 未启用；设置 ENABLE_NEWS_SCHEDULER=true 后开启');
-    return;
-  }
-
-  const expression = process.env.NEWS_REFRESH_CRON || '*/30 * * * *';
-  const timezone = process.env.NEWS_REFRESH_TIMEZONE || 'Asia/Shanghai';
-  if (!cron.validate(expression)) {
-    console.error(`[新闻定时任务] Cron 表达式无效：${expression}`);
-    return;
-  }
-
-  try {
-    cron.schedule(expression, refreshNews, { timezone });
-    console.log(`[新闻定时任务] 已启用：${expression}（${timezone}）`);
-  } catch (error) {
-    console.error(`[新闻定时任务] 启动失败：${error.message}`);
-  }
-}
-
-function startProjectCategoryScheduler() {
-  if (process.env.ENABLE_PROJECT_CATEGORY_SCHEDULER === 'false') {
-    console.log('[项目分类任务] 已通过环境变量禁用');
-    return;
-  }
-  if (!process.env.DEEPSEEK_API_KEY) {
-    console.log('[项目分类任务] 未配置 DEEPSEEK_API_KEY，未启用');
-    return;
-  }
-
-  const expression = process.env.PROJECT_CATEGORY_CRON || '30 10 * * *';
-  const timezone = process.env.PROJECT_CATEGORY_TIMEZONE || 'Asia/Shanghai';
-  if (!cron.validate(expression)) {
-    console.error(`[项目分类任务] Cron 表达式无效：${expression}`);
-    return;
-  }
-
-  try {
-    cron.schedule(expression, refreshProjectCategories, { timezone });
-    console.log(`[项目分类任务] 已启用：${expression}（${timezone}）`);
-  } catch (error) {
-    console.error(`[项目分类任务] 启动失败：${error.message}`);
-  }
-}
-
-function startProjectImageScheduler() {
-  if (process.env.ENABLE_PROJECT_IMAGE_SCHEDULER === 'false') {
-    console.log('[项目图片任务] 已通过环境变量禁用');
-    return;
-  }
-
-  const expression = process.env.PROJECT_IMAGE_CRON || '0 11 * * *';
-  const timezone = process.env.PROJECT_IMAGE_TIMEZONE || 'Asia/Shanghai';
-  if (!cron.validate(expression)) {
-    console.error(`[项目图片任务] Cron 表达式无效：${expression}`);
-    return;
-  }
-
-  try {
-    cron.schedule(expression, refreshProjectImages, { timezone });
-    console.log(`[项目图片任务] 已启用：${expression}（${timezone}）`);
-  } catch (error) {
-    console.error(`[项目图片任务] 启动失败：${error.message}`);
-  }
-}
-
-function startProjectDataScheduler() {
-  if (process.env.ENABLE_PROJECT_DATA_SCHEDULER === 'false') {
-    console.log('[项目数据任务] 已通过环境变量禁用');
-    return;
-  }
-
-  const expression = process.env.PROJECT_DATA_CRON || '0 10 * * *';
-  const timezone = process.env.PROJECT_DATA_TIMEZONE || 'Asia/Shanghai';
-  if (!cron.validate(expression)) {
-    console.error(`[项目数据任务] Cron 表达式无效：${expression}`);
-    return;
-  }
-
-  try {
-    cron.schedule(expression, refreshProjectData, { timezone });
-    console.log(`[项目数据任务] 已启用：${expression}（${timezone}）`);
-  } catch (error) {
-    console.error(`[项目数据任务] 启动失败：${error.message}`);
-  }
-}
-
-function startProjectMetricsScheduler() {
-  if (process.env.ENABLE_PROJECT_METRICS_SCHEDULER === 'false') {
-    console.log('[项目指标任务] 已通过环境变量禁用');
-    return;
-  }
-  if (!process.env.GITHUB_TOKEN) {
-    console.log('[项目指标任务] 未配置 GITHUB_TOKEN，未启用');
-    return;
-  }
-
-  const expression = process.env.PROJECT_METRICS_CRON || '30 11 * * *';
-  const timezone = process.env.PROJECT_METRICS_TIMEZONE || 'Asia/Shanghai';
-  if (!cron.validate(expression)) {
-    console.error(`[项目指标任务] Cron 表达式无效：${expression}`);
-    return;
-  }
-
-  try {
-    cron.schedule(expression, refreshProjectMetrics, { timezone });
-    console.log(`[项目指标任务] 已启用：${expression}（${timezone}）`);
-  } catch (error) {
-    console.error(`[项目指标任务] 启动失败：${error.message}`);
   }
 }
 
@@ -356,7 +121,7 @@ function startVectorScheduler() {
     return;
   }
 
-  const expression = process.env.VECTOR_INDEX_CRON || '15 10 * * *';
+  const expression = process.env.VECTOR_INDEX_CRON || '0 10 * * *';
   const timezone = process.env.VECTOR_INDEX_TIMEZONE || 'Asia/Shanghai';
   if (!cron.validate(expression)) {
     console.error(`[向量定时任务] Cron 表达式无效：${expression}`);
@@ -377,12 +142,15 @@ const callbackUrl = process.env.GITHUB_CALLBACK_URL || `http://localhost:${port}
 const secureCookies = callbackUrl.startsWith('https://');
 const proxyUrl = process.env.HTTPS_PROXY || process.env.HTTP_PROXY || (isDevelopment ? 'http://127.0.0.1:7890' : '');
 const githubDispatcher = proxyUrl ? new ProxyAgent(proxyUrl) : undefined;
+const semanticProjectSearch = vectorSearchConfigured()
+  ? createSemanticProjectSearch({ environment: process.env, proxyUrl, dispatcher: githubDispatcher })
+  : null;
 const app = express();
 app.disable('x-powered-by');
 app.use(express.json());
 
 app.post('/api/search', async (request, response) => {
-  if (!vectorSearchConfigured()) {
+  if (!semanticProjectSearch) {
     return response.status(503).json({
       code: 'SEMANTIC_SEARCH_NOT_CONFIGURED',
       message: '语义搜索服务尚未配置'
@@ -410,9 +178,7 @@ app.post('/api/search', async (request, response) => {
   const limit = Math.min(100, Math.max(1, Number(request.body?.limit) || 50));
 
   try {
-    const projects = await searchProjects(query, {
-      config: vectorSearchConfig(),
-      dispatcher: githubDispatcher,
+    const projects = await semanticProjectSearch.search(query, {
       minStars,
       maxStars,
       limit
@@ -529,39 +295,15 @@ app.get('/auth/github/callback', async (request, response) => {
   }
 });
 
-app.get('/data/news.json', (_request, response) => {
-  response.set('Cache-Control', 'no-store');
-  response.sendFile(join(projectRoot, 'public/data/news.json'));
-});
-
-app.get('/data/project-categories.json', (_request, response) => {
-  response.set('Cache-Control', 'no-store');
-  response.sendFile(join(projectRoot, 'public/data/project-categories.json'));
-});
-
-app.get('/data/project-scores.json', (_request, response) => {
-  response.set('Cache-Control', 'no-store');
-  response.sendFile(join(projectRoot, 'public/data/project-scores.json'));
-});
-
-app.get('/data/project-images.json', (_request, response) => {
-  response.set('Cache-Control', 'no-store');
-  response.sendFile(join(projectRoot, 'public/data/project-images.json'));
-});
-
-app.get('/data/project-images/:filename', (request, response) => {
-  const filename = String(request.params.filename || '');
-  if (!/^(?:[a-f0-9]{64}|_default)\.webp$/.test(filename)) return response.sendStatus(404);
-  response.set('Cache-Control', 'public, max-age=2592000, immutable');
-  response.sendFile(join(projectRoot, 'public/data/project-images', filename));
-});
-
 if (isDevelopment) {
   const { createServer } = await import('vite');
   const vite = await createServer({ server: { middlewareMode: true }, appType: 'spa' });
   app.use(vite.middlewares);
 } else {
   const distDirectory = join(projectRoot, 'dist');
+  const publicDataDirectory = join(projectRoot, 'public', 'data');
+  // 榜单数据在运行时由 generate_data_from_starrocks.py 生成到 public/data，前端从这里读取
+  app.use('/data', express.static(publicDataDirectory, { index: false }));
   app.use(express.static(distDirectory, { index: false }));
   app.use((request, response, next) => {
     if (request.method !== 'GET' || !request.accepts('html')) return next();
@@ -572,10 +314,5 @@ if (isDevelopment) {
 app.listen(port, () => {
   console.log(`GitHub Star 趋势榜已启动：http://localhost:${port}`);
   if (proxyUrl) console.log(`GitHub OAuth 网络代理：${proxyUrl}`);
-  startProjectDataScheduler();
   startVectorScheduler();
-  startNewsScheduler();
-  startProjectCategoryScheduler();
-  startProjectImageScheduler();
-  startProjectMetricsScheduler();
 });
