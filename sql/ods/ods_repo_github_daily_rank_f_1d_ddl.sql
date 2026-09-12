@@ -1,9 +1,9 @@
 -- GitHub 每日开源项目飙升榜（数据源：OpenGithubs/github-daily-rank）
 -- 主键模型：(dt, full_name) 唯一，Stream Load 按 upsert 去重
--- 按天分区：表达式分区 date_trunc('day', dt)，按写入日期自动创建日分区，无需预先建分区
+-- dt 为 bigint yyyyMMdd，按天自动分区 PARTITION BY (dt)，无需预先建分区
 
 CREATE TABLE IF NOT EXISTS ods.ods_repo_github_daily_rank_f_1d (
-    `dt`                  date           NOT NULL COMMENT "统计日期（分区键）",
+    `dt`                  bigint(20)     NOT NULL COMMENT "统计日期 yyyyMMdd（分区键）",
     `full_name`           varchar(255)   NOT NULL COMMENT "仓库全名 owner/name",
     `rank_num`            int(11)        NOT NULL COMMENT "当日榜单排名",
     `repo_url`            varchar(512)   NULL COMMENT "仓库地址",
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS ods.ods_repo_github_daily_rank_f_1d (
     `crawled_at`          datetime       NULL COMMENT "数据写入时间"
 ) ENGINE=OLAP
 PRIMARY KEY (`dt`, `full_name`)
-PARTITION BY date_trunc('day', `dt`)
+PARTITION BY (`dt`)
 DISTRIBUTED BY HASH (`full_name`) BUCKETS 1
 PROPERTIES (
     "replication_num" = "1",

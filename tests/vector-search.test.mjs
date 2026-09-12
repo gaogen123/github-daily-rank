@@ -6,6 +6,7 @@ import {
   vectorSearchConfigured,
   vectorSearchConfig
 } from '../lib/vector-search.mjs';
+import { projectRepositoryUrl } from '../src/lib/project-url.js';
 import * as legacyIndexAdapter from '../scripts/index-projects.mjs';
 import * as canonicalIndex from '../scripts/projects/index-projects.mjs';
 
@@ -19,9 +20,26 @@ test('识别完整的向量搜索配置', () => {
   assert.equal(vectorSearchConfigured(environment), true);
   const config = vectorSearchConfig(environment);
   assert.equal(config.qdrantUrl, 'https://example.qdrant.io');
-  assert.equal(config.collection, 'github_projects_bge_m3_v1');
+  assert.equal(config.collection, 'github_projects_profiles_v1');
   assert.equal(config.model, 'BAAI/bge-m3');
   assert.equal(config.dimension, 1024);
+});
+
+test('识别 Gemini 向量搜索配置', () => {
+  const environment = {
+    GEMINI_API_KEY: 'test-gemini-key',
+    QDRANT_URL: 'https://example.qdrant.io/',
+    QDRANT_API_KEY: 'test-qdrant-key'
+  };
+
+  assert.equal(vectorSearchConfigured(environment), true);
+  const config = vectorSearchConfig(environment);
+  assert.equal(config.provider, 'gemini');
+  assert.equal(config.apiKey, 'test-gemini-key');
+  assert.equal(config.qdrantUrl, 'https://example.qdrant.io');
+  assert.equal(config.collection, 'github_projects_gemini_v1');
+  assert.equal(config.model, 'text-embedding-004');
+  assert.equal(config.dimension, 768);
 });
 
 test('缺少密钥时不启用语义搜索', () => {
@@ -30,6 +48,11 @@ test('缺少密钥时不启用语义搜索', () => {
     () => vectorSearchConfig({ QDRANT_URL: 'https://example.qdrant.io' }),
     /SILICONFLOW_API_KEY/
   );
+});
+
+test('项目链接保留有效地址并安全回退到 GitHub 仓库', () => {
+  assert.equal(projectRepositoryUrl({ repo: 'acme/tool', url: 'https://example.com/tool' }), 'https://example.com/tool');
+  assert.equal(projectRepositoryUrl({ repo: 'acme/tool name', url: 'javascript:alert(1)' }), 'https://github.com/acme/tool%20name');
 });
 
 test('production adapter 通过同一语义搜索 interface 保持远端契约', async (context) => {
@@ -72,8 +95,8 @@ test('production adapter 通过同一语义搜索 interface 保持远端契约',
     limit: 8
   });
 
-  assert.deepEqual(projects, [{ repo: 'acme/search', stars: 5200, semanticScore: 0.87 }]);
-  assert.equal(requests[1].url, 'https://qdrant.example/collections/github_projects_bge_m3_v1/points/search');
+  assert.deepEqual(projects, [{ repo: 'acme/search', stars: 5200, url: 'https://github.com/acme/search', semanticScore: 0.87 }]);
+  assert.equal(requests[1].url, 'https://qdrant.example/collections/github_projects_profiles_v1/points/search');
   assert.deepEqual(JSON.parse(requests[0].options.body), {
     model: 'BAAI/bge-m3',
     input: ['semantic search'],
@@ -85,6 +108,62 @@ test('production adapter 通过同一语义搜索 interface 保持远端契约',
     with_payload: true,
     score_threshold: 0.2,
     filter: { must: [{ key: 'stars', range: { gte: 5000, lte: 9000 } }] }
+  });
+});
+
+test('production adapter 使用 Gemini 生成向量并检索', async (context) => {
+  const requests = [];
+  context.mock.method(globalThis, 'fetch', async (url, options) => {
+    requests.push({ url, options });
+    if (url === 'https://generativelanguage.googleapis.com/v1beta/openai/embeddings') {
+      return {
+        ok: true,
+        async json() {
+          return { data: [{ index: 0, embedding: [0.1, 0.9] }] };
+        }
+      };
+    }
+    return {
+      ok: true,
+      status: 200,
+      async json() {
+        return {
+          result: [{
+            score: 0.95,
+            payload: { repo: 'acme/gemini-search', stars: 8888, url: 'https://github.com/Acme/gemini-search' }
+          }]
+        };
+      }
+    };
+  });
+  const search = createSemanticProjectSearch({
+    environment: {
+      GEMINI_API_KEY: 'gemini-secret-key',
+      QDRANT_URL: 'https://qdrant.example',
+      QDRANT_API_KEY: 'qdrant-key'
+    },
+    proxyUrl: ''
+  });
+
+  const projects = await search.search('deep learning', {
+    minStars: 1000,
+    limit: 5
+  });
+
+  assert.deepEqual(projects, [{ repo: 'acme/gemini-search', stars: 8888, url: 'https://github.com/Acme/gemini-search', semanticScore: 0.95 }]);
+  assert.equal(requests[0].url, 'https://generativelanguage.googleapis.com/v1beta/openai/embeddings');
+  assert.equal(requests[0].options.headers.Authorization, 'Bearer gemini-secret-key');
+  assert.deepEqual(JSON.parse(requests[0].options.body), {
+    model: 'text-embedding-004',
+    input: ['deep learning']
+  });
+  assert.equal(requests[1].url, 'https://qdrant.example/collections/github_projects_gemini_v1/points/search');
+  assert.deepEqual(JSON.parse(requests[1].options.body), {
+    vector: [0.1, 0.9],
+    limit: 5,
+    with_payload: true,
+    score_threshold: 0.2,
+    filter: { must: [{ key: 'stars', range: { gte: 1000 } }] }
   });
 });
 
@@ -258,32 +337,28 @@ test('refresh 不会让未变化项目重嵌', async () => {
       repo: 'acme/stable',
       name: 'Stable',
       description: 'unchanged',
-      readmeSummary: 'unchanged summary',
+      readmeSummary: 'unchanged',
       topics: [],
-      stars: 100,
-      url: 'https://github.com/acme/stable',
-      dailyGrowth: 1,
-      openedAt: '2026-01-01',
-      firstSeen: '2026-01-01',
-      lastSeen: '2026-01-01',
-      sourceHash: 'ignored',
-      contentHash: 'ignored'
+      stars: 10
     }
   };
+  cached['acme/stable'].contentFingerprint = 'unchanged-content';
+  cached['acme/stable'].payloadFingerprint = 'unchanged-payload';
+
   const synchronizer = createProjectIndexSynchronizer({
     documentProvider: {
       async list() { return cached; },
-      async prepare() { return { ...cached['acme/stable'] }; },
-      async save() {}
+      async prepare(p) { return cached[p.repo]; },
+      async save(doc) { writes.push(doc); }
     },
     vectorIndexWriter: {
       async sync({ vectors, payloads }) {
-        writes.push({ vectors: vectors.length, payloads: payloads.length });
+        if (vectors.length || payloads.length) writes.push(...vectors, ...payloads);
       }
     }
   });
 
-  await synchronizer.sync({ projects: [{ repo: 'acme/stable' }], refresh: true });
+  await synchronizer.sync({ projects: [{ repo: 'acme/stable' }] });
 
   assert.deepEqual(writes, []);
 });
@@ -409,18 +484,16 @@ test('索引同步对完全未变化项目不产生远端写入', async () => {
     topics: [],
     stars: 100
   });
-  const prior = prepare();
+  const cached = prepare();
   const capture = {};
   const priorSync = createProjectIndexSynchronizer({
     documentProvider: {
-      async list() { return { 'acme/stable': prior }; },
+      async list() { return { 'acme/stable': cached }; },
       async prepare() { return prepare(); },
       async save() {}
     },
     vectorIndexWriter: {
-      async sync({ vectors }) {
-        for (const document of vectors) capture['acme/stable'] = document;
-      }
+      async sync({ vectors }) { for (const document of vectors) capture['acme/stable'] = document; }
     }
   });
   await priorSync.sync({ projects: [{ repo: 'acme/stable' }], force: true });
@@ -429,11 +502,11 @@ test('索引同步对完全未变化项目不产生远端写入', async () => {
     documentProvider: {
       async list() { return { 'acme/stable': capture['acme/stable'] }; },
       async prepare() { return prepare(); },
-      async save() {}
+      async save(document) { writes.push(document); }
     },
     vectorIndexWriter: {
       async sync({ vectors, payloads }) {
-        writes.push({ vectors: vectors.length, payloads: payloads.length });
+        if (vectors.length || payloads.length) writes.push(...vectors, ...payloads);
       }
     }
   });
@@ -455,8 +528,8 @@ test('production 索引同步通过同一 factory 写入向量并跳过未变化
         }
       };
     }
-    if (url.includes('/collections/github_projects_bge_m3_v1')) {
-      return { ok: true, status: 200, async json() { return {}; } };
+    if (url.includes('/collections/github_projects_profiles_v1')) {
+      return { ok: true, status: 200, async json() { return { result: { config: { params: { vectors: { size: 1024, distance: 'Cosine' } } } } }; } };
     }
     return { ok: true, status: 204, async json() { return null; } };
   });
@@ -529,6 +602,7 @@ test('通过语义搜索 interface 返回符合约束的规范化项目', async 
 
   assert.deepEqual(projects, [{
     repo: 'acme/agent-tools',
+    url: 'https://github.com/acme/agent-tools',
     name: 'Agent Tools',
     stars: 4200,
     semanticScore: 0.91

@@ -1,8 +1,8 @@
 -- GitHub Trending 每日抓取表（数据源：https://github.com/trending?since=daily）
--- 主键模型：(dt, full_name)，按天动态分区（保留 30 天历史 + 3 天未来）
+-- 主键模型：(dt, full_name)，dt 为 bigint yyyyMMdd，按天自动分区 PARTITION BY (dt)
 
 CREATE TABLE IF NOT EXISTS ods.ods_crawl_day_github_trending_f_1d (
-    `dt`          date           NOT NULL COMMENT "统计日期（分区键）",
+    `dt`          bigint(20)     NOT NULL COMMENT "统计日期 yyyyMMdd（分区键）",
     `full_name`   varchar(255)   NOT NULL COMMENT "仓库全名 owner/name",
     `rank_num`    int(11)        NOT NULL COMMENT "榜单排名",
     `repo_url`    varchar(512)   NULL COMMENT "仓库地址",
@@ -13,16 +13,10 @@ CREATE TABLE IF NOT EXISTS ods.ods_crawl_day_github_trending_f_1d (
     `crawled_at`  datetime       NULL COMMENT "抓取时间"
 ) ENGINE=OLAP
 PRIMARY KEY (`dt`, `full_name`)
-PARTITION BY RANGE (`dt`) ()
+PARTITION BY (`dt`)
 DISTRIBUTED BY HASH (`full_name`) BUCKETS 1
 PROPERTIES (
     "replication_num" = "1",
-    "dynamic_partition.enable" = "true",
-    "dynamic_partition.time_unit" = "DAY",
-    "dynamic_partition.start" = "-30",
-    "dynamic_partition.end" = "3",
-    "dynamic_partition.prefix" = "p",
-    "dynamic_partition.buckets" = "1",
     "enable_persistent_index" = "true",
     "fast_schema_evolution" = "true",
     "replicated_storage" = "true"

@@ -1,0 +1,57 @@
+{
+  "1Panel-dev/1Panel": {
+    "is_ai": false,
+    "categories": [],
+    "reason": "开源 Linux 服务器运维面板，属于传统 DevOps 工具，非 AI 运维产品"
+  },
+  "coollabsio/coolify": {
+    "is_ai": false,
+    "categories": [],
+    "reason": "开源自建 PaaS 服务，属于传统运维基础设施，非 AI 运维"
+  },
+  "NaiboWang/EasySpider": {
+    "is_ai": false,
+    "categories": [],
+    "reason": "可视化通用网页爬虫软件，非 AI 原生数据采集工具"
+  },
+  "massgravel/Microsoft-Activation-Scripts": {
+    "is_ai": false,
+    "categories": [],
+    "reason": "系统工具与脚本，非 AI 工具"
+  },
+  "comfyanonymous/ComfyUI": {
+    "is_ai": true,
+    "categories": ["AI图像工具"],
+    "reason": "最强大的基于节点流的 Stable Diffusion 图像生成与编辑 WebUI"
+  },
+  "AUTOMATIC1111/stable-diffusion-webui": {
+    "is_ai": true,
+    "categories": ["AI图像工具"],
+    "reason": "主流 Stable Diffusion 图像生成 Web 界面"
+  },
+  "langgenius/dify": {
+    "is_ai": true,
+    "categories": ["AI开发平台"],
+    "reason": "LLM 应用与 Agentic Workflow 开发、编排和部署平台"
+  },
+  "paul-gauthier/aider": {
+    "is_ai": true,
+    "categories": ["AI编程工具"],
+    "reason": "终端命令行 AI 协同编程与代码编辑工具"
+  },
+  "moltbot/moltbot": {
+    "is_ai": true,
+    "categories": ["AI智能体"],
+    "reason": "具备跨平台自主规划与工具执行能力的 Agent"
+  },
+  "NousResearch/hermes-agent": {
+    "is_ai": true,
+    "categories": ["AI智能体"],
+    "reason": "NousResearch 研发的开源自主 Agent 框架"
+  },
+  "anywhere-labs/deepseek-harness-desktop": {
+    "is_ai": true,
+    "categories": ["AI智能体", "Skills"],
+    "reason": "面向 DeepSeek Harness 插件与能力生态打造的桌面端工作台"
+  }
+}

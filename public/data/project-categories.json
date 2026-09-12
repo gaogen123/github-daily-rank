@@ -9,9 +9,7 @@
     "0xNyk/council-of-high-intelligence": [
       "AI智能体"
     ],
-    "1Panel-dev/1Panel": [
-      "AI运维"
-    ],
+    "1Panel-dev/1Panel": [],
     "1c7/chinese-independent-developer": [],
     "1jehuang/jcode": [
       "AI编程工具"
@@ -380,9 +378,7 @@
     ],
     "NVIDIA/open-gpu-kernel-modules": [],
     "NVIDIA/warp": [],
-    "NaiboWang/EasySpider": [
-      "AI爬虫工具"
-    ],
+    "NaiboWang/EasySpider": [],
     "NangoHQ/nango": [
       "AI开发平台"
     ],
@@ -734,7 +730,8 @@
     ],
     "anvaka/city-roads": [],
     "anywhere-labs/deepseek-harness-desktop": [
-      "AI开发平台"
+      "AI智能体",
+      "Skills"
     ],
     "apache/airflow": [],
     "apache/dolphinscheduler": [
@@ -957,9 +954,7 @@
     "continuedev/continue": [
       "AI编程工具"
     ],
-    "coollabsio/coolify": [
-      "AI运维"
-    ],
+    "coollabsio/coolify": [],
     "coqui-ai/TTS": [
       "AI音频工具"
     ],
@@ -1520,8 +1515,7 @@
       "AI编程工具"
     ],
     "langgenius/dify": [
-      "AI开发平台",
-      "AI智能体"
+      "AI开发平台"
     ],
     "lapce/lapce": [],
     "laurent22/joplin": [
@@ -2416,5 +2410,6 @@
     "zumerlab/snapdom": [
       "AI图像工具"
     ]
-  }
+  },
+  "updated_at": "2026-09-09 21:50:17"
 }

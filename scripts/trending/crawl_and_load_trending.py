@@ -131,9 +131,13 @@ def normalize_dt(value):
 
 
 def to_star_rows(extract, since, dt=None):
-    """把抓取结果转成表结构对应的行。dt 默认取抓取当天，可用 --dt 指定。"""
+    """把抓取结果转成表结构对应的行。dt 默认取抓取当天，可用 --dt 指定。
+
+    dt 写成 bigint yyyyMMdd，如 20260905。
+    """
     crawled_at = datetime.now()
-    dt = normalize_dt(dt) if dt else crawled_at.strftime("%Y-%m-%d")
+    dt_str = normalize_dt(dt) if dt else crawled_at.strftime("%Y-%m-%d")
+    dt = int(dt_str.replace("-", ""))
     rows = []
     for index, repo in enumerate(extract.get("repositories", [])):
         rows.append(

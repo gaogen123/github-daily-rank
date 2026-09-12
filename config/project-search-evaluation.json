@@ -1,0 +1,86 @@
+{
+  "status": "awaiting_sample_annotations",
+  "instructions": "首批100项目生成后，依据其README人工填写expectedRepos；找不到相关项目的查询应替换为样本覆盖的需求。不能以搜索结果反推正确答案。",
+  "cases": [
+    {
+      "query": "把 PDF 转成 Markdown 的工具",
+      "expectedRepos": []
+    },
+    {
+      "query": "在本地管理个人知识库",
+      "expectedRepos": []
+    },
+    {
+      "query": "抓取网页并提取结构化数据",
+      "expectedRepos": []
+    },
+    {
+      "query": "将语音转成文字",
+      "expectedRepos": []
+    },
+    {
+      "query": "构建多智能体协作应用",
+      "expectedRepos": []
+    },
+    {
+      "query": "辅助代码审查和发现问题",
+      "expectedRepos": []
+    },
+    {
+      "query": "将自然语言转换成数据库查询",
+      "expectedRepos": []
+    },
+    {
+      "query": "生成和编辑图片",
+      "expectedRepos": []
+    },
+    {
+      "query": "为自己的文档建立语义搜索",
+      "expectedRepos": []
+    },
+    {
+      "query": "可视化编排自动化工作流",
+      "expectedRepos": []
+    },
+    {
+      "query": "从视频提取字幕",
+      "expectedRepos": []
+    },
+    {
+      "query": "管理容器和部署服务",
+      "expectedRepos": []
+    },
+    {
+      "query": "监控网站运行状态",
+      "expectedRepos": []
+    },
+    {
+      "query": "构建聊天机器人的开发框架",
+      "expectedRepos": []
+    },
+    {
+      "query": "管理个人任务和日程",
+      "expectedRepos": []
+    },
+    {
+      "query": "远程访问自己的电脑",
+      "expectedRepos": []
+    },
+    {
+      "query": "制作演示文稿",
+      "expectedRepos": []
+    },
+    {
+      "query": "管理 API 文档与接口测试",
+      "expectedRepos": []
+    },
+    {
+      "query": "处理表格和分析数据",
+      "expectedRepos": []
+    },
+    {
+      "query": "为项目生成静态文档网站",
+      "expectedRepos": []
+    }
+  ]
+}

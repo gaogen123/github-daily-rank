@@ -8,3 +8,7 @@ dist/
 !.env.example
 storage/
 gen-lang-client-*-*.json
+.DS_Store
+*.zip
+.aider-desk/
+.claude/

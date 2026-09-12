@@ -78,7 +78,7 @@ function toDatetime(iso) {
 // 把抓取结果转换为表结构对应的行数组（保持主键 upsert，不清除任何分区）。
 function toStarRows(result) {
   const crawledAt = result.crawledAt || new Date().toISOString();
-  const dt = crawledAt.slice(0, 10);
+  const dt = Number(crawledAt.slice(0, 10).replaceAll('-', ''));
   return (result.repositories || []).map((repo) => ({
     dt,
     full_name: repo.fullName,

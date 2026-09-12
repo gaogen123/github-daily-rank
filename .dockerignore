@@ -9,3 +9,5 @@ storage
 *.log
 Dockerfile
 docker-compose.yml
+*.zip
+*.tar.gz

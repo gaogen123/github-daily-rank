@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """从 StarRocks 生成前端 dashboard 所需 public/data JSON。
 
-替代 generate-data.mjs 的本地 Markdown 解析，改为直接查询
-ods.ods_repo_github_daily_rank_f_1d，产出与原来完全兼容的：
+最新榜单读取 ads.ads_github_trend_rank_f，项目元数据读取 ADS 仓库表。
+历史榜单使用 DWD 明细和 ODS 日榜，产出：
 
 - public/data/dates.json         {latest, dates[]}
 - public/data/rankings.json      最新一天的报告
@@ -21,6 +21,9 @@ from collections import defaultdict
 from pathlib import Path
 
 import pymysql
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'shared'))
+from project_catalog import load_catalog
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
@@ -100,6 +103,16 @@ def to_project(row):
     }
 
 
+def format_dt(value):
+    """bigint 20260905 -> '2026-09-05'；date/datetime 则走 isoformat。"""
+    if hasattr(value, "isoformat"):
+        return value.isoformat()
+    s = str(value)
+    if len(s) == 8 and s.isdigit():
+        return f"{s[:4]}-{s[4:6]}-{s[6:]}"
+    return s
+
+
 def build_project_index(dates, reports_by_date):
     """复刻 generate-data.mjs 的 projectIndex 聚合逻辑：
     按日期升序遍历，后出现的覆盖前面的；name/description 取最新非空值。"""
@@ -117,58 +130,143 @@ def build_project_index(dates, reports_by_date):
     return sorted(project_index.values(), key=lambda p: -p["stars"])
 
 
+
+def query_table(table):
+    conn = pymysql.connect(
+        host=STARROCKS_MYSQL_HOST, port=STARROCKS_MYSQL_PORT,
+        user=STARROCKS_USER, password=STARROCKS_PASSWORD,
+        cursorclass=pymysql.cursors.DictCursor,
+    )
+    try:
+        with conn.cursor() as cur:
+            cur.execute(f"SELECT * FROM {table}")
+            return cur.fetchall()
+    finally:
+        conn.close()
+
+
+PERIODS = {"daily_rank": "daily", "weekly_rank": "weekly", "monthly_rank": "monthly"}
+
+
+def build_boards(rows):
+    boards = {}
+    for row in rows:
+        kind = row["sort_type"]
+        date = format_dt(row["dt"])
+        board = boards.setdefault(kind, {"date": date, "projects": []})
+        if date != board["date"]:
+            raise ValueError(f"榜单 {kind} 包含不同日期")
+        project = {
+            "repo": row["full_name"], "url": row["repo_url"] or f'https://github.com/{row["full_name"]}',
+            "name": row["repo_name"] or "", "description": row["description"] or "",
+            "stars": int(row["total_stars"] or 0),
+            "openedAt": format_dt(row["opened_at"]) if row["opened_at"] else "",
+            "rank": row["rank_num"], "growth": row["growth"],
+        }
+        period = PERIODS.get(kind)
+        if period:
+            project[period + "Growth"] = row["growth"]
+            project[period + "Rate"] = float(row["growth_rate"]) if row["growth_rate"] is not None else None
+        board["projects"].append(project)
+    for board in boards.values():
+        board["projects"].sort(key=lambda p: (p["rank"], p["repo"]))
+    return boards
+
+
+def write_json(path, value):
+    temporary = path.with_suffix(".json.tmp")
+    temporary.write_text(json.dumps(value, ensure_ascii=False, default=float) + "\n", encoding="utf-8")
+    temporary.replace(path)
+
+
+
+def merge_metrics(projects, rows):
+    # 同一项目有多天记录；仅用比现有仓库快照更新的实际采集结果。
+    for row in sorted(rows, key=lambda r: (str(r["fetched_at"] or ""), r["dt"])):
+        repo = row["repo"]
+        existing = projects.get(repo, {})
+        fetched = row["fetched_at"].isoformat() if row["fetched_at"] else ""
+        if not fetched or fetched < existing.get("fetchedAt", ""):
+            continue
+        growth = row["source_star_delta_1d"]
+        stars = row["stars"]
+        projects[repo] = {
+            **existing, "repo": repo, "url": row["github_url"] or existing.get("url", f"https://github.com/{repo}"),
+            "name": existing.get("name", ""), "description": row["description"] or existing.get("description", ""),
+            "homepage": row["homepage"] or existing.get("homepage", ""),
+            "stars": stars, "forks": row["forks"],
+            "dailyGrowth": growth, "weeklyGrowth": row["source_star_delta_7d"],
+            "monthlyGrowth": row["source_star_delta_30d"],
+            "dailyRate": 100 * growth / (stars - growth) if growth is not None and stars is not None and stars > growth else None,
+            "openedAt": format_dt(row["created_at"].date()) if row["created_at"] else existing.get("openedAt", ""),
+            "firstSeen": existing.get("firstSeen", ""), "lastSeen": existing.get("lastSeen", ""),
+            "fetchedAt": fetched, "updatedAt": fetched[:10],
+        }
+    return projects
+
+
 def main():
     rows = query_rows()
-    if not rows:
-        print("StarRocks 中没有数据，请先运行日榜加载脚本")
-        return 1
-
+    ads_rows = query_table("ads.ads_github_trend_rank_f")
+    if not ads_rows:
+        raise ValueError("ADS 榜单为空，保留现有网站数据")
+    boards = build_boards(ads_rows)
+    latest = max(board["date"] for board in boards.values())
     reports_by_date = defaultdict(list)
     for row in rows:
-        dt = row["dt"].isoformat()
-        reports_by_date[dt].append(to_project(row))
-
-    dates = sorted(reports_by_date.keys())
-    latest = dates[-1]
-
+        reports_by_date[format_dt(row["dt"])].append(to_project(row))
+    reports = {date: {"date": date, "projects": projects} for date, projects in reports_by_date.items()}
+    history = defaultdict(list)
+    for row in query_table("dwd.dwd_github_trend_rank_f_1d"):
+        history[format_dt(row["dt"])].append(row)
+    for date, items in history.items():
+        report = reports.setdefault(date, {"date": date, "projects": []})
+        report["boards"] = build_boards(items)
+    # 最新页展示各榜单的最新一期；每个榜单保留自己的真实统计日期。
+    latest_report = {"date": latest, "projects": reports_by_date.get(latest, []), "boards": boards, "source": "ads"}
+    reports[latest] = latest_report
+    dates = sorted(reports)
+    projects = {p["repo"]: p for p in build_project_index(sorted(reports_by_date), reports_by_date)}
+    for row in query_table("ads.ads_github_trend_repo_f"):
+        repo = row["full_name"]
+        existing = projects.get(repo, {})
+        projects[repo] = {
+            **existing, "repo": repo, "url": row["repo_url"] or f"https://github.com/{repo}",
+            "name": row["repo_name"] or existing.get("name", ""),
+            "description": row["description"] or existing.get("description", ""),
+            "stars": int(row["stargazers_count"] or 0), "homepage": row["homepage"] or "",
+            "openGraphImageUrl": row["open_graph_image_url"],
+            "usesCustomOpenGraphImage": bool(row["uses_custom_open_graph_image"]) if row["uses_custom_open_graph_image"] is not None else None,
+            "imageFetchedAt": row["image_fetched_at"].isoformat() if row["image_fetched_at"] else None,
+            "openedAt": format_dt(row["created_at"].date()) if row["created_at"] else existing.get("openedAt", ""),
+            "firstSeen": existing.get("firstSeen", ""), "lastSeen": existing.get("lastSeen", ""),
+            "updatedAt": row["fetched_at"].isoformat()[:10] if row["fetched_at"] else "",
+            "fetchedAt": row["fetched_at"].isoformat() if row["fetched_at"] else "",
+        }
+    merge_metrics(projects, query_table("dwd.dwd_github_repo_metrics_f_1d"))
+    conn = pymysql.connect(
+        host=STARROCKS_MYSQL_HOST, port=STARROCKS_MYSQL_PORT,
+        user=STARROCKS_USER, password=STARROCKS_PASSWORD,
+        cursorclass=pymysql.cursors.DictCursor,
+    )
+    try:
+        inventory = load_catalog(conn)
+    finally:
+        conn.close()
+    projects = {repo.lower(): {**project, "repo": repo.lower()} for repo, project in projects.items()}
+    for repo, project in inventory.items():
+        projects.setdefault(repo, project)
     data_dir = PROJECT_ROOT / "public" / "data"
     reports_dir = data_dir / "reports"
     reports_dir.mkdir(parents=True, exist_ok=True)
-
-    # 清理旧 report 文件，避免残留已不存在的日期
-    for old in reports_dir.glob("*.json"):
-        old.unlink()
-
-    # 1) 每天报告 + 2) 最新一天 rankings
-    for date in dates:
-        report = {"date": date, "projects": reports_by_date[date]}
-        (reports_dir / f"{date}.json").write_text(
-            json.dumps(report, ensure_ascii=False) + "\n", encoding="utf-8"
-        )
-
-    latest_report = {"date": latest, "projects": reports_by_date[latest]}
-    (data_dir / "rankings.json").write_text(
-        json.dumps(latest_report, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
-
-    # 3) dates.json
-    (data_dir / "dates.json").write_text(
-        json.dumps({"latest": latest, "dates": dates}, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
-
-    # 4) projects.json
-    projects = build_project_index(dates, reports_by_date)
-    (data_dir / "projects.json").write_text(
-        json.dumps({"projects": projects}, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
-
-    print(f"已生成 {len(dates)} 份单日报和 {len(projects)} 个全库项目，最新日期：{latest}")
+    for date, report in reports.items():
+        write_json(reports_dir / f"{date}.json", report)
+    write_json(data_dir / "rankings.json", latest_report)
+    write_json(data_dir / "projects.json", {"projects": sorted(projects.values(), key=lambda p: -p["stars"])})
+    write_json(data_dir / "dates.json", {"latest": latest, "dates": dates})
+    print(f"已导出 ADS 最新榜单 {latest}，{len(boards)} 种榜单，{len(projects)} 个项目")
     return 0
 
 
 if __name__ == "__main__":
-    try:
-        sys.exit(main())
-    except Exception as exc:  # noqa: BLE001
-        print(str(exc), file=sys.stderr)
-        sys.exit(1)
+    sys.exit(main())

@@ -35,6 +35,8 @@ COPY lib ./lib
 
 # 数据生成脚本与公开目录（public/data 在启动时由脚本写入）
 COPY scripts ./scripts
+COPY sql/dwd/dwd_github_repo_profile_f_ddl.sql ./sql/dwd/dwd_github_repo_profile_f_ddl.sql
+COPY src/lib ./src/lib
 COPY public ./public
 
 # 统一交给 node 用户，便于非 root 运行

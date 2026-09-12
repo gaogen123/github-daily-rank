@@ -107,6 +107,25 @@ def date_from_source(source, content):
     raise ValueError(f"无法从 {source or '日报'} 中识别统计日期")
 
 
+def to_bigint_date(value):
+    """'2025-03-08' -> 20250308；已为整数则原样返回。"""
+    if value is None or value == "":
+        return None
+    if isinstance(value, int):
+        return value
+    return int(str(value).replace("-", ""))
+
+
+def format_date_key(value):
+    """bigint 20260905 -> '2026-09-05'；date/datetime 走 isoformat；其它原样转字符串。"""
+    if hasattr(value, "isoformat"):
+        return value.isoformat()
+    s = str(value)
+    if len(s) == 8 and s.isdigit():
+        return f"{s[:4]}-{s[4:6]}-{s[6:]}"
+    return s
+
+
 def chunk(array, size):
     for index in range(0, len(array), size):
         yield array[index:index + size]
@@ -327,7 +346,7 @@ def daily_to_star_rows(report, crawled_at):
     rows = []
     for index, project in enumerate(report["projects"]):
         rows.append({
-            "dt": report["date"],
+            "dt": to_bigint_date(report["date"]),
             "full_name": project["repo"],
             "rank_num": index + 1,
             "repo_url": project.get("url") or "",
@@ -350,7 +369,7 @@ def to_star_rows(report, growth_field, crawled_at):
     rows = []
     for index, project in enumerate(report["projects"]):
         rows.append({
-            "dt": report["date"],
+            "dt": to_bigint_date(report["date"]),
             "full_name": project["repo"],
             "rank_num": index + 1,
             "repo_url": project.get("url") or "",
@@ -364,28 +383,104 @@ def to_star_rows(report, growth_field, crawled_at):
     return rows
 
 
-# --------------------------------------------------------------------------- #
-# 仓库同步 & StarRocks
-# --------------------------------------------------------------------------- #
+def get_git_proxy():
+    """获取适用于 Git 命令的网络代理地址（优先读取环境变量，在容器内默认使用宿主机代理）。"""
+    proxy = env("HTTPS_PROXY") or env("HTTP_PROXY") or env("https_proxy") or env("http_proxy")
+    if not proxy and (Path("/.dockerenv").exists() or Path("/app/github-daily-rank").exists()):
+        # Docker 容器环境下，默认回退到宿主机代理端口
+        proxy = "http://host.docker.internal:7897"
+    return proxy
+
+
+def run_git_command(args, cwd=None, retries=3, delay=2):
+    """执行 Git 命令，针对网络抖动支持自动重试，并自动附带代理参数避免网络握手失败。"""
+    last_exc = None
+    proxy = get_git_proxy()
+    cmd = list(args)
+    # 如果配置了代理，在 git 基础命令后注入 -c 代理配置，解决 sudo -u root -i 剥离环境变量的问题
+    if proxy and cmd and cmd[0] == "git":
+        proxy_flags = [
+            "-c", f"http.proxy={proxy}",
+            "-c", f"https.proxy={proxy}",
+        ]
+        cmd = [cmd[0]] + proxy_flags + cmd[1:]
+
+    git_env = os.environ.copy()
+    if proxy:
+        git_env["http_proxy"] = proxy
+        git_env["https_proxy"] = proxy
+        git_env["HTTP_PROXY"] = proxy
+        git_env["HTTPS_PROXY"] = proxy
+
+    for attempt in range(1, retries + 1):
+        try:
+            return subprocess.run(
+                cmd,
+                cwd=str(cwd) if cwd else None,
+                check=True,
+                capture_output=True,
+                text=True,
+                env=git_env,
+            )
+        except subprocess.CalledProcessError as exc:
+            last_exc = exc
+            error_msg = (exc.stderr or exc.stdout or str(exc)).strip()
+            if attempt < retries:
+                print(f"[Git重试] 命令 {' '.join(cmd)} 失败（第 {attempt}/{retries} 次）：{error_msg}，{delay} 秒后重试...", file=sys.stderr)
+                time.sleep(delay)
+                delay *= 2
+            else:
+                print(f"[Git错误] 命令 {' '.join(cmd)} 最终失败：{error_msg}", file=sys.stderr)
+    raise last_exc
+
+
+def clean_directory(path):
+    """彻底清空指定目录内的所有内容（含隐藏文件如 .DS_Store）。"""
+    path = Path(path)
+    if not path.exists():
+        return
+    for item in path.iterdir():
+        if item.is_dir():
+            shutil.rmtree(item, ignore_errors=True)
+        else:
+            try:
+                item.unlink(missing_ok=True)
+            except OSError:
+                pass
+
+
 def ensure_repo(repo_url, repo_dir, branch="main"):
+    """确保本地存在目标 Git 仓库的最新代码。
+
+    逻辑：
+    1. 若已存在有效 .git，优先通过带重试的 fetch + reset 同步，避免因单次网络抖动粗暴删库。
+    2. 若同步失败或本地目录损坏，彻底清理残余文件（避免挂载卷中 .DS_Store 导致非空目录无法 clone），再全新克隆。
+    """
     repo_dir = Path(repo_dir)
     os.makedirs(repo_dir.parent, exist_ok=True)
     is_repo = (repo_dir / ".git").is_dir()
+
     if is_repo:
         try:
-            subprocess.run(
-                ["git", "-C", str(repo_dir), "pull", "--ff-only", "origin", branch],
-                check=True,
-            )
+            # 优先采用 fetch + reset，支持网络重试且不会由于合并冲突导致 pull 失败
+            run_git_command(["git", "-C", str(repo_dir), "fetch", "--depth", "1", "origin", branch])
+            subprocess.run(["git", "-C", str(repo_dir), "reset", "--hard", f"origin/{branch}"], check=True)
+            subprocess.run(["git", "-C", str(repo_dir), "clean", "-fd"], check=True)
             return
-        except subprocess.CalledProcessError as exc:
-            print(f"增量拉取失败，改用全新浅克隆：{exc}", file=sys.stderr)
+        except Exception as exc:
+            print(f"现有仓库同步失败（{exc}），尝试清理并重新浅克隆...", file=sys.stderr)
 
-    shutil.rmtree(repo_dir, ignore_errors=True)
-    subprocess.run(
-        ["git", "clone", "--depth", "1", "--branch", branch, repo_url, str(repo_dir)],
-        check=True,
-    )
+    # 清理旧目录中残留的所有文件（彻底避免挂载卷上 .DS_Store 等导致 git clone 报 destination exists and is not empty）
+    if repo_dir.exists():
+        clean_directory(repo_dir)
+        try:
+            repo_dir.rmdir()
+        except OSError:
+            pass
+
+    # 若目录已彻底删除则直接 clone；若目录仍存在（为空目录），在空目录中执行 clone
+    clean_directory(repo_dir)
+    run_git_command(["git", "clone", "--depth", "1", "--branch", branch, repo_url, str(repo_dir)])
 
 
 def stream_load(rows, db, table, label_suffix=""):
@@ -426,7 +521,7 @@ def query_existing_dates(db, table, col="dt"):
             dates = set()
             for row in cur.fetchall():
                 value = row[0]
-                dates.add(value.isoformat() if hasattr(value, "isoformat") else str(value))
+                dates.add(format_date_key(value))
         return dates
     finally:
         conn.close()

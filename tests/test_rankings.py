@@ -237,5 +237,44 @@ class AdapterSmokeTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
 
 
+class EnsureRepoTests(unittest.TestCase):
+    """测试 ensure_repo 的重试、容错与目录清理机制。"""
+
+    @mock.patch("rank_common.run_git_command")
+    def test_ensure_repo_cleans_non_empty_corrupted_directory(self, mock_git):
+        # 模拟本地存在包含 .DS_Store 等残留文件的非 git 目录
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            target_repo = Path(tmp_dir) / "corrupted_repo"
+            target_repo.mkdir()
+            (target_repo / ".DS_Store").write_text("dummy", encoding="utf-8")
+
+            common.ensure_repo("https://github.com/example/repo.git", target_repo)
+
+            # 验证残留文件被彻底清理，并且调用了 clone 命令
+            self.assertFalse((target_repo / ".DS_Store").exists())
+            mock_git.assert_called_once()
+            args = mock_git.call_args[0][0]
+            self.assertEqual(args[0], "git")
+            self.assertEqual(args[1], "clone")
+
+    @mock.patch("subprocess.run")
+    @mock.patch("rank_common.run_git_command")
+    def test_ensure_repo_syncs_existing_git_repo(self, mock_git, mock_sub):
+        # 模拟本地已存在合法 .git 目录
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            target_repo = Path(tmp_dir) / "existing_repo"
+            target_repo.mkdir()
+            (target_repo / ".git").mkdir()
+
+            common.ensure_repo("https://github.com/example/repo.git", target_repo)
+
+            # 验证优先执行 fetch，而不是删除重克隆
+            mock_git.assert_called_once()
+            args = mock_git.call_args[0][0]
+            self.assertEqual(args[0], "git")
+            self.assertIn("fetch", args)
+
+
 if __name__ == "__main__":
     unittest.main()
+

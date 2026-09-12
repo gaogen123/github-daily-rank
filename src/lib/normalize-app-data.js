@@ -1,3 +1,5 @@
+import { mergeProjectProfiles } from './project-profiles.js';
+
 function normalizeCategories(value) {
   if (!value || typeof value !== 'object') return {};
   return value.projects || value.projectCategories || value.categories || value;
@@ -11,7 +13,8 @@ export function normalizeAppData(raw = {}) {
     news = null,
     projectCategories = null,
     projectImages = null,
-    projectScores = null
+    projectScores = null,
+    projectProfiles = null
   } = raw;
 
   if (!index || !Array.isArray(index.dates)) {
@@ -21,10 +24,14 @@ export function normalizeAppData(raw = {}) {
     throw new Error('缺少全库项目索引');
   }
 
+  // Profiles are optional for the website; the indexer validates them strictly.
+  let globalProjects = globalProjectIndex.projects;
+  try { globalProjects = mergeProjectProfiles(globalProjects, projectProfiles); } catch { /* keep core data usable */ }
+
   return {
     dates: index.dates,
     selectedDate: index.latest,
-    globalProjects: globalProjectIndex.projects,
+    globalProjects,
     user: authUser || null,
     news: news || { generated_at: null, count: 0, items: [] },
     projectCategories: normalizeCategories(projectCategories),

@@ -354,6 +354,7 @@ test('无效 cron 配置不调度', () => {
       SILICONFLOW_API_KEY: 'k',
       QDRANT_URL: 'u',
       QDRANT_API_KEY: 'k',
+      ENABLE_VECTOR_SCHEDULER: 'true',
       VECTOR_INDEX_CRON: 'invalid'
     },
     scheduler
@@ -375,6 +376,7 @@ test('有效 cron 配置调度刷新', () => {
       SILICONFLOW_API_KEY: 'k',
       QDRANT_URL: 'u',
       QDRANT_API_KEY: 'k',
+      ENABLE_VECTOR_SCHEDULER: 'true',
       VECTOR_INDEX_CRON: '0 1 * * *'
     },
     scheduler

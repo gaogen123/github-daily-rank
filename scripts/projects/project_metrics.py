@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import datetime as dt
 import json
 import os
@@ -322,7 +323,7 @@ def _request_json(
             with urllib.request.urlopen(request, timeout=timeout) as response:
                 response_headers = {key.lower(): value for key, value in response.headers.items()}
                 return json.loads(response.read().decode("utf-8")), response_headers
-        except (urllib.error.URLError, TimeoutError) as error:
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as error:
             last_error = error
             if attempt < 2:
                 time.sleep(2**attempt)
@@ -472,11 +473,13 @@ def collect_metrics(
     if batch_size < 1 or batch_size > 20:
         raise ValueError("batch_size must be between 1 and 20")
     now = dt.datetime.now(dt.timezone.utc)
+    dt_int = int(now.strftime("%Y%m%d"))
     since = (now - dt.timedelta(days=30)).isoformat().replace("+00:00", "Z")
     source_by_repo = {project["repo"]: project for project in projects}
     repos = list(source_by_repo)
     collected = 0
     failures: list[str] = []
+    starrock_rows: list[dict[str, Any]] = []
 
     for start in range(0, len(repos), batch_size):
         batch = repos[start : start + batch_size]
@@ -496,10 +499,11 @@ def collect_metrics(
             if include_contributors:
                 try:
                     contributors = _contributor_count(repo, token)
-                except (urllib.error.URLError, TimeoutError) as error:
+                except (urllib.error.URLError, TimeoutError, ConnectionError) as error:
                     print(f"[项目指标] {repo} 贡献者采集失败：{error}", file=sys.stderr)
             metrics = _repository_metrics(repo, repository, source_by_repo[repo], contributors, now)
             upsert_repository_metrics(connection, metrics)
+            starrock_rows.append(metrics)
             if metrics["stars"] is not None and metrics["forks"] is not None:
                 record_snapshot(
                     connection,
@@ -511,6 +515,13 @@ def collect_metrics(
             collected += 1
 
         connection.commit()
+        try:
+            loaded = load_metrics_to_starrocks(starrock_rows, dt_int)
+        except Exception as exc:  # noqa: BLE001
+            print(f"[项目指标] 指标写入 StarRocks 失败：{exc}", file=sys.stderr)
+        else:
+            print(f"[项目指标] 指标写入 StarRocks：{loaded} 行", file=sys.stderr)
+        starrock_rows.clear()
         rate_limit = data.get("rateLimit") or {}
         print(
             f"[项目指标] 已采集 {collected}/{len(repos)}，GraphQL 剩余额度 {rate_limit.get('remaining', '未知')}",
@@ -600,6 +611,48 @@ def export_scores(
     return len(projects)
 
 
+def _stream_load(rows, db, table, dt_int=None, label_prefix="stream_load"):
+    if not rows:
+        return 0
+    http = os.environ.get("STARROCKS_HTTP", "http://localhost:8040").rstrip("/")
+    user = os.environ.get("STARROCKS_USER", "root")
+    password = os.environ.get("STARROCKS_PASSWORD", "")
+    auth = base64.b64encode(f"{user}:{password}".encode()).decode()
+    url = f"{http}/api/{db}/{table}/_stream_load"
+    if dt_int is not None:
+        for row in rows:
+            row["dt"] = dt_int
+    label = f"{label_prefix}_{dt_int or int(time.time() * 1000)}_{int(time.time() * 1000)}"
+    data = json.dumps(rows, ensure_ascii=False).encode("utf-8")
+    headers = {
+        "Authorization": f"Basic {auth}",
+        "label": label,
+        "format": "json",
+        "strip_outer_array": "true",
+        "Content-Type": "application/json",
+    }
+    request = urllib.request.Request(url, data=data, headers=headers, method="PUT")
+    with urllib.request.urlopen(request, timeout=120) as response:
+        result = json.loads(response.read().decode("utf-8"))
+    if result.get("Status") != "Success":
+        raise RuntimeError(f"Stream Load 失败: {json.dumps(result, ensure_ascii=False)[:300]}")
+    return int(result.get("NumberLoadedRows", 0))
+
+
+def load_metrics_to_starrocks(rows, dt_int):
+    return _stream_load(rows, "dwd", "dwd_github_repo_metrics_f_1d", dt_int, "repo_metrics")
+
+
+def load_categories_to_starrocks(categories):
+    rows = []
+    for repo, values in categories.items():
+        if not isinstance(values, list):
+            continue
+        for category in values:
+            rows.append({"repo": repo, "category": category})
+    return _stream_load(rows, "dwd", "dwd_github_repo_category_f", None, "repo_category")
+
+
 def _read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -637,6 +690,13 @@ def main(argv: Sequence[str] | None = None) -> int:
     projects = [project for project in projects_document.get("projects", []) if project.get("repo") in classified]
     if getattr(args, "limit", None) is not None:
         projects = projects[: max(0, args.limit)]
+
+    # 分类维度写入 StarRocks（评分前置）
+    try:
+        category_loaded = load_categories_to_starrocks(categories)
+        print(f"分类写入 StarRocks：{category_loaded} 行")
+    except Exception as exc:  # noqa: BLE001
+        print(f"分类写入 StarRocks 失败：{exc}", file=sys.stderr)
 
     with _open_database(args.database) as connection:
         if args.command in ("collect", "run"):

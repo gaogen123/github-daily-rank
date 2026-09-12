@@ -18,7 +18,11 @@
     "build": "python3 scripts/exports/generate_data_from_starrocks.py && vite build",
     "start": "node server.mjs",
     "preview": "vite preview",
-    "test": "node --test"
+    "test": "node --test",
+    "profiles:init": "python3 scripts/projects/project_profiles.py --init-table",
+    "profiles:refresh": "python3 scripts/projects/project_profiles.py",
+    "profiles:export": "python3 scripts/projects/project_profiles.py --export-only",
+    "profiles:evaluate": "node scripts/projects/evaluate-profile-search.mjs"
   },
   "dependencies": {
     "express": "^5.1.0",

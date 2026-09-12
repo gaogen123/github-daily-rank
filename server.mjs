@@ -53,7 +53,11 @@ const githubDispatcher = proxyUrl ? new ProxyAgent(proxyUrl) : undefined;
 
 const refresh = {
   runDailyRankIncremental: () => runPythonScript('scripts/rankings/load_daily_rank_incremental.py'),
-  runGenerateData: () => runPythonScript('scripts/exports/generate_data_from_starrocks.py'),
+  runGenerateData: async () => {
+    await runPythonScript('scripts/exports/generate_data_from_starrocks.py');
+    await runPythonScript('scripts/projects/project_profiles.py');
+    await runPythonScript('scripts/projects/project_profiles.py', ['--export-only']);
+  },
   runIndexProjects: () => runNodeScript('scripts/projects/index-projects.mjs', ['--refresh'])
 };
 

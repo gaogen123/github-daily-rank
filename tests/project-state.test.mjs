@@ -94,6 +94,23 @@ test('关键词搜索匹配 repo/name/description', () => {
   assert.deepEqual(result.map((project) => project.repo), ['b/y']);
 });
 
+test('多关键词与自然语言中文关键词搜索正确匹配并按相关度排序', () => {
+  const customState = {
+    ...rankingState,
+    searchMode: true,
+    minK: 0,
+    maxK: null,
+    globalProjects: [
+      { repo: 'opendatalab/MinerU', name: 'MinerU', description: 'Transforms complex documents like PDFs into markdown', stars: 70000 },
+      { repo: 'foo/pdf-viewer', name: 'pdf-viewer', description: 'Just a PDF viewer', stars: 50000 },
+      { repo: 'bar/markdown-editor', name: 'editor', description: 'A markdown editor', stars: 40000 }
+    ]
+  };
+  const result = computeRankings({ ...customState, query: '把pdf专程markdown的项目' });
+  assert.equal(result.length, 1);
+  assert.equal(result[0].repo, 'opendatalab/MinerU');
+});
+
 test('新项目 30 天判定覆盖临界与无效日期', () => {
   assert.equal(isNewProject({ openedAt: '2026-08-20' }, '2026-09-01'), true);
   assert.equal(isNewProject({ openedAt: '2026-08-01' }, '2026-09-01'), false);

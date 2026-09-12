@@ -34,7 +34,8 @@ services:
   # standalone-server：API + Master + Worker + Alert 合一进程，JDBC 注册中心，外接 PostgreSQL
   standalone:
     build:
-      context: ./dolphinscheduler
+      context: .
+      dockerfile: dolphinscheduler/Dockerfile
     image: dolphinscheduler-standalone:3.4.2-py
     container_name: dolphinscheduler-standalone
     restart: unless-stopped
@@ -48,6 +49,8 @@ services:
       SPRING_DATASOURCE_PASSWORD: root
       # 默认 -Xms4g -Xmx4g，这里调低堆内存避免占满 Docker 内存
       JAVA_OPTS: "-Xms1g -Xmx2g"
+      # 调大 HTTP 请求头上限，避免用 API 保存含多节点的流程定义时 414 URI Too Long
+      SERVER_MAX_HTTP_HEADER_SIZE: "102400"
       # ---- 榜单脚本连库配置：Shell 任务直接继承，无需在命令里 export ----
       STARROCKS_MYSQL_HOST: "host.docker.internal"
       STARROCKS_MYSQL_PORT: "9030"
@@ -55,6 +58,19 @@ services:
       STARROCKS_PASSWORD: ""
       STARROCKS_DB: "ods"
       STARROCKS_HTTP: "http://host.docker.internal:8040"
+      # ---- 过载保护配置：单机/Docker环境下内存通常在80%左右，避免触发拒绝消费命令导致任务挂起 ----
+      MASTER_SERVER_LOAD_PROTECTION_ENABLED: "false"
+      WORKER_SERVER_LOAD_PROTECTION_ENABLED: "false"
+      MASTER_SERVER_LOAD_PROTECTION_MAX_SYSTEM_MEMORY_USAGE_PERCENTAGE_THRESHOLDS: "0.98"
+      WORKER_SERVER_LOAD_PROTECTION_MAX_SYSTEM_MEMORY_USAGE_PERCENTAGE_THRESHOLDS: "0.98"
+      # ---- 代理配置：Shell 任务（Git 拉取、Python 抓取等）走宿主机代理 ----
+      HTTP_PROXY: "http://host.docker.internal:7897"
+      HTTPS_PROXY: "http://host.docker.internal:7897"
+      http_proxy: "http://host.docker.internal:7897"
+      https_proxy: "http://host.docker.internal:7897"
+      # 排除内网与数仓服务，确保 StarRocks 与 Postgres 数据库直连
+      NO_PROXY: "127.0.0.1,localhost,host.docker.internal,postgresql,standalone"
+      no_proxy: "127.0.0.1,localhost,host.docker.internal,postgresql,standalone"
     depends_on:
       schema-init:
         condition: service_completed_successfully
@@ -62,10 +78,12 @@ services:
       - dolphinscheduler-logs:/opt/dolphinscheduler/logs
       # 挂载榜单项目目录，供 Shell 任务直接运行三个增量脚本
       - ./:/app/github-daily-rank
+      - profiles-node-modules:/app/github-daily-rank/node_modules
     extra_hosts:
       # 容器内通过 host.docker.internal 访问宿主机上的 StarRocks（quickstart 容器）
       - "host.docker.internal:host-gateway"
 
 volumes:
+  profiles-node-modules:
   dolphinscheduler-postgresql:
   dolphinscheduler-logs:
